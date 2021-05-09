@@ -75,9 +75,15 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-//        \common\models\Category::getStructCategories();
+        $categories = Yii::$app->db->createCommand(
+            'SELECT category.id, category.name, category.parent_id, category.slug, COUNT(good.id) as count FROM `category`
+                    LEFT join good on category.id = good.category_id
+                    GROUP by category.id
+                    ORDER by category.id
+'
+        )->queryAll();
 
-        return $this->render('index');
+        return $this->render('index', ['categories'=>$categories]);
     }
 
     /**

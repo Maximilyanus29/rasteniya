@@ -28,6 +28,20 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_INACTIVE = 9;
     const STATUS_ACTIVE = 10;
     const STATUS_ADMIN = 1;
+    const STATUS_USER = 2;
+    const STATUS_PROVIDER = 3;
+
+
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Имя пользователя',
+            'password' => 'Пароль',
+            'fio' => 'ФИО',
+            'address' => 'Адрес',
+
+        ];
+    }
 
 
     /**
@@ -55,7 +69,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED, self::STATUS_ADMIN]],
+            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED, self::STATUS_ADMIN, self::STATUS_PROVIDER, self::STATUS_USER]],
         ];
     }
 
@@ -64,7 +78,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' => $id, 'status' => [self::STATUS_ACTIVE, self::STATUS_ADMIN]]);
+        return static::findOne(['id' => $id, 'status' => [self::STATUS_ADMIN, self::STATUS_PROVIDER, self::STATUS_USER]]);
     }
 
     /**
@@ -209,5 +223,13 @@ class User extends ActiveRecord implements IdentityInterface
     public function removePasswordResetToken()
     {
         $this->password_reset_token = null;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getProvider()
+    {
+        return $this->hasOne(Provider::class,['user_id'=>'id']);
     }
 }

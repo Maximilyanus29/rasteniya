@@ -2,59 +2,84 @@
     <div class="container">
         <div class="pull-right">
             <div id="account" class="btn-group">
-                <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-user"></i>
-                    <span class="hidden-xs">Личный кабинет</span>
-                    <i class="fa fa-caret-down"></i>
-                </button>
 
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="http://voodland.com/index.php?route=account/register">Регистрация</a></li>
-                    <li><a href="http://voodland.com/index.php?route=account/login">Авторизация</a></li>
-                </ul>
+
+
+
+
+                <?php if (Yii::$app->user->isGuest) :?>
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user"></i>
+                        <span class="hidden-xs">Личный кабинет</span>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="/user/default/signup">Регистрация</a></li>
+                        <li><a href="/user/default/login">Авторизация</a></li>
+                    </ul>
+                <?php else:?>
+
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        <i class="fa fa-user"></i>
+                        <span class="hidden-xs"><?= Yii::$app->user->identity->email ?></span>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="/user">Личный кабинет</a></li>
+                        <li><a href="/user/default/order-list">История заказа</a></li>
+                        <li><a href="/user/default/payment-history">Операции</a></li>
+                        <li><a href="/user/default/logout">Выход</a></li>
+                    </ul>
+
+                <?php endif; ?>
+
             </div>
         </div>
-        <div class="pull-right">
-            <form action="http://voodland.com/index.php?route=common/language/language" method="post"
-                  enctype="multipart/form-data" id="language">
-                <div class="btn-group">
-                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-globe" aria-hidden="true" title="Russian"></i>
-                        <span class="hidden-xs">Язык</span> <i class="fa fa-caret-down"></i>
-                    </button>
+<!--        <div class="pull-right">-->
+<!--            <form action="http://voodland.com/index.php?route=common/language/language" method="post"-->
+<!--                  enctype="multipart/form-data" id="language">-->
+<!--                <div class="btn-group">-->
+<!--                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">-->
+<!--                        <i class="fa fa-globe" aria-hidden="true" title="Russian"></i>-->
+<!--                        <span class="hidden-xs">Язык</span> <i class="fa fa-caret-down"></i>-->
+<!--                    </button>-->
+<!---->
+<!--                    <ul class="dropdown-menu dropdown-menu-right">-->
+<!--                        <li>-->
+<!--                            <a data-code="ru-ru"><img src="/images/ru-ru.png" alt="Russian" title="Russian">Russian</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a data-code="en-gb"><img src="/images/en-gb.png" alt="English" title="English">English</a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <input type="hidden" name="code" value="">-->
+<!--                <input type="hidden" name="redirect" value="/">-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="pull-right">-->
+<!--            <form action="http://voodland.com/index.php?route=common/currency/currency" method="post"-->
+<!--                  enctype="multipart/form-data" id="currency">-->
+<!--                <div class="btn-group">-->
+<!--                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">-->
+<!--                        <span>р.</span>-->
+<!--                        <span class="hidden-xs">Валюта</span> <i class="fa fa-caret-down"></i>-->
+<!--                    </button>-->
+<!--                    <ul class="dropdown-menu dropdown-menu-right">-->
+<!--                        <li><a data-code="EUR">€ Euro</a></li>-->
+<!--                        <li><a data-code="GBP">£ Pound Sterling</a></li>-->
+<!--                        <li><a data-code="USD">$ US Dollar</a></li>-->
+<!--                        <li><a data-code="RUB">р. Рубль</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <input type="hidden" name="code" value="">-->
+<!--                <input type="hidden" name="redirect" value="/">-->
+<!--            </form>-->
+<!--        </div>-->
 
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li>
-                            <a data-code="ru-ru"><img src="/images/ru-ru.png" alt="Russian" title="Russian">Russian</a>
-                        </li>
-                        <li>
-                            <a data-code="en-gb"><img src="/images/en-gb.png" alt="English" title="English">English</a>
-                        </li>
-                    </ul>
-                </div>
-                <input type="hidden" name="code" value="">
-                <input type="hidden" name="redirect" value="http://voodland.com/">
-            </form>
-        </div>
-        <div class="pull-right">
-            <form action="http://voodland.com/index.php?route=common/currency/currency" method="post"
-                  enctype="multipart/form-data" id="currency">
-                <div class="btn-group">
-                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                        <span>р.</span>
-                        <span class="hidden-xs">Валюта</span> <i class="fa fa-caret-down"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a data-code="EUR">€ Euro</a></li>
-                        <li><a data-code="GBP">£ Pound Sterling</a></li>
-                        <li><a data-code="USD">$ US Dollar</a></li>
-                        <li><a data-code="RUB">р. Рубль</a></li>
-                    </ul>
-                </div>
-                <input type="hidden" name="code" value="">
-                <input type="hidden" name="redirect" value="http://voodland.com/">
-            </form>
-        </div>
+
         <div id="top-links" class="hidden-xs hidden-sm">
             <ul>
                 <li>
@@ -71,7 +96,7 @@
                                 Ваш город — <span class="prmn-cmngr__confirm-city">Ростов-на-Дону</span>?
                                 <div class="prmn-cmngr__confirm-btns">
                                     <input class="prmn-cmngr__confirm-btn btn btn-primary" value="Да" type="button"
-                                           data-value="yes" data-redirect="http://opt.voodland.com/">
+                                           data-value="yes" data-redirect="/">
                                     <input class="prmn-cmngr__confirm-btn btn" value="Нет" type="button"
                                            data-value="no">
                                 </div>
@@ -79,17 +104,19 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="http://voodland.com/o-kompanii" title="О компании">О компании</a></li>
-                <li><a href="http://voodland.com/index.php?route=information/information&amp;information_id=5"
+
+
+                <li><a href="/page/about" title="О компании">О компании</a></li>
+                <li><a href="/page/policy"
                        title="Условия соглашения">Условия соглашения</a></li>
-                <li><a href="http://opt.voodland.com/" title="Купить оптом">Купить оптом</a></li>
-                <li><a href="http://voodland.com/index.php?route=blog/latest" title="Статьи">Статьи</a></li>
+                <li><a href="/blog/index" title="Статьи">Статьи</a></li>
 
             </ul>
         </div>
         <div id="top-links2" class="btn-group pull-left visible-xs visible-sm">
-            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info"></i> <i
-                        class="fa fa-caret-down"></i></button>
+            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info"></i>
+                <i class="fa fa-caret-down"></i>
+            </button>
         </div>
     </div>
 </nav>

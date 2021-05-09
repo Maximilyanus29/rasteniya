@@ -41,10 +41,14 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'good/sale' => 'good/sale',
+                'good/search' => 'good/search',
+                'blog/<slug:[a-zA-Z-]+>' => 'blog/view',
+
+                'good/<provider:[a-zA-Z-]+>/<slug:[-\w+]+>' => 'good/view',
 
                 'category/<slug:[a-zA-Z-]+>' => 'good/category',
 
-                'good/<slug:\w+>' => 'good/view',
 
 
 //                '//<city:[a-zA-Z]+>.rasteniya' => 'local/default/index',
@@ -65,11 +69,57 @@ return [
 //                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
             ],
         ],
+
+        'cart' => [
+            'class' => 'devanych\cart\Cart',
+            'storageClass' => 'devanych\cart\storage\SessionStorage',
+            'calculatorClass' => 'devanych\cart\calculators\SimpleCalculator',
+            'params' => [
+                'key' => 'cart',
+                'expire' => 604800,
+                'productClass' => 'common\models\Good',
+                'productFieldId' => 'id',
+                'productFieldPrice' => 'price',
+            ],
+        ],
+
+        'favorite' => [
+            'class' => 'devanych\cart\Cart',
+            'storageClass' => 'devanych\cart\storage\SessionStorage',
+            'calculatorClass' => 'devanych\cart\calculators\SimpleCalculator',
+            'params' => [
+                'key' => 'favorite',
+                'expire' => 604800,
+                'productClass' => 'common\models\Good',
+                'productFieldId' => 'id',
+                'productFieldPrice' => 'price',
+            ],
+        ],
+
+        'compare' => [
+            'class' => 'devanych\cart\Cart',
+            'storageClass' => 'devanych\cart\storage\SessionStorage',
+            'calculatorClass' => 'devanych\cart\calculators\SimpleCalculator',
+            'params' => [
+                'key' => 'compare',
+                'expire' => 604800,
+                'productClass' => 'common\models\Good',
+                'productFieldId' => 'id',
+                'productFieldPrice' => 'price',
+            ],
+        ],
+
     ],
     'modules' => [
         'local' => [
             'class' => 'frontend\modules\local\Module',
             // ... другие настройки модуля ...
+        ],
+        'user' => [
+            'class' => 'frontend\modules\user\Module',
+        ],
+        'provider' => [
+            'class' => 'frontend\modules\provider\Module',
         ],
     ],
     'params' => $params,

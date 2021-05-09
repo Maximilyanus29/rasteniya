@@ -1,9 +1,16 @@
+<?php
+
+$cart = Yii::$app->cart;
+
+
+?>
+
 <header>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <div id="logo">
-                    <a href="http://voodland.com/"><img src="/images/_без названия.png" title="Voodland.com"
+                    <a href="/"><img src="/images/_без названия.png" title="Voodland.com"
                                                         alt="Voodland.com" class="img-responsive"></a>
                 </div>
             </div>
@@ -43,11 +50,82 @@
                 <div id="cart" class="btn-group pull-right ">
                     <button type="button" data-toggle="dropdown" data-loading-text="Загрузка..."
                             class="btn dropdown-toggle"><i class="fa fa-shopping-basket"></i> <span
-                                id="cart-total">0</span></button>
+                                id="cart-total"><?= $cart->getTotalCount() ?></span></button>
+
                     <ul class="dropdown-menu pull-right">
-                        <li style="padding-top:0;border-top:none">
-                            <p class="text-center">Ваша корзина пуста!</p>
-                        </li>
+                        <?php if ($cart->getTotalCount() > 0 ) : ?>
+                            <?php foreach ($cart->getItemIds() as $item) :
+                                $item = $cart->getItem($item);
+                                $product = $item->getProduct()
+                                ?>
+                                <li data-id="<?= $product->id ?>">
+                                    <table class="cart table table-striped">
+                                        <tbody>
+                                        <tr>
+                                            <td class="image">
+                                                <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"><img src="http://opt.voodland.com/image/cache/catalog/semena/Sosna%20/%20%D1%81%D0%BE%D1%81%D0%BD%D1%8B%20%D1%81%20%D0%BB%D0%BE%D0%B3%D0%BE%203-47x47.png" alt="Семена сосны обыкновенной " title="Семена сосны обыкновенной " class="img-thumbnail"></a>
+                                            </td>
+                                            <td class="name text-left">
+                                                <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"><?= $product->name ?> </a>
+                                                <br>- <small><?= substr($product->description,0, 18)  ?></small>
+                                            </td>
+                                            <td class="quantity text-right">
+                                                <div class="input-group" style="max-width:100px;">
+
+                                                    <input type="text"
+                                                           name="quantity[<?= $product->id ?>]"
+                                                           value="<?= $item->getQuantity() ?>"
+
+                                                           size="1"
+                                                           class="form-control">
+
+                                                    <span>
+
+                                                    <i class="fa fa-plus btn btn-default"></i>
+                                                    <i class="fa fa-minus btn btn-default"></i>
+
+                                                </span>
+                                                </div>
+                                            </td>
+
+                                            <td class="total text-right"><?= $product->price * $item->getQuantity() ?> р.</td>
+
+                                            <td class="remove text-center">
+                                                <button type="button"
+                                                        title="Удалить">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+
+                            <?php endforeach;?>
+
+                            <li>
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-right"><strong>Итого:</strong></td>
+                                            <td class="text-right"><?= $cart->getTotalCost() ?>р.</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <p class="text-right">
+                                        <a href="index.php?route=checkout/uni_checkout" class="btn btn-primary">Оформление заказа</a>
+                                    </p>
+                                </div>
+                            </li>
+
+                        <?php else: ?>
+                            <li style="padding-top:0;border-top:none">
+                                <p class="text-center">Ваша корзина пуста!</p>
+                            </li>
+                        <?php endif; ?>
+
                     </ul>
                     <script>
                         function p_array() {
@@ -93,35 +171,41 @@
 		<button type="button" class="search btn btn-default btn-lg"><i class="fa fa-search"></i></button>
 	</span>
                 </div>
+                <div id="live-search" class="live-search div_search" style="display: block;">
+                    <ul>
+
+                    </ul>
+                </div>
                 <div id="search_phrase" class="hidden-xs hidden-sm">
                     Например: <a>найти</a></div>
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-9 col-xl-16 col-md-push-4 col-lg-push-3 col-xl-push-2">
                 <ul class="menu_links">
                     <li>
-                        <a href="http://voodland.com/akcii" title="Акции">
+                        <a href="/good/sale" title="Акции">
                             <span><i class="fa fa-thumbs-up"></i></span>
                             Акции </a>
                     </li>
                     <li>
-                        <a href="http://shop.voodland.com/blog-voodland/" title="Блог ">
+                        <a href="/blog/" title="Блог ">
                             <span><i class="fab fa-blogger-b"></i></span>
                             Блог </a>
                     </li>
                     <li>
-                        <a href="http://voodland.com/kontakti" title="Контакты">
+                        <a href="/page/contacts" title="Контакты">
                             <span><i class="fa fa-edit"></i></span>
                             Контакты </a>
                     </li>
-                    <li>
-                        <a href="http://opt.voodland.com/" title="Купить оптом">
-                            <span><i class="fa fa-shopping-basket"></i></span>
-                            Купить оптом </a>
-                    </li>
+<!--                    <li>-->
+<!--                        <a href="/" title="Купить оптом">-->
+<!--                            <span><i class="fa fa-shopping-basket"></i></span>-->
+<!--                            Купить оптом </a>-->
+<!--                    </li>-->
                 </ul>
                 <script>uniUpdRightMenu('.menu_links');</script>
             </div>
@@ -138,20 +222,20 @@
                 <div id="search" class="search_form input-group se">
                     <input type="hidden" name="filter_category_id" value="">
                     <div class="cat_id input-group-btn">
-                        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
-                            <span>Везде</span><i class="fa fa-chevron-down"></i></button>
-                        <ul class="dropdown-menu">
-                            <li data-id=""><a>Везде</a></li>
-                            <li data-id="188"><a>Для выращивания растений</a></li>
-                            <li data-id="20"><a>Хвойные деревья</a></li>
-                            <li data-id="18"><a>Лиственные деревья</a></li>
-                            <li data-id="164"><a>Хвойные кустарники</a></li>
-                            <li data-id="25"><a>Лиственные кустарники</a></li>
-                            <li data-id="57"><a>Плодовые растения</a></li>
-                            <li data-id="166"><a>Растения для доращивания</a></li>
-                            <li data-id="33"><a>Розы</a></li>
-                            <li data-id="34"><a>Уход за растениями</a></li>
-                        </ul>
+<!--                        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">-->
+<!--                            <span>Везде</span><i class="fa fa-chevron-down"></i></button>-->
+<!--                        <ul class="dropdown-menu">-->
+<!--                            <li data-id=""><a>Везде</a></li>-->
+<!--                            <li data-id="188"><a>Для выращивания растений</a></li>-->
+<!--                            <li data-id="20"><a>Хвойные деревья</a></li>-->
+<!--                            <li data-id="18"><a>Лиственные деревья</a></li>-->
+<!--                            <li data-id="164"><a>Хвойные кустарники</a></li>-->
+<!--                            <li data-id="25"><a>Лиственные кустарники</a></li>-->
+<!--                            <li data-id="57"><a>Плодовые растения</a></li>-->
+<!--                            <li data-id="166"><a>Растения для доращивания</a></li>-->
+<!--                            <li data-id="33"><a>Розы</a></li>-->
+<!--                            <li data-id="34"><a>Уход за растениями</a></li>-->
+<!--                        </ul>-->
                     </div>
                     <input type="text" name="search" value="" placeholder="Поиск" class="form-control input-lg"
                            autocomplete="off">

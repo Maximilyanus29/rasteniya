@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row">
-        <div id="content" class="col-sm-12"><div id="banner0" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+        <div id="content" class="col-sm-12">
+            <div id="banner0" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                 <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 4560px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px); transform-origin: 570px center; perspective-origin: 570px center;">
                         <div class="owl-item" style="width: 1140px;"><div class="item">
                                 <a href="http://stariyoscol.voodland.com/semena/semena-eli-evropeiskoi">
@@ -29,78 +30,20 @@
                 });
                 --></script>
             <div class="row categorywall covers">
+                <?php foreach ($categories as $category) : ?>
                 <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
                     <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/dlia-virashivania-rastenii/"><img class="img-responsive" src="/images/Parnik-200x200.png" alt="Для выращивания растений (127)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/dlia-virashivania-rastenii/">Для выращивания растений (127)</a></h4>
+                        <!--noindex-->
+                        <div class="image">
+                            <a rel="nofollow" href="/category/<?=$category['slug'] ?>">
+                                <img class="img-responsive" src="/images/Parnik-200x200.png" alt="<?=$category['name'] ?> (<?=$category['count'] ?>)"></a>
+                        </div><!--/noindex-->
+                        <h4 style="padding-left:10px">
+                            <a class="category_name" href="/category/<?=$category['slug'] ?>"><?=$category['name'] ?> <?=$category['count'] != 0 ? "(" . $category['count'] . ")" : ""?></a></h4>
                     </div>
                 </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/prizhivaemosti-i-posadka-/"><img class="img-responsive" src="/images/posadka-dereva (1)1-200x200.png" alt="Посадка и приживаемость  (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/prizhivaemosti-i-posadka-/">Посадка и приживаемость  (0)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/khvojnye-rasteniya/"><img class="img-responsive" src="/images/hvoin_plants-200x200.jpg" alt="Хвойные деревья (1)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/khvojnye-rasteniya/">Хвойные деревья (1)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/derevya/"><img class="img-responsive" src="/images/list_derevo-200x200.jpg" alt="Лиственные деревья (2)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/derevya/">Лиственные деревья (2)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/hvojnie-kustarniki/"><img class="img-responsive" src="/images/hvoi_kust-200x200.jpg" alt="Хвойные кустарники (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/hvojnie-kustarniki/">Хвойные кустарники (0)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/kustarniki/"><img class="img-responsive" src="/images/list_kust-200x200.jpg" alt="Лиственные кустарники (2)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/kustarniki/">Лиственные кустарники (2)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/plodovye/"><img class="img-responsive" src="/images/plodov-200x200.jpg" alt="Плодовые растения (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/plodovye/">Плодовые растения (0)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/sejanci/"><img class="img-responsive" src="/images/seyancy-200x200.jpg" alt="Растения для доращивания (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/sejanci/">Растения для доращивания (0)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/rozi/"><img class="img-responsive" src="/images/roses-200x200.jpg" alt="Розы (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/rozi/">Розы (0)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/semena/"><img class="img-responsive" src="/images/semena-200x200.jpg" alt="Семена (4)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/semena/">Семена (4)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/ukhod-za-rasteniyami/"><img class="img-responsive" src="/images/uhod-200x200.jpg" alt="Уход за растениями (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/ukhod-za-rasteniyami/">Уход за растениями (0)</a></h4>
-                    </div>
-                </div>
-                <div class="product-layout-1" style="float:left;width:290px;padding:0 10px">
-                    <div class="categorywall_thumbnail product-thumb">
-                        <!--noindex--><div class="image"><a rel="nofollow" href="http://voodland.com/projects/"><img class="img-responsive" src="/images/soil-mixtures-for-plants-200x200.jpg" alt="Удобрения и препараты  (0)"></a></div><!--/noindex-->
-                        <h4 style="padding-left:10px"><a class="category_name" href="http://voodland.com/projects/">Удобрения и препараты  (0)</a></h4>
-                    </div>
-                </div>
+                <?php endforeach; ?>
+
             </div>
             <script>
                 $( document ).ready(function() {

@@ -22,24 +22,36 @@ class AppAsset extends AssetBundle
         'css/custom_footer.css',
         'css/notification.css',
         'css/subscribe.css',
+        'css/custom.css',
+        'css/cart/checkout.css',
     ];
     public $js = [
 
-        'js/tag.js',
-//        'js/jquery-2.1.1.min.js',
+
+        'js/jquery-2.1.1.min.js',
+
         'js/bootstrap.min.js',
         'js/common.js',
+        'js/custom.js',
+        'js/cart.js',
+        'js/cart/cart.js',
+
+
         'js/jquery.progroman.autocomplete.js',
         'js/jquery.progroman.citymanager.js',
+        'js/jquery.magnific-popup.min.js',
+
         'js/owl.carousel.min.js',
-        'js/subscribe.js',
+//        'js/tag.js',
+//        'js/subscribe.js',
+
 
 
 
     ];
     public $jsOptions = ['position' => \yii\web\View::POS_HEAD];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+//        'yii\web\YiiAsset',
+//        'yii\bootstrap\BootstrapAsset',
     ];
 }

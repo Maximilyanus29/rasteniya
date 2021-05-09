@@ -28,7 +28,8 @@ class City extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'slug'], 'required'],
-            [['name', 'slug'], 'string', 'max' => 254],
+            [['name', 'slug', 'region', 'district'], 'string', 'max' => 254],
+            [['lat', 'lng'], 'number'],
         ];
     }
 

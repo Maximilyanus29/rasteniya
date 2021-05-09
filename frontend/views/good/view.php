@@ -109,33 +109,18 @@ use frontend\components\Helper; ?>
                         <div class="col-xs-12">
                             <hr>
                         </div>
-                        <div class="col-xs-12"><h5 class="heading"><span>Доступные варианты</span></h5></div>
-                        <div class="form-group required options_select col-xs-12 col-sm-6">
-                            <label class="control-label" for="input-option828">Вес (г)</label>
-                            <select name="option[828]" id="input-option828" class="form-control">
-                                <option value=""> --- Выберите ---</option>
-                                <option value="754">1000</option>
-                                <option value="778">3000</option>
-                            </select>
-                        </div>
+<!--                        <div class="col-xs-12"><h5 class="heading"><span>Доступные варианты</span></h5></div>-->
+<!--                        <div class="form-group required options_select col-xs-12 col-sm-6">-->
+<!--                            <label class="control-label" for="input-option828">Вес (г)</label>-->
+<!--                            <select name="option[828]" id="input-option828" class="form-control">-->
+<!--                                <option value=""> --- Выберите ---</option>-->
+<!--                                <option value="754">1000</option>-->
+<!--                                <option value="778">3000</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
                     </div>
                     <hr style="margin-top:0">
                     <div class="row">
-                        <div class="share col-sm-12 col-md-12 col-lg-6">
-                            <div id="goodshare" data-socials="vkontakte,facebook,twitter,viber,whatsapp">
-                                <div class="vkontakte" data-social="vkontakte"><span
-                                        data-counter="vkontakte">1</span></div>
-                                <div class="facebook" data-social="facebook"><span data-counter="facebook">0</span>
-                                </div>
-                                <div class="twitter" data-social="twitter"></div>
-                                <div class="viber" data-social="viber"></div>
-                                <div class="whatsapp" data-social="whatsapp"></div>
-                                <link href="/images/goodshare.css" rel="stylesheet" type="text/css"
-                                      media="screen">
-                            </div>
-                            <script src="/images/goodshare.js.Без названия"></script>
-                            <link href="/images/goodshare.css" rel="stylesheet" media="screen">
-                        </div>
                         <div class="col-sm-12 col-md-12 visible-xs visible-sm visible-md">
                             <hr>
                         </div>
@@ -275,7 +260,8 @@ use frontend\components\Helper; ?>
             </div>
             <hr>
             <div class="row product_carousel">
-                <h3 class="heading"><span>Рекомендуем посмотреть</span></h3>
+                <h3 class="heading">
+                    <span>Рекомендуем посмотреть</span></h3>
                 <div class="products product_related owl-carousel owl-theme" style="opacity: 1; display: block;">
                     <div class="owl-wrapper-outer">
                         <div class="owl-wrapper" style="width: 580px; left: 0px; display: block;">
@@ -351,8 +337,7 @@ use frontend\components\Helper; ?>
             <hr>
             <p>
                 <i class="fa fa-tag" data-toggle="tooltip" title="" data-original-title="Теги:"></i>
-                <a href="http://opt.voodland.com/index.php?route=product/search&amp;tag=%D0%A1%D0%B5%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%B0%D0%BA%D0%B0%D1%86%D0%B8%D0%B8">Семена
-                    акации</a>
+                <a href="/good/<?= $good->slug ?>"><?= $good->name ?></a>
             </p>
             <hr style="margin-bottom:20px">
         </div>

@@ -23,31 +23,9 @@ AppAsset::register($this);
     <base href=".">
     <meta name="description" content="декоративные-растения-для-ландшафтного-дизайна, купить-растения, большой-выбор-саженцев-из-ведущих-питомников, посадочный-материал-для-городского-и-загородного-озеленения, вудлэнд, выбор-и-покупка-растений-от-проверенных-поставщиков, маркет-растений, саженцы-хвойных-растений, саженцы-лиственных-растений, сеянцы, саженцы-плодовых-растений, купить-саженцы-растений, где-купить-растения, купить-декоративные-растения">
     <meta name="keywords" content="декоративные-растения, выбор-и-покупка-растений-от-проверенных-поставщиков, купить-растения, о-декоративных-растениях, декоративными-растениями, купить-саженцы, саженцы, купить-сеянцы, купить-хвойные-растения, лиственные, кустарники, декоративные-кустарники, цветущие-кустарники, магазин-растений, садовый-центр, растения-для-сада, декоративные-деревья, хвойные-растения, растения-купить, продажа-растений, посадочный-материал, питомник-саженцев, озеленение, интернет-магазин-растений, плодовые-саженцы, саженцы-деревьев, купить-деревья, деревья, саженцы-плодовых-деревьев, растения-продажа, питомник-растений, декоративное-растение, интернет-магазин-саженцев, вудлэнд, woodlend, woodland, посадка-деревьев, посадка-растений">
-    <meta property="og:title" content="Выбор и покупка растений от проверенных поставщиков">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="http://voodland.com/image/catalog/Voodland Market / без названия.png">
-    <meta property="og:site_name" content="Voodland.com">
-    <link href="http://voodland.com/" rel="canonical">
-    <link href="http://voodland.com/image/catalog/Voodland.png" rel="icon">
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+<!--    <link href="http://voodland.com/image/catalog/Voodland.png" rel="icon">-->
 
-        ym(70461433, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    </script>
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/70461433" style="position:absolute; left:-9999px;" alt="" />
-        </div>
-    </noscript>
 
     <style type="text/css" data-ymaps="css-modules">
 

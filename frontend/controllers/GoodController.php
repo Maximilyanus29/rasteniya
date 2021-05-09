@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use common\models\Category;
 use common\models\Good;
 use common\models\GoodType;
+use frontend\models\GoodSearch;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -44,9 +45,18 @@ class GoodController extends Controller
      *
      * @return mixed
      */
-    public function actionIndex()
+    public function actionSearch()
     {
-        return $this->render('index');
+        $searchModel = new GoodSearch();
+
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        $goods = $dataProvider->query->all();
+
+        return $this->render('search', [
+            'goods' => $goods,
+            'searchModel' => $searchModel,
+        ]);
     }
 
 
@@ -54,7 +64,7 @@ class GoodController extends Controller
      * @return mixed
      * @throws HttpException
      */
-    public function actionView($slug)
+    public function actionView($provider, $slug)
     {
         $good = Good::find()->where(['slug'=> $slug])->limit(1)->one();
 
@@ -66,7 +76,34 @@ class GoodController extends Controller
     }
 
 
+    /**
+     * @return mixed
+     * @throws HttpException
+     */
+    public function actionSale()
+    {
+        $categories = Yii::$app->db->createCommand(
+            'SELECT category.id, category.name, category.parent_id, category.slug, COUNT(good.id) as count FROM `category`
+                    LEFT join good on category.id = good.category_id
+                    GROUP by category.id
+                    ORDER by category.id
+'
+        )
 
+            ->queryAll();
+
+        return $this->render('sale',['categories'=>$categories]);
+    }
+
+/*
+ *
+SELECT category.name, category.slug,  good.name, category.id , COUNT(good.id) as count FROM `good`
+LEFT join good_category on good.id = good_category.good_id
+LEFT join category on category.id = good_category.category_id
+GROUP by category.id
+WHERE  category.parent_id = :id or category.id = :id
+
+*/
 
 
 
@@ -79,13 +116,8 @@ WHERE category.id = 1
 */
 
 
-    /**
-     * @return mixed
-     * @throws Exception
-     */
-    public function actionCategory($slug)
-    {
-        $mainCategory = Category::find(['slug' => $slug])->one();
+
+
 //        $categories = Category::find(['parent_id' => $category['id']])->asArray()->all();
 
 //        $categories = Yii::$app->db->createCommand(
@@ -95,22 +127,42 @@ WHERE category.id = 1
 //            WHERE  category.parent_id = :id
 //            '
 //        )
+
+    /**
+     * @return mixed
+     * @throws Exception
+     */
+    public function actionCategory($slug)
+    {
+        $mainCategory = Category::findOne(['slug' => $slug]);
+
         $categories = Yii::$app->db->createCommand(
-            'SELECT category.name, category.slug FROM `category`
-            WHERE  category.parent_id = :id or category.id = :id
-            '
-        )
-            ->bindValue(':id', $mainCategory['id'])
-            ->queryAll();
-
-//        var_dump($categories);die;
+            'SELECT category.id, category.name, category.parent_id, category.slug, COUNT(good.id) as count FROM `category`
+            LEFT join good on category.id = good.category_id
+            GROUP by category.id
+            ORDER by category.id
+        ')->bindValue(':id', $mainCategory['id'])->queryAll();
 
 
-        $goods = $mainCategory->goods;
+        $searchModel = new GoodSearch();
 
-//        var_dump($goods);die;
+        $searchModel->category_id = $mainCategory->id;
 
-        return $this->render('category', ['goods' => $goods, 'categories' => $categories, 'mainCategory' => $mainCategory]);
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+//        $subcategories = $mainCategory->getGoods2();
+
+//        var_dump($dataProvider->query->all());die;
+
+        $goods = $dataProvider->query->all();
+
+
+        return $this->render('category', [
+            'goods' => $goods,
+            'categories' => $categories,
+            'mainCategory' => $mainCategory,
+            'searchModel' => $searchModel,
+        ]);
     }
 
 

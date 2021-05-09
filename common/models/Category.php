@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\SluggableBehavior;
 
 /**
  * This is the model class for table "category".
@@ -14,6 +15,17 @@ use Yii;
  */
 class Category extends \yii\db\ActiveRecord
 {
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => SluggableBehavior::className(),
+                'attribute' => 'name',
+                'slugAttribute' => 'slug',
+            ],
+        ];
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -28,7 +40,8 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'slug'], 'required'],
+            [['name'], 'required'],
+            [['name'], 'unique'],
             [['parent_id'], 'integer'],
             [['name', 'slug'], 'string', 'max' => 254],
         ];
@@ -52,42 +65,18 @@ class Category extends \yii\db\ActiveRecord
      */
     public function getGoods()
     {
-        return $this->hasMany(Good::className(), ['id' => 'good_id'])
-            ->viaTable('good_category', ['category_id' => 'id']);
+        return $this->hasMany(Good::className(), ['category_id' => 'id']);
     }
 
-
-    private function buildT2ree($model)
+    /**
+     * {@inheritdoc}
+     */
+    public function getGoods2()
     {
-
-        $oneLvl = [];
-        $otherLvl = [];
-
-
-        foreach ($model as $key => $value){
-            if ($value->parent_id === 0){
-                $oneLvl[] = $value;
-            }else{
-                $otherLvl[] = $value;
-            }
-        }
-
-
-        foreach ($otherLvl as $key => $value){
-
-
-            $value->parent_id;
-
-
-        }
-
-
-
-
-
-
-
-
+        return self::find()->where(['or',
+            ['=','parent_id', $this->id],
+            ['=','id', $this->id],
+        ])->with('goods')->all();
     }
 
 

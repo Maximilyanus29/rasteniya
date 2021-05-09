@@ -108,21 +108,24 @@ $(function() {
 		$('#currency input[name=\'code\']').attr('value', $(this).attr('data-code'));
 		$('#currency').submit();
 	});
+
+
+
 	
-	$('body').on('click', '#search ul li', function () {
-		$('#search .cat_id button span').text($(this).text());
-		$('#search input[name=\'filter_category_id\']').val($(this).attr('data-id'));
-	});
+	// $('body').on('click', '#search ul li', function () {
+	// 	$('#search .cat_id button span').text($(this).text());
+	// 	$('#search input[name=\'filter_category_id\']').val($(this).attr('data-id'));
+	// });
 
 	$('body').on('click', '.search', function() {
-		url = $('base').attr('href') + 'index.php?route=product/search';
+		url = '/good/search';
 		var value = $(this).parent().parent().find('input[name=\'search\']').val();
 		if (value) {
-			url += '&search=' + encodeURIComponent(value);
+			url += '?GoodSearch%5Bname%5D=' + encodeURIComponent(value);
 		}
-		var filter_category_id = $(this).parent().parent().find('input[name=\'filter_category_id\']').val();
-		if (filter_category_id > 0) url += '&category_id=' + encodeURIComponent(filter_category_id)+'&sub_category=true';
-		url += '&description=true';
+		// var filter_category_id = $(this).parent().parent().find('input[name=\'filter_category_id\']').val();
+		// if (filter_category_id > 0) url += '&category_id=' + encodeURIComponent(filter_category_id)+'&sub_category=true';
+		// url += '&description=true';
 		
 		location = url;
 	});
@@ -153,50 +156,10 @@ $(function() {
 	top_menu();
 	add_additional_img();
 	fly_menu_enabled = 0;
-	
-	if(!uni_touch_support && (uni_descr_hover || uni_attr_hover || uni_option_hover)) {
-		$('body').on('mouseenter', '.product-thumb', function() {
-			var product = $(this),
-				container = product.parent(),
-				carousel = product.closest('.owl-carousel'),
-				descr = uni_descr_hover ? product.find('.description') : '',
-				attr = uni_attr_hover ? product.find('.attribute') : '',
-				options = uni_option_hover ? product.find('.option') : '';
-			
-			if(container.hasClass('product-list') || container.hasClass('product-price')) {
-				return;
-			}
-			
-			container.height(product.outerHeight(true));
-			
-			if(carousel.length) {
-				product.css({left: product.offset().left - carousel.offset().left, width: product.outerWidth()}).detach().addClass('hover').prependTo(carousel);
-			} else {
-				product.css({width: product.outerWidth()}).addClass('hover');
-			}
-			
-			if(descr) descr.show();
-			if(attr) attr.show();
-			if(options && options.find('label').length) options.show();
-			
-			product.on('mouseleave', function() {
-				
-				product.css({left: '', width: ''}).removeClass('hover');
-				
-				if(carousel.length) {
-					product.detach().appendTo(container);
-				}
-				
-				container.css({height: ''});
-				
-				if(descr) descr.hide();
-				if(attr) attr.hide();
-				if(options && options.find('label').length) options.hide();
-				
-				product.unbind('mouseleave');
-			});
-		});
-	}
+
+
+
+
 });
 
 function list_view() {
@@ -861,334 +824,80 @@ function scroll_text(target_div, target_text) {
 	});
 }
 
-function uni_live_search(show_image, show_description, show_rating, show_price, show_limit, all_results, empty_results) {
-	data_id = 'div_search';
-	$('body').on('click', function() {$('.live-search').hide();});
-	$('header .form-control.input-lg').attr('autocomplete', 'off')
-	
-	$('body').on('input click', 'header .form-control.input-lg', function() {
-		data_id = $(this).parent().parent().attr('id');
-		if(!$('.'+data_id).size()) {
-			$(this).parent().after('<div id="live-search" class="live-search '+data_id+'"><ul></ul></div>');
-		}	
-			
-		if ($(this).val().length >= 3) {
-			$.ajax({
-				url: 'index.php?route=unishop/search&filter_name='+$('#'+data_id+' input[name=\'search\']').val()+'&category_id='+$('#'+data_id+' input[name=\'filter_category_id\']').val(),
-				dataType: 'json',
-				beforeSend: function() {$('.'+data_id+' ul').html('<li style="text-align:center;"><i class="fa fa-spinner" aria-hidden="true"></i></li>');},
-				complete: function() {$('.'+data_id+' ul').html();},
-				success: function(result) {
-					var products = result.products;
-					$('.'+data_id+' ul li').remove();
-					if (!$.isEmptyObject(products)) {								
-						$(products).each(function(index, product) {
-							html = '';
-							html += '<li onclick="location=\''+product.url+'\'">';
-							if (product.image && show_image) {html += '<div class="product-image"><img alt="'+product.name+'" src="'+product.image+'"></div>';}
-							html += '<div class="product-name">'+product.name;
-							if (show_description || show_rating) {
-								html += '<p>';
-								if (show_description) {html += '<span>'+product.description+'</span>';}
-								if (show_rating) {
-									html += '<span class="rating">';
-									for(var i=1; i <= 5; i++) {
-										if(product.rating < i) {
-											html += '<i class="fa fa-star-o"></i>';
-										} else {
-											html += '<i class="fa fa-star"></i>';
-										}
-									}
-									html += '</span>';
-								}
-								html += '</p>';
-							}
-							html += '</div>';
-							if(show_price){
-								if (product.special) {
-									html += '<div class="product-price"><span class="special">'+product.price+'</span><span class="price">'+product.special+'</span></div>';
-								} else {
-									html += '<div class="product-price"><span class="price">'+product.price+'</span></div>';
-								}
-							}
-							html += '</li>';
-							$('.'+data_id+' ul').append(html);
-						});
-						if(parseFloat(show_limit) < parseFloat(result.products_total)) {
-							var description = '';
-							if(show_description) {
-								var description = '&description=true';
-							}
-							$('.'+data_id+' ul').append('<li style="text-align:center;"><a href="index.php?route=product/search&search='+$('#'+data_id+' input[name=\'search\']').val()+''+description+'">'+all_results+' ('+result.products_total+')</a></li>');
-						}
-					} else {
-						$('.'+data_id+' ul').html('<li style="text-align:center;padding:5px 0;">'+empty_results+'</li>');
-					}
-					$('.'+data_id).css('display', 'block');
-				}
-			});
-		}
-	});
-}
 
-// Cart add remove functions
-var cart = {
-	'add': function(product_id, quantity) {
-		
-		var $elem = $('html body').find('.add_to_cart.'+product_id).closest('.product-thumb'),
-			product_quantity = typeof(quantity) != 'undefined' ? quantity : 1,
-			product_options = $elem.find('.option input[type=\'text\'], .option input[type=\'hidden\'], .option input:checked, .option select, .option textarea'),
-			data = 'product_id='+product_id+'&quantity='+product_quantity;
-		
-		if (product_options.length) {
-			data += '&'+product_options.serialize();
-		}
-		
-		$.ajax({
-			url: 'index.php?route=checkout/cart/add',
-			type: 'post',
-			data: data,
-			dataType: 'json',
-			success: function(json) {
-				$('.text-danger').remove();
 
-				if (json['redirect'] && !$elem.find('.option input, .option select').length) {
-					location = json['redirect'];
-				}
-				
-				$('.form-group').removeClass('has-error');
+// function uni_live_search(show_image, show_description, show_rating, show_price, show_limit, all_results, empty_results) {
+// 	data_id = 'div_search';
+// 	$('body').on('click', function() {$('.live-search').hide();});
+// 	$('header .form-control.input-lg').attr('autocomplete', 'off')
+//
+// 	$('body').on('input click', 'header .form-control.input-lg', function() {
+// 		data_id = $(this).parent().parent().attr('id');
+// 		if(!$('.'+data_id).size()) {
+// 			$(this).parent().after('<div id="live-search" class="live-search '+data_id+'"><ul></ul></div>');
+// 		}
+//
+// 		if ($(this).val().length >= 3) {
+// 			$.ajax({
+// 				url: 'index.php?route=unishop/search&filter_name='+$('#'+data_id+' input[name=\'search\']').val()+'&category_id='+$('#'+data_id+' input[name=\'filter_category_id\']').val(),
+// 				dataType: 'json',
+// 				beforeSend: function() {$('.'+data_id+' ul').html('<li style="text-align:center;"><i class="fa fa-spinner" aria-hidden="true"></i></li>');},
+// 				complete: function() {$('.'+data_id+' ul').html();},
+// 				success: function(result) {
+// 					var products = result.products;
+// 					$('.'+data_id+' ul li').remove();
+// 					if (!$.isEmptyObject(products)) {
+// 						$(products).each(function(index, product) {
+// 							html = '';
+// 							html += '<li onclick="location=\''+product.url+'\'">';
+// 							if (product.image && show_image) {html += '<div class="product-image"><img alt="'+product.name+'" src="'+product.image+'"></div>';}
+// 							html += '<div class="product-name">'+product.name;
+// 							if (show_description || show_rating) {
+// 								html += '<p>';
+// 								if (show_description) {html += '<span>'+product.description+'</span>';}
+// 								if (show_rating) {
+// 									html += '<span class="rating">';
+// 									for(var i=1; i <= 5; i++) {
+// 										if(product.rating < i) {
+// 											html += '<i class="fa fa-star-o"></i>';
+// 										} else {
+// 											html += '<i class="fa fa-star"></i>';
+// 										}
+// 									}
+// 									html += '</span>';
+// 								}
+// 								html += '</p>';
+// 							}
+// 							html += '</div>';
+// 							if(show_price){
+// 								if (product.special) {
+// 									html += '<div class="product-price"><span class="special">'+product.price+'</span><span class="price">'+product.special+'</span></div>';
+// 								} else {
+// 									html += '<div class="product-price"><span class="price">'+product.price+'</span></div>';
+// 								}
+// 							}
+// 							html += '</li>';
+// 							$('.'+data_id+' ul').append(html);
+// 						});
+// 						if(parseFloat(show_limit) < parseFloat(result.products_total)) {
+// 							var description = '';
+// 							if(show_description) {
+// 								var description = '&description=true';
+// 							}
+// 							$('.'+data_id+' ul').append('<li style="text-align:center;"><a href="index.php?route=product/search&search='+$('#'+data_id+' input[name=\'search\']').val()+''+description+'">'+all_results+' ('+result.products_total+')</a></li>');
+// 						}
+// 					} else {
+// 						$('.'+data_id+' ul').html('<li style="text-align:center;padding:5px 0;">'+empty_results+'</li>');
+// 					}
+// 					$('.'+data_id).css('display', 'block');
+// 				}
+// 			});
+// 		}
+// 	});
+// }
 
-				if (json['error']) {
-					if (json['error']['option']) {
-						for (i in json['error']['option']) {							
-							var element = $elem.find('#input-option' + i.replace('_', '-'));
-							
-							if(!element.length) {
-								element = $elem.find('.input-option' + i.replace('_', '-'));
-							}
 
-							if (element.parent().hasClass('input-group')) {
-								element.parent().after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-							} else {
-								element.after('<div class="text-danger">' + json['error']['option'][i] + '</div>');
-							}
-						}
-					}
-				}
 
-				if (json['success']) {
-					$('.tooltip').remove();
-						
-					html = '<div id="modal-cart" class="modal">';
-					html += '<div class="modal-dialog">';
-					html += '<div class="modal-content">';
-					html += '<div class="modal-header">';
-					html += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>';
-					html += '</div>';
-					html += '<div class="modal-body">';
-					html += json['success_new'];
-					html += '</div>';
-					html += '</div>';
-					html += '</div>';
-					html += '</div>';
-					
-					var $html = $(html);
-					
-					if(!$('#unicheckout').length) {
-						
-						if(uni_cart_type == 'popup') {
-							$('#modal-cart').remove();
-							$('html body').append($html);
-							$('#modal-cart').addClass('fade').modal('show');
-						} else {
-							if(!$('html body').find('.cart-wrapper').length){
-								$('html body').append('<div class="cart-wrapper"></div>');
-							}
-						
-							$('.cart-wrapper').prepend($html)
-							
-							setTimeout(function() { 
-								$html.remove();
-							}, 3000);
-						}
-					}
-						
-					$('#cart > button').html('<i class="fa fa-shopping-basket"></i><span id="cart-total">' + json['total_items'] + '</span>');
-					$('#cart > ul').load('index.php?route=common/cart/info ul li');
-					
-					$('#cart').addClass('show');
-					
-					replace_button(product_id);
-					
-					dataLayer.push({
-						'ecommerce':{
-							'currencyCode':'',
-							'add':{
-								'products':[json['products']]
-							}
-						}
-					});
-				}
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
-	},
-	'update': function(key, quantity) {
-		$('#cart, #cart .dropdown-menu').addClass('open2');
-		$.ajax({
-			url: 'index.php?route=checkout/cart/edit',
-			type: 'post',
-			data: 'quantity[' + key + ']='+quantity,
-			dataType: 'html',
-			success: function(data) {
-				$('#cart, .cart_wrap #cart').load('index.php?route=common/cart/info #cart > *');
-				
-				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
-					$('#content').load('index.php?route=checkout/cart #content > *');
-				}
-				
-				p_array();
-				
-				$('#cart, .cart_wrap #cart').addClass('open').removeClass('open2');
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
-	},
-	'remove': function(key, product_id) {
-		$.ajax({
-			url: 'index.php?route=checkout/cart/remove',
-			type: 'post',
-			data: 'key=' + key,
-			dataType: 'json',
-			success: function(json) {
-				// Need to set timeout otherwise it wont update the total
-				//setTimeout(function () {
-					$('#cart > button').html('<i class="fa fa-shopping-basket"></i><span id="cart-total">' + json['total_items'] + '</span>');
-				//}, 100);
-
-				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
-					location = 'index.php?route=checkout/cart';
-				} else if (getURLVar('route') == 'checkout/unicheckout') {
-					cart_update();
-					$('#cart > ul').load('index.php?route=common/cart/info ul li');
-				} else {
-					$('#cart > ul').load('index.php?route=common/cart/info ul li');
-				}
-				
-				return_button(product_id);
-				$('#cart, .cart_wrap #cart').removeClass('show');
-				//$('#cart').addClass('open').removeClass('open2');
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
-	}
-}
-
-var voucher = {
-	'add': function() {
-
-	},
-	'remove': function(key) {
-		$.ajax({
-			url: 'index.php?route=checkout/cart/remove',
-			type: 'post',
-			data: 'key=' + key,
-			dataType: 'json',
-			beforeSend: function() {
-				$('#cart > button').button('loading');
-			},
-			complete: function() {
-				$('#cart > button').button('reset');
-			},
-			success: function(json) {
-				// Need to set timeout otherwise it wont update the total
-				//setTimeout(function () {
-					$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
-				//}, 100);
-
-				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
-					location = 'index.php?route=checkout/cart';
-				} else {
-					$('#cart > ul').load('index.php?route=common/cart/info ul li');
-				}
-				
-				if (getURLVar('route') == 'checkout/unicheckout') {
-					update_checkout();
-				}
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
-	}
-}
-
-var wishlist = {
-	'add': function(product_id) {
-		$.ajax({
-			url: 'index.php?route=account/wishlist/add',
-			type: 'post',
-			data: 'product_id=' + product_id,
-			dataType: 'json',
-			success: function(json) {
-				$('.alert').remove();
-
-				if (json['redirect']) {
-					location = json['redirect'];
-				}
-
-				if (json['success']) {
-					$('#content').parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
-				}
-
-				$('#wishlist-total span').html(json['total']);
-				$('#wishlist-total').attr('title', json['total']);
-
-				//$('html, body').animate({ scrollTop: 0 }, 'slow');
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
-	},
-	'remove': function() {
-
-	}
-}
-
-var compare = {
-	'add': function(product_id) {
-		$.ajax({
-			url: 'index.php?route=product/compare/add',
-			type: 'post',
-			data: 'product_id=' + product_id,
-			dataType: 'json',
-			success: function(json) {
-				$('.alert').remove();
-
-				if (json['success']) {
-					$('#content').parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
-
-					$('#compare-total').html(json['total']);
-
-					//$('html, body').animate({ scrollTop: 0 }, 'slow');
-				}
-			},
-	        error: function(xhr, ajaxOptions, thrownError) {
-	            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-	        }
-		});
-	},
-	'remove': function() {
-
-	}
-}
 
 $(document).delegate('.agree', 'click', function(e) {
 	e.preventDefault();
@@ -1372,3 +1081,40 @@ function getURLVar(key) {
 		});
 	}
 })(window.jQuery);
+
+
+/*custom кастом*/
+
+function pagination(event) {
+	let currentUrl = new URL(window.location.href);
+
+	if (currentUrl.searchParams.has('GoodSearch[limit]')){
+		currentUrl.searchParams.set('GoodSearch[limit]', event.value);
+		window.location.href = currentUrl.href;
+	}else {
+		currentUrl.searchParams.append('GoodSearch[limit]', event.value);
+		window.location.href = currentUrl.href;
+	}
+}
+
+function sort(event) {
+	let currentUrl = new URL(window.location.href);
+
+	if (currentUrl.searchParams.has('GoodSearch[sort]')){
+		currentUrl.searchParams.set('GoodSearch[sort]', event.value);
+		window.location.href = currentUrl.href;
+	}else {
+		console.log(event)
+		console.log(event.value)
+		currentUrl.searchParams.append('GoodSearch[sort]', event.value);
+		window.location.href = currentUrl.href;
+	}
+}
+/*
+append(name, value) – добавить параметр по имени,
+	delete(name) – удалить параметр по имени,
+	get(name) – получить параметр по имени,
+	getAll(name) – получить все параметры с одинаковым именем name (такое возможно, например: ?user=John&user=Pete),
+has(name) – проверить наличие параметра по имени,
+	set(name, value) – задать/заменить параметр,
+	sort()*/

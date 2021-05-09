@@ -1,4 +1,9 @@
 <?php
+use yii\helpers\Url;
+
+
+$absoluteUrl = Yii::$app->request->getPathInfo();
+//var_dump($searchModel->sort);die;
 
 ?>
 
@@ -6,7 +11,7 @@
 
     <ul class="breadcrumb ">
         <li><a href="http://opt.voodland.com/"><i class="fa fa-home"></i></a></li>
-        <li><?= $category['name'] ?></li>
+        <li><?= $mainCategory->name ?></li>
     </ul>
 
     <div class="row">
@@ -27,12 +32,48 @@
                 //--></script>
             <div class="list-group">
 
-                <?php foreach ($categories as $category): ?>
+                <?php foreach ($categories as $category):
+                    if($category['parent_id']==0):
+                    ?>
 
-                    <a href="/category/<?= $category['slug'] ?>" class="list-group-item <?= $mainCategory['slug'] === $category['slug'] ? "active" : "" ?>"> <?= $mainCategory['slug'] !== $category['slug'] ? "-" : "" ?> <?= $category['name'] ?> (<?= $category['count'] ?>)</a>
 
 
-                <?php endforeach; ?>
+
+                    <a href="/category/<?= $category['slug'] ?>"
+                       class="list-group-item <?= $mainCategory->id ==  $category['id'] || $mainCategory->parent_id == $category['id']  ? "active" : "" ?>"
+                    >
+
+                        <?= $category['name'] ?>
+
+
+                    </a>
+
+                        <?php foreach ($categories as $subcategory):
+                        if($category['parent_id']!==0&&$subcategory['parent_id']==$category['id']):
+                            ?>
+
+
+
+
+                            <a href="/category/<?= $subcategory['slug'] ?>"
+                               class="list-group-item <?= $mainCategory->id ==  $subcategory['id'] || $mainCategory->parent_id == $subcategory['id']  ? "active" : "" ?>"
+                            >
+                                -
+
+                                <?= $subcategory['name'] ?>
+
+                                (<?= $subcategory['count'] ?>)
+                            </a>
+
+
+
+
+                        <?php endif;
+                    endforeach; ?>
+
+
+                <?php endif;
+                endforeach; ?>
 
             </div>
             <div class="list-group">
@@ -60,18 +101,19 @@
                 });
                 --></script>
         </aside>
-        <div id="content" class="col-sm-8 col-md-8 col-lg-9">			<h1 class="heading"><span><?= $category['name'] ?></span></h1>
+        <div id="content" class="col-sm-8 col-md-8 col-lg-9">
+            <h1 class="heading"><span><?= $mainCategory->name ?></span></h1>
             <div class="row">
                 <div class="category-info">
                     <div class="col-xs-12">
                         <hr>
                         <div class="image">
-                            <img src="/images/hvoin_plants-80x80.jpg" alt="<?= $category['name'] ?>" title="<?= $category['name'] ?>" class="img-thumbnail">
+                            <img src="/images/hvoin_plants-80x80.jpg" alt="<?= $mainCategory->name ?>" title="<?= $mainCategory->name ?>" class="img-thumbnail">
                         </div>
                         <div class="description">
                             <p>
-                                <span style="font-weight: bold;"><?= $category['name'] ?></span>
-                                <p><?= $category['name'] ?></p>
+                                <span style="font-weight: bold;"><?= $mainCategory->name ?></span>
+                                <p><?= $mainCategory->name ?></p>
                                 <br>
                             </p>
                         </div>
@@ -80,50 +122,61 @@
                 </div>
             </div>
             <div class="category_list row">
+                <?php foreach ($categories as $category):
+                    if($category['parent_id']!==0 && $category['parent_id'] == $mainCategory->id ):
+                        ?>
 
-                <?php foreach ($categories as $category): ?>
 
-                    <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <a href="/category/<?= $category['slug'] ?>">
-                            <p style="height: 14px;"><?= $category['name'] ?> (<?= $category['count'] ?>)</p>
-                        </a>
-                    </div>
+                        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <a href="/category/<?= $category['slug'] ?>">
+                                <p style="height: 14px;"><?= $category['name'] ?> (<?= $category['count'] ?>)</p>
+                            </a>
+                        </div>
 
-                <?php endforeach; ?>
+
+
+                    <?php endif;
+                endforeach; ?>
+
 
 
             </div>
-            <p style="margin:0"><a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (0)</a></p>				<div class="row">
+            <p style="margin:0">
+                <a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (0)</a>
+            </p>
+            <div class="row">
                 <div class="col-xs-12"><hr></div>
                 <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
                     <div class="btn-group">
                     </div>
                 </div>
+
                 <div class="col-xs-6 col-sm-5 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-3 text-right">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-sort"></i><span class="hidden-xs hidden-sm hidden-md">Сортировка:</span></span>
-                        <select id="input-sort" class="form-control" onchange="location = this.value;">
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=p.sort_order&amp;order=ASC" selected="selected">По умолчанию</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=pd.name&amp;order=ASC">Название (А - Я)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=pd.name&amp;order=DESC">Название (Я - А)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=p.price&amp;order=ASC">Цена (низкая &gt; высокая)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=p.price&amp;order=DESC">Цена (высокая &gt; низкая)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=rating&amp;order=DESC">Рейтинг (начиная с высокого)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=rating&amp;order=ASC">Рейтинг (начиная с низкого)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=p.model&amp;order=ASC">Код Товара (А - Я)</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?sort=p.model&amp;order=DESC">Код Товара (Я - А)</option>
+                        <select id="input-sort" class="form-control" onchange="sort(this);">
+
+                            <option value="price" <?= ($searchModel->sort == 'price') && (empty($searchModel->order)) ? 'selected' : ''?> >По умолчанию</option>
+                            <option value="name" <?= ($searchModel->sort == 'name')  ? 'selected' : ''?>>Название (А - Я)</option>
+                            <option value="-name" <?= ($searchModel->sort == '-name') ? 'selected' : ''?>>Название (Я - А)</option>
+                            <option value="price" <?= ($searchModel->sort == 'price')  ? 'selected' : ''?>>Цена (низкая &gt; высокая)</option>
+                            <option value="-price" <?= ($searchModel->sort == '-price') ? 'selected' : ''?>>Цена (высокая &gt; низкая)</option>
+                            <option value="-rating" <?= ($searchModel->sort == '-rating') ? 'selected' : ''?>>Рейтинг (начиная с высокого)</option>
+                            <option value="rating" <?= ($searchModel->sort == 'rating') ? 'selected' : ''?>>Рейтинг (начиная с низкого)</option>
+                            <option value="vendor_code" <?= ($searchModel->sort == 'vendor_code') ? 'selected' : ''?>>Код Товара (А - Я)</option>
+                            <option value="-vendor_code" <?= ($searchModel->sort == '-vendor_code') ? 'selected' : ''?>>Код Товара (Я - А)</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 text-right">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-eye"></i><span class="hidden-xs hidden-sm hidden-md">Показать:</span></span>
-                        <select id="input-limit" class="form-control" onchange="location = this.value;">
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?limit=15" selected="selected">15</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?limit=25">25</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?limit=50">50</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?limit=75">75</option>
-                            <option value="http://opt.voodland.com/khvojnye-rasteniya/?limit=100">100</option>
+                        <select id="input-limit" class="form-control" onchange="pagination(this)">
+                            <option value="15" <?= intval($searchModel->limit) == 15 ? 'selected' : ''?>>15</option>
+                            <option value="25" <?=intval($searchModel->limit) == 25 ? 'selected' : ''?>>25</option>
+                            <option value="50" <?=intval($searchModel->limit) == 50 ? 'selected' : ''?>>50</option>
+                            <option value="75" <?=intval($searchModel->limit) == 75 ? 'selected' : ''?>>75</option>
+                            <option value="100" <?=intval($searchModel->limit) == 100 ? 'selected' : ''?>>100</option>
                         </select>
                     </div>
                 </div>
@@ -131,76 +184,9 @@
             </div>
             <div class="products-block row">
 
-                <?php foreach ($goods as $good): ?>
-
-                    <div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="product-thumb transition">
-
-                            <div class="image">
-
-                                <a href="/good/<?= $good->slug ?>">
-                                    <img src="/images/_сосны с лого 3-500x400.png" alt="Семена сосны обыкновенной " title="Семена сосны обыкновенной " class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="caption">
-                                <a href="/good/<?= $good->slug ?>" style="height: 22px;"><?= $good->name ?> </a>
-                                <p class="description" style="height: 80px;"><?= $good->name ?>..</p>
-                                <div id="option_406" class="option" style="height: 0px;">
-                                </div>
-                                <div class="rating">
-                                    <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                    <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                    <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                    <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                    <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                    <sup><a onclick="location=&#39;http://opt.voodland.com/semena/semena-sosny-obyknovennoj-#tab-review&#39;"></a></sup>										</div>
-                                <p class="price">
-                                    <?= !empty($good->discount_price) ? $good->discount_price : $good->price ?>																																</p>
-                            </div>
-                            <div class="cart">
-                                <button type="button" class="add_to_cart button btn btn-default  406" data-toggle="tooltip" title="" onclick="cart.add(406)" data-original-title="В корзину"><i class="fa fa-shopping-basket"></i><span class="hidden-sm">В корзину</span></button>
-                                <button type="button" class="wishlist btn btn-default" data-toggle="tooltip" title="" onclick="wishlist.add(&#39;406&#39;);" data-original-title="В закладки"><i class="fa fa-heart"></i></button>									<button type="button" class="compare btn btn-default" data-toggle="tooltip" title="" onclick="compare.add(&#39;406&#39;);" data-original-title="В сравнение"><i class="fa fa-exchange-alt"></i></button>								</div>
-                        </div>
-
-                    </div>
-
-                <?php endforeach; ?>
+                <?= $this->render('_goods', ['goods' => $goods]) ?>
 
 
-                <div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="product-thumb transition">
-
-                        <div class="image">
-
-                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-">
-                                <img src="/images/_сосны с лого 3-500x400.png" alt="Семена сосны обыкновенной " title="Семена сосны обыкновенной " class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="caption">
-                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-" style="height: 22px;">Семена сосны обыкновенной </a>
-                            <p class="description" style="height: 80px;">Сосна обыкновенная.
-                                Семена развиваются в шишках, которые созревают поздно осенью следующего года,
-                                ..</p>
-                            <div id="option_406" class="option" style="height: 0px;">
-                            </div>
-                            <div class="rating">
-                                <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                <span class="fa fa-stack"><i class="far fa-star fa-stack-2x"></i></span>
-                                <sup><a onclick="location=&#39;http://opt.voodland.com/semena/semena-sosny-obyknovennoj-#tab-review&#39;"></a></sup>										</div>
-                            <p class="price">
-                                9000.00р.																																</p>
-                        </div>
-                        <div class="cart">
-                            <button type="button" class="add_to_cart button btn btn-default  406" data-toggle="tooltip" title="" onclick="cart.add(406)" data-original-title="В корзину"><i class="fa fa-shopping-basket"></i><span class="hidden-sm">В корзину</span></button>
-                            <button type="button" class="wishlist btn btn-default" data-toggle="tooltip" title="" onclick="wishlist.add(&#39;406&#39;);" data-original-title="В закладки"><i class="fa fa-heart"></i></button>									<button type="button" class="compare btn btn-default" data-toggle="tooltip" title="" onclick="compare.add(&#39;406&#39;);" data-original-title="В сравнение"><i class="fa fa-exchange-alt"></i></button>								</div>
-                    </div>
-
-
-
-                </div>
             </div>
             <script>
                 var window_width = $(window).width();

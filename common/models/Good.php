@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\SluggableBehavior;
 
 /**
  * This is the model class for table "good".
@@ -20,6 +21,18 @@ use Yii;
  */
 class Good extends \yii\db\ActiveRecord
 {
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => SluggableBehavior::className(),
+                'attribute' => 'name',
+                 'slugAttribute' => 'slug',
+            ],
+        ];
+    }
+
+
     /**
      * {@inheritdoc}
      */
@@ -34,10 +47,11 @@ class Good extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'provider', 'have_wrap', 'slug'], 'required'],
-            [['provider', 'have_wrap', 'quantity'], 'integer'],
+            [['name', 'provider_id',], 'required'],
+            [['provider_id', 'quantity'], 'integer'],
             [['weight', 'height', 'width', 'volume'], 'number'],
             [['slug', 'name'], 'string', 'max' => 254],
+            ['hash', 'unique'],
         ];
     }
 
@@ -68,6 +82,11 @@ class Good extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Category::className(), ['id' => 'category_id'])
             ->viaTable('good_category', ['good_id' => 'id']);
+    }
+
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'category_id']);
     }
 
     /**

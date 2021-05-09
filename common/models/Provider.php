@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\SluggableBehavior;
 
 /**
  * This is the model class for table "provider".
@@ -14,6 +15,17 @@ use Yii;
  */
 class Provider extends \yii\db\ActiveRecord
 {
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => SluggableBehavior::className(),
+                'attribute' => 'name',
+                'slugAttribute' => 'slug',
+            ],
+        ];
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -28,7 +40,8 @@ class Provider extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'address', 'profit_in_percent'], 'required'],
+            [['name', 'address', 'profit_in_percent', 'city_id'], 'required'],
+            [['name'], 'unique'],
             [['profit_in_percent'], 'number'],
             [['name', 'address'], 'string', 'max' => 254],
         ];

@@ -2,9 +2,6 @@
 
     $categories = \common\models\Category::getStructCategories();
 
-
-
-
 ?>
 
 
