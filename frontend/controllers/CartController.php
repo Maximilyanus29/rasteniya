@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use common\models\City;
 use common\models\Good;
+use frontend\models\CartForm;
 use yii\filters\ContentNegotiator;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -114,8 +115,11 @@ class CartController extends Controller
     {
         $cart = \Yii::$app->cart;
 
+        $model = new CartForm();
+
         return $this->render('index', [
             'cart' => $cart,
+            'model' => $model,
         ]);
     }
 
@@ -124,8 +128,19 @@ class CartController extends Controller
     {
         $cart = \Yii::$app->cart;
 
+        $model = new CartForm();
+
+        $post = \Yii::$app->request->post();
+
+        if ($model->load($post) && $model->validate()){
+
+            $model->createOrder();
+
+        }
+
         return $this->render('index', [
             'cart' => $cart,
+            'model' => $model,
         ]);
     }
 

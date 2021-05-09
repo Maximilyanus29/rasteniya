@@ -150,11 +150,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.querySelector('.total.text-right').innerHTML = data.goodtotalPrice + " р.";
 
                 let deliveryPrice = document.querySelectorAll(".delivery td");
+
                 let totalPrice = document.querySelectorAll(".total_table .total td");
 
                 let totaltotalPrice = document.querySelector("#totatotalsum);
 
-                deliveryPrice[deliveryPrice.length-1].innerHTML = data.totalPrice + " р.";
+                // deliveryPrice[deliveryPrice.length-1].innerHTML = data.totalPrice + " р.";
                 totalPrice[totalPrice.length-1].innerHTML = data.totalPrice + " р.";
                 totaltotalPrice.innerHTML = data.totalPrice + " р.";
 
@@ -219,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         let totaltotalPrice = document.querySelector("#totatotalsum);
 
-                        deliveryPrice[deliveryPrice.length-1].innerHTML = data.totalPrice + " р.";
+                        // deliveryPrice[deliveryPrice.length-1].innerHTML = data.totalPrice + " р.";
                         totalPrice[totalPrice.length-1].innerHTML = data.totalPrice + " р.";
                         totaltotalPrice.innerHTML = data.totalPrice + " р.";
 
