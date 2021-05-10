@@ -5,6 +5,8 @@ namespace backend\controllers;
 use Yii;
 use common\models\Provider;
 use backend\models\search\Provider as ProviderSearch;
+use yii\filters\AccessControl;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -12,22 +14,8 @@ use yii\filters\VerbFilter;
 /**
  * ProviderController implements the CRUD actions for Provider model.
  */
-class ProviderController extends Controller
+class ProviderController extends AppController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Provider models.

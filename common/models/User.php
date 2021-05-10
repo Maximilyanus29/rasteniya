@@ -69,7 +69,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED, self::STATUS_ADMIN, self::STATUS_PROVIDER, self::STATUS_USER]],
+//            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED, self::STATUS_ADMIN, self::STATUS_PROVIDER, self::STATUS_USER]],
         ];
     }
 
@@ -78,7 +78,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' => $id, 'status' => [self::STATUS_ADMIN, self::STATUS_PROVIDER, self::STATUS_USER]]);
+        return static::findOne(['id' => $id]);
     }
 
     /**
@@ -97,7 +97,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findByUsername($username)
     {
-        return static::findOne(['username' => $username, 'status' => [self::STATUS_ACTIVE, self::STATUS_ADMIN]]);
+        return static::findOne(['username' => $username]);
     }
 
     /**

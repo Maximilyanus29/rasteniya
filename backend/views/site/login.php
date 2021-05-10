@@ -1,11 +1,10 @@
 
 <h1>Sign In Form</h1>
 <div id="wrapper">
-	<form id="signin" method="" action="" autocomplete="off">
-		<input type="text" id="user" name="user" placeholder="username" />
-		<input type="password" id="pass" name="pass" placeholder="password" />
+	<form id="signin" method="POST" action="" autocomplete="off">
+        <input type="hidden" name="<?=Yii::$app->request->csrfParam; ?>" value="<?=Yii::$app->request->getCsrfToken(); ?>" />
+		<input type="text" id="user" name="LoginForm[username]" placeholder="username" />
+		<input type="password" id="pass" name="LoginForm[password]" placeholder="password" />
 		<button type="submit">&#xf0da;</button>
-		<p>forgot your password? <a href="#">click here</a></p>
 	</form>
 </div>
-

@@ -22,8 +22,6 @@ class CartController extends Controller
         $good = Good::find()->where(['id'=>$id])->limit(1)->one();
 
 
-
-
         if ($setQuantity == true){
             $this->_cart->change($good->id, $quantity);
         }else{
@@ -36,8 +34,8 @@ class CartController extends Controller
             'status' => true,
             'count' => $this->_cart->getTotalCount(),
             'quantity' => $item->getQuantity(),
-            'totalPrice' => $this->_cart->getTotalCost(),
-            'goodtotalPrice' => $item->getCost(),
+            'totalPrice' => $this->_cart->getTotalCost(true),
+            'goodtotalPrice' => $item->getCost(true),
         ];
     }
 
@@ -133,6 +131,11 @@ class CartController extends Controller
         $post = \Yii::$app->request->post();
 
         if ($model->load($post) && $model->validate()){
+
+            if ($model->checkTotalSumOnProvider() !== true){
+                return "Для заказа необходимо набрать товаров у каждого заказчика на сумму 2000 шекелей";
+
+            }
 
             $model->createOrder();
 

@@ -12,22 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * GoodController implements the CRUD actions for Good model.
  */
-class GoodController extends Controller
+class GoodController extends AppController
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Good models.

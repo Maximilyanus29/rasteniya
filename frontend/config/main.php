@@ -71,15 +71,17 @@ return [
         ],
 
         'cart' => [
-            'class' => 'devanych\cart\Cart',
+            'class' => 'frontend\components\cart\Cart',
             'storageClass' => 'devanych\cart\storage\SessionStorage',
-            'calculatorClass' => 'devanych\cart\calculators\SimpleCalculator',
+            'calculatorClass' => 'frontend\components\cart\CalculatorForCart',
+            'cartItemClass' => 'frontend\components\cart\CartItem',
             'params' => [
                 'key' => 'cart',
                 'expire' => 604800,
                 'productClass' => 'common\models\Good',
                 'productFieldId' => 'id',
                 'productFieldPrice' => 'price',
+                'productFieldDiscountPrice' => 'discount_price',
             ],
         ],
 

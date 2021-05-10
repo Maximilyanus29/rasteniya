@@ -86,51 +86,13 @@ class TestController extends Controller
      *
      * @return mixed
      */
-//    public function actionIndex()
-//    {
-//
-//        $post = Yii::$app->request->post();
-//
-//
-//
-//
-//
-//        if ($post){
-//
-//
-//            $watermark = "img/watermark.png";
-//
-//
-//            $uploaddir = "img/buffer/";
-//            $uploadfile = $uploaddir . basename($_FILES['avatar']['name']);
-//
-//
-//            $moveFiel = "/img/".$uploadfile;
-//
-//            echo '<pre>';
-//            if (move_uploaded_file($_FILES['avatar']['tmp_name'], $uploadfile)) {
-//                echo "Файл корректен и был успешно загружен.\n";
-//            } else {
-//                echo "Возможная атака с помощью файловой загрузки!\n";
-//            }
-//
-//            echo 'Некоторая отладочная информация:';
-//            print_r($_FILES);
-//
-//            Image::watermark($uploadfile,$watermark, [10,10])->save($uploadfile);
-//
-//
-//            var_dump($uploadfile);die;
-//
-//
-//            print "</pre>";die;
-//
-//
-//        }
-//
-//
-//        return $this->render('index');
-//    }
+    public function actionIndex()
+    {
+
+        $cart = Yii::$app->cart;
+
+        return $cart->getTotalCost();
+    }
 
 
 

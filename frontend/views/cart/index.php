@@ -61,9 +61,7 @@ use yii\widgets\ActiveForm;
 
 
                         <?php endforeach;?>
-                        <?php else: ?>
-                        <p>Корзина пуста</p>
-                        <?php endif; ?>
+
 
                         </tbody>
                     </table>
@@ -258,3 +256,7 @@ use yii\widgets\ActiveForm;
     </div>
 </div>
 <?php ActiveForm::end() ?>
+
+<?php else: ?>
+    <p style="font-size: 3rem; text-align: center">Корзина пуста</p>
+<?php endif; ?>

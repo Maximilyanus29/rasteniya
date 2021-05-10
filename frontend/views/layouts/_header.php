@@ -88,7 +88,7 @@ $cart = Yii::$app->cart;
                                                 </div>
                                             </td>
 
-                                            <td class="total text-right"><?= $product->price * $item->getQuantity() ?> р.</td>
+                                            <td class="total text-right"><?= $item->getCost(true) ?> р.</td>
 
                                             <td class="remove text-center">
                                                 <button type="button"
@@ -109,7 +109,7 @@ $cart = Yii::$app->cart;
                                         <tbody>
                                         <tr>
                                             <td class="text-right"><strong>Итого:</strong></td>
-                                            <td class="text-right"><?= $cart->getTotalCost() ?>р.</td>
+                                            <td class="text-right"><?= $cart->getTotalCost(true) ?>р.</td>
                                         </tr>
 
                                         </tbody>

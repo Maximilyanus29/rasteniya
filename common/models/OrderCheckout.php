@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use frontend\models\CartForm;
 use Yii;
 
 /**
@@ -47,5 +48,28 @@ class OrderCheckout extends \yii\db\ActiveRecord
             'delivery_price' => Yii::t('app', 'Delivery Price'),
             'total_price' => Yii::t('app', 'Total Price'),
         ];
+    }
+
+
+
+    public function create(CartForm $cartForm)
+    {
+        $cart = Yii::$app->cart;
+
+        $this->name = $cartForm->name;
+        $this->email = $cartForm->email;
+        $this->phone = $cartForm->phone;
+        $this->delivery_method = $cartForm->delivery_method;
+        $this->delivery_price = 0;
+        $this->delivery_address = $cartForm->delivery_address;
+        $this->payment_method = $cartForm->payment_method;
+        $this->total_price = $cart->getTotalCost();
+        $this->discount_price = $cart->getTotalCost() - $cart->getTotalCost(true);
+
+        if ($this->save()){
+            return OrderItem::attach($this->id);
+        }
+        var_dump($this);die;
+        return false;
     }
 }
