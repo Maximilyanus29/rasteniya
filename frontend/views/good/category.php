@@ -45,6 +45,8 @@ $absoluteUrl = Yii::$app->request->getPathInfo();
 
                         <?= $category['name'] ?>
 
+                        (<?= $category['count'] ?>)
+
 
                     </a>
 
@@ -139,17 +141,15 @@ $absoluteUrl = Yii::$app->request->getPathInfo();
                 endforeach; ?>
 
 
-
             </div>
             <p style="margin:0">
                 <a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (0)</a>
             </p>
             <div class="row">
+
                 <div class="col-xs-12"><hr></div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs">
-                    <div class="btn-group">
-                    </div>
-                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-xs"><div class="btn-group"></div></div>
 
                 <div class="col-xs-6 col-sm-5 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-3 text-right">
                     <div class="input-group">
@@ -168,6 +168,7 @@ $absoluteUrl = Yii::$app->request->getPathInfo();
                         </select>
                     </div>
                 </div>
+
                 <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 text-right">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-eye"></i><span class="hidden-xs hidden-sm hidden-md">Показать:</span></span>
@@ -180,60 +181,25 @@ $absoluteUrl = Yii::$app->request->getPathInfo();
                         </select>
                     </div>
                 </div>
+
                 <div class="col-xs-12"><hr></div>
             </div>
+
             <div class="products-block row">
-
                 <?= $this->render('_goods', ['goods' => $goods]) ?>
-
-
             </div>
-            <script>
-                var window_width = $(window).width();
 
-            </script>
             <div class="pagination_wrap row">
                 <div class="col-sm-6 text-left"></div>
                 <div class="col-sm-6 text-right">Показано с 1 по 1 из 1 (всего 1 страниц)</div>
             </div>
+
             <div class="cat_desc row"></div>
+
             <div class="row">
                 <div class="col-xs-12"></div>
             </div>
+
         </div>
     </div>
 </div>
-
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 0,
-                "item" :
-                {
-                    "@id": "http://opt.voodland.com/",
-                    "name": "Voodland.com"
-                }
-            }, 									{
-                "@type": "ListItem",
-                "position": 1,
-                "item" :
-                {
-                    "@id": "http://opt.voodland.com/khvojnye-rasteniya/",
-                    "name": "Хвойные деревья"
-                }
-            }								]
-    }
-</script>
-
-<script>
-    $(document).ready(function() {
-        fly_menu('1');	fly_cart();	fly_callback('Заказ звонка');		uni_live_search('', '', '1', '', '5', 'Все результаты поиска', 'Ничего не найдено');	});
-    var uni_cart_type = 'popup',
-        uni_descr_hover = '',
-        uni_attr_hover = '',
-        uni_option_hover = '';
-</script>

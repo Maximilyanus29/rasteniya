@@ -29,6 +29,9 @@ class Good extends \yii\db\ActiveRecord
                 'attribute' => 'name',
                  'slugAttribute' => 'slug',
             ],
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
         ];
     }
 
@@ -62,15 +65,20 @@ class Good extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'name' => Yii::t('app', 'Name'),
-            'provider' => Yii::t('app', 'Provider'),
-            'weight' => Yii::t('app', 'Weight'),
-            'height' => Yii::t('app', 'Height'),
-            'width' => Yii::t('app', 'Width'),
-            'volume' => Yii::t('app', 'Volume'),
-            'have_wrap' => Yii::t('app', 'Have Wrap'),
-            'quantity' => Yii::t('app', 'Quantity'),
-            'slug' => Yii::t('app', 'Slug'),
+            'name' => 'Наименование',
+            'provider' => "Поставщик",
+            'weight' => "Вес",
+            'height' => "Высота",
+            'width' => "ширина",
+            'volume' => "обьем",
+            'root_system' => "Корневая система",
+            'quantity' => "количество",
+            'price' => "цена",
+            'discount_price' => "цена по скидке",
+            'vendor_code' => "артикул",
+            'description' => "описание",
+            'provider_id' => "Поставщик",
+
         ];
     }
 

@@ -22,8 +22,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'volume')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'have_wrap')->textInput() ?>
-
     <?= $form->field($model, 'quantity')->textInput() ?>
 
     <?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>

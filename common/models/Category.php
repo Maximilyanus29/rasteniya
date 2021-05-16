@@ -23,6 +23,9 @@ class Category extends \yii\db\ActiveRecord
                 'attribute' => 'name',
                 'slugAttribute' => 'slug',
             ],
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
         ];
     }
 

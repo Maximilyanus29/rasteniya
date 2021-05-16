@@ -7,40 +7,34 @@ use yii\widgets\Pjax;
 /* @var $searchModel backend\models\search\Good */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Goods');
+$this->title = "Товары";
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="good-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a(Yii::t('app', 'Create Good'), ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
 
     <?php Pjax::begin(); ?>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
             'name',
             'provider_id',
             'weight',
             'height',
-            //'width',
-            //'volume',
+            'width',
+            'volume',
             //'have_wrap',
-            //'quantity',
-            //'slug',
-            //'price',
-            //'discount_price',
-            //'vendor_code',
-            //'description:ntext',
+            'quantity',
+//            'slug',
+            'price',
+//            'discount_price',
+            'vendor_code',
+            'description:ntext',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

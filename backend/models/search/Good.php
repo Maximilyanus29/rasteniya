@@ -17,7 +17,7 @@ class Good extends GoodModel
     public function rules()
     {
         return [
-            [['id', 'provider_id', 'have_wrap', 'quantity', 'price', 'discount_price'], 'integer'],
+            [['id', 'provider_id', 'quantity', 'price', 'discount_price'], 'integer'],
             [['name', 'slug', 'vendor_code', 'description'], 'safe'],
             [['weight', 'height', 'width', 'volume'], 'number'],
         ];
@@ -65,7 +65,6 @@ class Good extends GoodModel
             'height' => $this->height,
             'width' => $this->width,
             'volume' => $this->volume,
-            'have_wrap' => $this->have_wrap,
             'quantity' => $this->quantity,
             'price' => $this->price,
             'discount_price' => $this->discount_price,

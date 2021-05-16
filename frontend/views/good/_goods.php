@@ -2,13 +2,12 @@
 
     <div class="product-layout product-grid col-lg-4 col-md-6 col-sm-6 col-xs-12" data-id="<?= $good->id ?>">
         <div class="product-thumb transition">
-
             <div class="image">
-
                 <a href="/good/<?= $good->provider->slug ?>/<?= $good->slug ?>" data-href>
-                    <img data-img src="/images/_сосны с лого 3-500x400.png" alt="Семена сосны обыкновенной " title="Семена сосны обыкновенной " class="img-responsive">
+                    <img data-img src="<?= $good->getImage()->getUrl('540x400') ?>" alt="<?= $good->name ?>" title="<?= $good->name ?>" class="img-responsive">
                 </a>
             </div>
+
             <div class="caption">
                 <a href="/good/<?= $good->provider->slug ?>/<?= $good->slug ?>" data-name style="height: 22px;"><?= $good->name ?> </a>
                 <p class="description" style="height: 80px;" data-desc><?= $good->description ?>..</p>
@@ -49,10 +48,6 @@
                     <i class="fa fa-exchange-alt"></i>
                 </button>
             </div>
-
-
         </div>
-
     </div>
-
 <?php endforeach; ?>

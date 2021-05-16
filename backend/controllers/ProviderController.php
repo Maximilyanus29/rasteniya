@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use common\models\City;
 use Yii;
 use common\models\Provider;
 use backend\models\search\Provider as ProviderSearch;
@@ -10,6 +11,7 @@ use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ProviderController implements the CRUD actions for Provider model.
@@ -54,12 +56,32 @@ class ProviderController extends AppController
     {
         $model = new Provider();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->setCityId($model->city_id);
+
+            $model->save();
+
+            $model->importFile = UploadedFile::getInstance($model, 'importFile');
+
+            $model->upload();
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
+
+
+        $citites = array_map(function ($el){
+            return $el['name'];
+        },City::find()->asArray()->all());
+
+//
+//        var_dump($citites);die;
+
+
         return $this->render('create', [
             'model' => $model,
+            'citites' => $citites,
         ]);
     }
 
@@ -74,12 +96,31 @@ class ProviderController extends AppController
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->setCityId($model->city_id);
+
+            $model->save();
+
+            $model->importFile = UploadedFile::getInstance($model, 'importFile');
+
+            $model->upload();
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
+
+        $citites = array_map(function ($el){
+            return $el['name'];
+        },City::find()->asArray()->all());
+
+//
+//        var_dump($citites);die;
+
         return $this->render('update', [
             'model' => $model,
+            'citites' => $citites,
         ]);
     }
 

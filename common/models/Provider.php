@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\components\Import\Import;
 use Yii;
 use yii\behaviors\SluggableBehavior;
 
@@ -15,14 +16,21 @@ use yii\behaviors\SluggableBehavior;
  */
 class Provider extends \yii\db\ActiveRecord
 {
+    public $importFile;
+
     public function behaviors()
     {
         return [
             [
                 'class' => SluggableBehavior::className(),
-                'attribute' => 'name',
+                'value' => function($event){
+                    return $this->name . $this->address;
+                },
                 'slugAttribute' => 'slug',
             ],
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ]
         ];
     }
 
@@ -41,10 +49,18 @@ class Provider extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'address', 'profit_in_percent', 'city_id'], 'required'],
-            [['name'], 'unique'],
+            [['slug'], 'unique'],
             [['profit_in_percent'], 'number'],
             [['name', 'address'], 'string', 'max' => 254],
+            [['importFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'xml'],
         ];
+    }
+
+
+    public function setCityId($val)
+    {
+        if (is_int($val)) return false;
+        $this->city_id = City::findOne(['name' => $val])->id;
     }
 
     /**
@@ -54,9 +70,27 @@ class Provider extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'name' => Yii::t('app', 'Name'),
-            'address' => Yii::t('app', 'Address'),
-            'profit_in_percent' => Yii::t('app', 'Profit In Percent'),
+            'name' => "Наименование поставщика",
+            'address' => "Адрес",
+            'profit_in_percent' => "Процент от продажи",
         ];
+    }
+
+    public function upload()
+    {
+        $path = '../../files/import_files/' . $this->importFile->baseName . '.' . $this->importFile->extension;
+        $this->importFile->saveAs($path);
+        $this->import($path, $this->id);
+
+        return true;
+    }
+
+    private function import($path, $provider_id)
+    {
+        $import = new Import($path, $provider_id);
+        $import->run();
+
+
+
     }
 }
