@@ -77,6 +77,32 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	liveSearch();
+
+
+	const cityBlock = document.querySelector('.prmn-cmngr');
+
+	cityBlock.addEventListener('click', event => {
+		$( "#dialog" ).dialog();
+	})
+
+	// const cityConfirm = cityBlock.querySelector('.prmn-cmngr__confirm');
+	//
+	// cityConfirm.addEventListener('click', event => {
+	// 	let target = event.target
+	// 	if(target.tagName === "INPUT"){
+	//
+	// 		if (target.dataset.value == "yes"){
+	// 			cityConfirm.style.display = "none";
+	// 		}else{
+	// 			cityConfirm.style.display = "none";
+	// 			$( "#dialog" ).dialog();
+	// 		}
+	// 	}
+	// })
+
+
+
+
 });
 
 

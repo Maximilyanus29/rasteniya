@@ -60,6 +60,56 @@ class GoodController extends Controller
     }
 
 
+        /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionCompare()
+    {
+        
+		$databases = [];
+
+		try{ 
+		    $pdo = new \PDO("mysql:host=localhost", "root", ""); 
+		    $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION); 
+		} catch(PDOException $e){ 
+		    die("ERROR: Could not connect. " . $e->getMessage()); 
+		} 
+
+
+
+		  
+		try{ 
+		    $sql = "SHOW DATABASES"; 
+		    $res = $pdo->query($sql); 
+
+
+			$databases = $res->fetchAll();
+
+
+			foreach ($databases as $key => $value) {
+
+				$pdo = new \PDO("mysql:host=localhost;dbname=" . $value[0] , "root", ""); 
+
+				$value = $value[0];
+
+			
+		    	var_dump($pdo->exec("DROP DATABASE testt"));
+				
+			}
+
+			
+
+		    echo "Database DEMO deleted successfully."; 
+		} catch(PDOException $e){ 
+		    die("ERROR: Could not able to execute $sql. " 
+		                                . $e->getMessage()); 
+		} 
+		unset($pdo); 
+    }
+
+
     /**
      * @return mixed
      * @throws HttpException
@@ -95,38 +145,6 @@ class GoodController extends Controller
         return $this->render('sale',['categories'=>$categories]);
     }
 
-/*
- *
-SELECT category.name, category.slug,  good.name, category.id , COUNT(good.id) as count FROM `good`
-LEFT join good_category on good.id = good_category.good_id
-LEFT join category on category.id = good_category.category_id
-GROUP by category.id
-WHERE  category.parent_id = :id or category.id = :id
-
-*/
-
-
-
-
-/*
-SELECT category.name, count(*) as count FROM `good`
-left join good_category ON good.id = good_category.good_id
-left join category ON category.id = good_category.category_id
-WHERE category.id = 1
-*/
-
-
-
-
-//        $categories = Category::find(['parent_id' => $category['id']])->asArray()->all();
-
-//        $categories = Yii::$app->db->createCommand(
-//        'SELECT category.name, category.slug, count(good.id) as count FROM `good`
-//            left join good_category ON good.id = good_category.good_id
-//            left join category ON category.id = good_category.category_id
-//            WHERE  category.parent_id = :id
-//            '
-//        )
 
     /**
      * @return mixed
@@ -135,15 +153,8 @@ WHERE category.id = 1
     public function actionCategory($slug)
     {
         $mainCategory = Category::findOne(['slug' => $slug]);
-//
-//        $categories = Yii::$app->db->createCommand(
-//            'SELECT category.id, category.name, category.parent_id, category.slug, COUNT(good.id) as count FROM `category`
-//            LEFT join good on category.id = good.category_id
-//            GROUP by category.id
-//            ORDER by category.id
-//        ')->bindValue(':id', $mainCategory['id'])->queryAll();
 
-                $categories = Yii::$app->db->createCommand(
+        $categories = Yii::$app->db->createCommand(
                     'SELECT c0.id, c0.name, c0.parent_id, c0.slug, COUNT(good.id) as count 
 FROM category c0 
 LEFT JOIN good ON c0.id 
@@ -155,20 +166,13 @@ ORDER by c0.id
                 ')->bindValue(':id', $mainCategory['id'])->queryAll();
 
 
-
-
         $searchModel = new GoodSearch();
 
         $searchModel->category_id = $mainCategory->id;
 
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-//        $subcategories = $mainCategory->getGoods2();
-
-//        var_dump($dataProvider->query->all());die;
-
         $goods = $dataProvider->query->all();
-
 
         return $this->render('category', [
             'goods' => $goods,

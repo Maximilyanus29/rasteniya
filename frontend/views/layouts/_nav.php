@@ -89,11 +89,11 @@
                                 <span class="prmn-cmngr__title-text"></span>
                                 <a class="prmn-cmngr__city">
                                     <span class="glyphicon glyphicon-map-marker fa fa-map-marker"></span>
-                                    <span class="prmn-cmngr__city-name">Ростов-на-Дону</span>
+                                    <span class="prmn-cmngr__city-name"><?= !empty(\frontend\components\Helper::getCity()) ? \frontend\components\Helper::getCity() : "Выберите город"?></span>
                                 </a>
                             </div>
                             <div class="prmn-cmngr__confirm" style="display: none;">
-                                Ваш город — <span class="prmn-cmngr__confirm-city">Ростов-на-Дону</span>?
+                                Ваш город — <span class="prmn-cmngr__confirm-city">Воронеж</span>?
                                 <div class="prmn-cmngr__confirm-btns">
                                     <input class="prmn-cmngr__confirm-btn btn btn-primary" value="Да" type="button"
                                            data-value="yes" data-redirect="/">

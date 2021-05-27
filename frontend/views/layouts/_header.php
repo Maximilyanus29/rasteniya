@@ -63,10 +63,14 @@ $cart = Yii::$app->cart;
                                         <tbody>
                                         <tr>
                                             <td class="image">
-                                                <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"><img src="http://opt.voodland.com/image/cache/catalog/semena/Sosna%20/%20%D1%81%D0%BE%D1%81%D0%BD%D1%8B%20%D1%81%20%D0%BB%D0%BE%D0%B3%D0%BE%203-47x47.png" alt="Семена сосны обыкновенной " title="Семена сосны обыкновенной " class="img-thumbnail"></a>
+                                                <a href="/good/<?= $product->provider->slug ?>/<?= $product->slug ?>">
+                                                    <img src="124512" alt="<?= $product->name ?>"
+                                                         title="<?= $product->name ?>"
+                                                         class="img-thumbnail">
+                                                </a>
                                             </td>
                                             <td class="name text-left">
-                                                <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"><?= $product->name ?> </a>
+                                                <a href="/good/<?= $product->provider->slug ?>/<?= $product->slug ?>"><?= $product->name ?></a>
                                                 <br>- <small><?= substr($product->description,0, 18)  ?></small>
                                             </td>
                                             <td class="quantity text-right">

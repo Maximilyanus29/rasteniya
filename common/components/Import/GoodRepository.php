@@ -92,7 +92,7 @@ class GoodRepository
 
         foreach ($data as $hash => $good){
 
-            $goods_in_db[$hash]->category_id = $good[0];
+            $goods_in_db[$hash]->category_id = $good[1];
             $goods_in_db[$hash]->vendor_code = $good[2];
             $goods_in_db[$hash]->size = $good[6];
             $goods_in_db[$hash]->description = $good[7];

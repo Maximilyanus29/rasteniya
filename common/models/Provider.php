@@ -89,8 +89,18 @@ class Provider extends \yii\db\ActiveRecord
     {
         $import = new Import($path, $provider_id);
         $import->run();
+    }
 
+    /**
+     * {@inheritdoc}
+     */
+    public function getGoods()
+    {
+        return $this->hasMany(Good::className(), ['provider_id' => 'id']);
+    }
 
-
+    public function getCity()
+    {
+        return $this->hasOne(City::className(), ['id' => 'city_id']);
     }
 }

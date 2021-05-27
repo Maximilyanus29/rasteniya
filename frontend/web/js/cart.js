@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateSecondCartWhenInHeaderLine = (block) => {
 
-
-
             const cart__blocks = document.querySelectorAll('#cart');
 
             setTimeout(()=> {
@@ -15,15 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     el.innerHTML = cart__blocks_open.innerHTML;
                 });
             },1100)
-
-
-
-
-
-
-
-
-
 
     };
 
@@ -105,6 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             li.forEach(ell => {
                 if (ell.dataset?.id == smallCard.dataset.id){
+
+                    console.log(ell);
+                    console.log(quantity);
+
                     ell.querySelector('input').value = quantity;
                     let elPrice__block = ell.querySelector('.total.text-right')
                     elPrice__block.innerHTML =  parseInt(goodtotalPrice);
@@ -230,8 +223,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!products) return false;
 
+    const host = location.host;
 
-
+    if(host.includes('.')){
+        var subdomain = location.host.split('.')[0];
+    }
 
     //for small card begin
     const smallCardCartHandler = event => {
@@ -248,6 +244,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const parent = target.closest('.cart');
 
             const good_id = parseInt(parent.dataset.id);
+
+            const good_city_slug = target.dataset.city;
+
+            if (good_city_slug !== subdomain){
+                if (!confirm("Этот товар находится в другом городе, хотите ли заказать его?")){
+                    return;
+                }
+            }
 
             $.ajax({
                 url: `/cart/add-to-${action}`,
@@ -267,9 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         insertCountCart(data.count);
                     }
 
-
                     return true;
-
                 }
             });
         }
@@ -282,7 +284,50 @@ document.addEventListener('DOMContentLoaded', () => {
     //for small card begin end
 
 
+    /*For good view*/
 
+    const button_to_cart = document.getElementById('button-cart');
+    const input_quantity = document.getElementById('input-quantity');
+
+    if (!button_to_cart) return false;
+
+    button_to_cart.addEventListener('click', event => {
+        let target = event.target;
+
+        if (target.tagName !== "BUTTON"){
+            target = target.closest('button');
+        }
+
+        const goodCard = document.getElementById('content');
+
+        const good_city_slug = target.dataset.city;
+
+        if (good_city_slug !== subdomain){
+            if (!confirm("Этот товар находится в другом городе, хотите ли заказать его?")){
+                return;
+            }
+        }
+
+        $.ajax({
+            url: `/cart/add-to-cart`,
+            type: 'get',
+            dataType: 'json',
+            data: {
+                id : target.dataset.id,
+                quantity : input_quantity.value,
+            },
+            success: function(data) {
+
+                addToCartBlock(goodCard, data.quantity, data.goodtotalPrice);
+
+                insertCountCart(data.count);
+
+                return true;
+            }
+        });
+    })
+
+    /*for good view end*/
 });
 
 

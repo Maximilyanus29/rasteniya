@@ -1,6 +1,9 @@
 <?php
 
-use frontend\components\Helper; ?>
+use frontend\components\Helper;
+
+\frontend\assets\ViewAsset::register($this);
+?>
 
 
 <div class="container">
@@ -9,82 +12,63 @@ use frontend\components\Helper; ?>
         <li><a href="/"><i class="fa fa-home"></i></a></li>
         <?= Helper::generateBreadCrumps($good->categories) ?>
 
-        <li><?= $good->name  ?></li>
+        <li><?= $good->name ?></li>
     </ul>
 
     <div class="row">
-        <div id="content" class="col-xs-12">
+        <div id="content" class="col-xs-12" data-id="<?= $good->id ?>">
             <div id="product" class="row product-block">
-                <div class="col-sm-12"><h1 class="heading"><span><?= $good->name ?></span></h1></div>
-                <div class="col-sm-6 col-md-5">
-                    <ul class="thumbnails">
-                        <li>
-                            <a class="thumbnail"
-                               href="http://opt.voodland.com/image/cache/catalog/list_derev/akaciy/robiniya_lzheakatsiya_semena-1200x800.jpg"
-                               data-key="0">
-                                <img src="/images/robiniya_lzheakatsiya_semena-200x180.jpg"
-                                     data-zoom-image="http://opt.voodland.com/image/cache/catalog/list_derev/akaciy/robiniya_lzheakatsiya_semena-1200x800.jpg"
-                                     title="Семена акации" alt="Семена акации">
-                            </a>
-                        </li>
-                        <li id="additional-img" class="additional none owl-carousel owl-theme"
-                            style="opacity: 1; display: block;">
-                            <div class="owl-wrapper-outer">
-                                <div class="owl-wrapper"
-                                     style="width: 486px; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
-                                    <div class="owl-item" style="width: 81px;"><a class="thumbnail selected"
-                                                                                  href="http://opt.voodland.com/image/cache/catalog/list_derev/akaciy/robiniya_lzheakatsiya_semena-1200x800.jpg"
-                                                                                  title="Семена акации"
-                                                                                  data-image="http://opt.voodland.com/image/cache/catalog/list_derev/akaciy/robiniya_lzheakatsiya_semena-200x180.jpg"
-                                                                                  data-zoom-image="http://opt.voodland.com/image/cache/catalog/list_derev/akaciy/robiniya_lzheakatsiya_semena-1200x800.jpg"
-                                                                                  data-key="0">
-                                            <img src="/images/robiniya_lzheakatsiya_semena-74x74.jpg"
-                                                 title="Семена акации" alt="Семена акации" class="img-responsive">
-                                        </a></div>
-                                    <div class="owl-item" style="width: 81px;"><a class="thumbnail"
-                                                                                  href="http://opt.voodland.com/image/cache/catalog/semena/akaciia%20white/IMG_3162-1200x800.JPG"
-                                                                                  title="Семена акации"
-                                                                                  data-image="http://opt.voodland.com/image/cache/catalog/semena/akaciia%20white/IMG_3162-200x180.JPG"
-                                                                                  data-zoom-image="http://opt.voodland.com/image/cache/catalog/semena/akaciia%20white/IMG_3162-1200x800.JPG"
-                                                                                  data-key="1">
-                                            <img src="/images/IMG_3162-74x74.JPG" title="Семена акации"
-                                                 alt="Семена акации" class="img-responsive">
-                                        </a></div>
-                                    <div class="owl-item" style="width: 81px;"><a class="thumbnail"
-                                                                                  href="http://opt.voodland.com/image/cache/catalog/%20%D0%BB%D0%B5%D1%82%D0%BE%202016/1m-1200x800.jpg"
-                                                                                  title="Семена акации"
-                                                                                  data-image="http://opt.voodland.com/image/cache/catalog/%20%D0%BB%D0%B5%D1%82%D0%BE%202016/1m-200x180.jpg"
-                                                                                  data-zoom-image="http://opt.voodland.com/image/cache/catalog/%20%D0%BB%D0%B5%D1%82%D0%BE%202016/1m-1200x800.jpg"
-                                                                                  data-key="2">
-                                            <img src="/images/1m-74x74.jpg" title="Семена акации"
-                                                 alt="Семена акации" class="img-responsive">
-                                        </a></div>
-                                </div>
-                            </div>
 
-
-                            <div class="owl-controls clickable" style="display: none;">
-                                <div class="owl-buttons">
-                                    <div class="owl-prev"><i class="fa fa-chevron-left fa-2x"></i></div>
-                                    <div class="owl-next"><i class="fa fa-chevron-right fa-2x"></i></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-sm-12">
+                    <h1 class="heading">
+                        <span><?= $good->name ?></span>
+                    </h1>
                 </div>
+
+
+
+
+
+                <div class="col-sm-6 col-md-5">
+
+                    <section class="cd-single-item">
+                        <div class="cd-slider-wrapper">
+                            <ul class="cd-slider">
+                                <li class="selected">
+                                    <img src="<?= $good->getImage()->getUrl() ?>" alt="Product Image 1">
+                                </li>
+                                <?php foreach ($good->getImages() as $image) : ?>
+                                    <li><img src="<?= $image->getUrl() ?>" alt="Product Image 1"></li>
+                                <?php endforeach; ?>
+
+                            </ul>
+                            <ul class="cd-slider-navigation">
+                                <li><a class="cd-prev inactive">Next</a></li>
+                                <li><a class="cd-next">Prev</a></li>
+                            </ul>
+                            <a  class="cd-close">Close</a>
+                        </div>
+                    </section>
+
+                </div>
+
+
                 <div class="col-sm-6 col-md-5">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row">
-                                <div class="col-sm-6 col-md-6">Производитель: <a
-                                        href="http://opt.voodland.com/voodland"><span><?= $good->provider->name ?></span></a></div>
+                                <div class="col-sm-6 col-md-6">Производитель:
+                                    <a data-href href="/provider/<?= $good->provider->slug ?>">
+                                        <span data-name ><?= $good->provider->name ?></span>
+                                    </a>
+                                </div>
                                 <div class="col-sm-6 col-md-6">Артикул: <?= $good->vendor_code ?></div>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <ul class="list-unstyled price">
-                        <li><span><?= $good->price ?>р.</span></li>
+                        <li><span data-price ><?= $good->price ?>р.</span></li>
                         <li>
                             <hr>
                             <div class="form-group quantity">
@@ -98,8 +82,12 @@ use frontend\components\Helper; ?>
 											<i class="fa fa-minus btn btn-default"
                                                onclick="quantity(this, &#39;1&#39;, &#39;-&#39;);"></i>
 										</span>
-                                <button type="button" class="add_to_cart button btn btn-lg  335"
-                                        data-toggle="tooltip" title="" id="button-cart"
+                                <button type="button" class="add_to_cart button btn btn-lg"
+                                        data-toggle="tooltip"
+                                        title=""
+                                        id="button-cart"
+                                        data-city="<?= $good->provider->city->slug ?>"
+                                        data-id="<?= $good->id ?>"
                                         data-original-title="В корзину"><i class="fa fa-shopping-basket"></i><span>В корзину</span>
                                 </button>
                             </div>
@@ -124,16 +112,22 @@ use frontend\components\Helper; ?>
                         <div class="col-sm-12 col-md-12 visible-xs visible-sm visible-md">
                             <hr>
                         </div>
-                        <div class="rating col-xs-7 col-sm-8 col-md-12 col-lg-6">
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="fa fa-comments-o" aria-hidden="true"></i><a href="http://opt.voodland.com/"
-                                                                                  onclick="$(&#39;a[href=\&#39;#tab-review\&#39;]&#39;).trigger(&#39;click&#39;); scroll_to(&#39;#tab-review&#39;); return false;"><span
-                                    class="hidden-xs">0 отзывов</span><span class="visible-xs">0</span></a>
-                        </div>
+<!--                        <div class="rating col-xs-7 col-sm-8 col-md-12 col-lg-6">-->
+<!--                            <i class="far fa-star"></i>-->
+<!--                            <i class="far fa-star"></i>-->
+<!--                            <i class="far fa-star"></i>-->
+<!--                            <i class="far fa-star"></i>-->
+<!--                            <i class="far fa-star"></i>-->
+<!--                            <i class="fa fa-comments-o" aria-hidden="true"></i>-->
+<!--                            <a href="http://opt.voodland.com/"-->
+<!--                               onclick="-->
+<!--                               $(&#39;a[href=\&#39;#tab-review\&#39;]&#39;).trigger(&#39;click&#39;);-->
+<!--                               scroll_to(&#39;#tab-review&#39;); return false;">-->
+<!--                                -->
+<!--                                <span class="hidden-xs">0 отзывов</span>-->
+<!--                                <span class="visible-xs">0</span>-->
+<!--                            </a>-->
+<!--                        </div>-->
                         <div class="btn-group col-xs-5 col-sm-4 visible-xs visible-sm">
                             <button type="button" data-toggle="tooltip" class="btn btn-default" title=""
                                     onclick="callback(&#39;Вопрос о товаре&#39;, &#39;335&#39;);"
@@ -174,19 +168,25 @@ use frontend\components\Helper; ?>
             <div class="row">
                 <div class="col-xs-12">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="http://opt.voodland.com/#tab-description" data-toggle="tab"
-                                              aria-expanded="true"><i class="far fa-file-alt"
-                                                                      aria-hidden="true"></i>Описание</a></li>
-                        <li class=""><a href="http://opt.voodland.com/#tab-review" data-toggle="tab"
-                                        aria-expanded="false"><i class="fa fa-comments" aria-hidden="true"></i>Отзывов
-                                (0)</a></li>
+                        <li class="active">
+                            <a href="http://opt.voodland.com/#tab-description" data-toggle="tab" aria-expanded="true">
+                                <i class="far fa-file-alt" aria-hidden="true"></i>Описание</a>
+                        </li>
+                        <li class="">
+                            <a href="http://opt.voodland.com/#tab-review" data-toggle="tab" aria-expanded="false"><i class="fa fa-comments" aria-hidden="true"></i>Отзывов
+                                (0)</a>
+                        </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane active" id="tab-description"><span style="font-weight: bold;">
+                        <div class="tab-pane active" id="tab-description">
+                            <span style="font-weight: bold;" data-desc >
                                 <?= $good->description ?>
+                            </span>
+
                         </div>
                         <div class="tab-pane" id="tab-review">
-                            <div id="review"><p>Нет отзывов об этом товаре.</p>
+                            <div id="review">
+                                <p>Нет отзывов об этом товаре.</p>
                                 <div class="review_pagination">
                                     <div class="text-right"></div>
                                     <div class="text-right">
@@ -259,78 +259,79 @@ use frontend\components\Helper; ?>
                 </div>
             </div>
             <hr>
-            <div class="row product_carousel">
-                <h3 class="heading">
-                    <span>Рекомендуем посмотреть</span></h3>
-                <div class="products product_related owl-carousel owl-theme" style="opacity: 1; display: block;">
-                    <div class="owl-wrapper-outer">
-                        <div class="owl-wrapper" style="width: 580px; left: 0px; display: block;">
-                            <div class="owl-item" style="width: 290px;">
-                                <div class="product-layout">
-                                    <div class="product-thumb transition">
-                                        <div class="image">
-                                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-">
-                                                <img src="/images/_сосны с лого 3-200x180.png"
-                                                     alt="Семена сосны обыкновенной "
-                                                     title="Семена сосны обыкновенной " class="img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="caption">
-                                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"
-                                               style="height: 22px;">Семена сосны обыкновенной </a>
-                                            <p class="description" style="height: 80px;">Сосна обыкновенная.
-                                                Семена развиваются в шишках, которые созревают поздно осенью
-                                                следующего года,
-                                                ..</p>
-                                            <div id="option_406" class="option">
-                                            </div>
-                                            <div class="rating">
-                                                    <span class="fa fa-stack"><i
-                                                            class="far fa-star fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i
-                                                        class="far fa-star fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i
-                                                        class="far fa-star fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i
-                                                        class="far fa-star fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i
-                                                        class="far fa-star fa-stack-2x"></i></span>
-                                                <sup><a onclick="location=&#39;http://opt.voodland.com/semena/semena-sosny-obyknovennoj-#tab-review&#39;"></a></sup>
-                                            </div>
-                                            <p class="price">
-                                                9000.00р. </p>
-                                        </div>
-                                        <div class="cart">
-                                            <button type="button" class="add_to_cart button btn btn-default  406"
-                                                    data-toggle="tooltip" title=""
-                                                    onclick="cart.add(&#39;406&#39;);"
-                                                    data-original-title="В корзину"><i
-                                                    class="fa fa-shopping-basket"></i><span class="hidden-sm">В корзину</span>
-                                            </button>
-                                            <button type="button" class="wishlist btn btn-default"
-                                                    data-toggle="tooltip" title=""
-                                                    onclick="wishlist.add(&#39;406&#39;);"
-                                                    data-original-title="В закладки"><i class="fa fa-heart"></i>
-                                            </button>
-                                            <button type="button" class="compare btn btn-default"
-                                                    data-toggle="tooltip" title=""
-                                                    onclick="compare.add(&#39;406&#39;);"
-                                                    data-original-title="В сравнение"><i
-                                                    class="fa fa-exchange-alt"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-controls clickable" style="display: none;">
-                        <div class="owl-buttons">
-                            <div class="owl-prev"><i class="fa fa-chevron-left"></i></div>
-                            <div class="owl-next"><i class="fa fa-chevron-right"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="row product_carousel">-->
+<!--                <h3 class="heading">-->
+<!--                    <span>Рекомендуем посмотреть</span>-->
+<!--                </h3>-->
+<!--                <div class="products product_related owl-carousel owl-theme" style="opacity: 1; display: block;">-->
+<!--                    <div class="owl-wrapper-outer">-->
+<!--                        <div class="owl-wrapper" style="width: 580px; left: 0px; display: block;">-->
+<!--                            <div class="owl-item" style="width: 290px;">-->
+<!--                                <div class="product-layout">-->
+<!--                                    <div class="product-thumb transition">-->
+<!--                                        <div class="image">-->
+<!--                                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-">-->
+<!--                                                <img src="/images/_сосны с лого 3-200x180.png"-->
+<!--                                                     alt="Семена сосны обыкновенной "-->
+<!--                                                     title="Семена сосны обыкновенной " class="img-responsive">-->
+<!--                                            </a>-->
+<!--                                        </div>-->
+<!--                                        <div class="caption">-->
+<!--                                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"-->
+<!--                                               style="height: 22px;">Семена сосны обыкновенной </a>-->
+<!--                                            <p class="description" style="height: 80px;">Сосна обыкновенная.-->
+<!--                                                Семена развиваются в шишках, которые созревают поздно осенью-->
+<!--                                                следующего года,-->
+<!--                                                ..</p>-->
+<!--                                            <div id="option_406" class="option">-->
+<!--                                            </div>-->
+<!--                                            <div class="rating">-->
+<!--                                                    <span class="fa fa-stack"><i-->
+<!--                                                            class="far fa-star fa-stack-2x"></i></span>-->
+<!--                                                <span class="fa fa-stack"><i-->
+<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
+<!--                                                <span class="fa fa-stack"><i-->
+<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
+<!--                                                <span class="fa fa-stack"><i-->
+<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
+<!--                                                <span class="fa fa-stack"><i-->
+<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
+<!--                                                <sup><a onclick="location=&#39;http://opt.voodland.com/semena/semena-sosny-obyknovennoj-#tab-review&#39;"></a></sup>-->
+<!--                                            </div>-->
+<!--                                            <p class="price">-->
+<!--                                                9000.00р. </p>-->
+<!--                                        </div>-->
+<!--                                        <div class="cart">-->
+<!--                                            <button type="button" class="add_to_cart button btn btn-default  406"-->
+<!--                                                    data-toggle="tooltip" title=""-->
+<!--                                                    onclick="cart.add(&#39;406&#39;);"-->
+<!--                                                    data-original-title="В корзину"><i-->
+<!--                                                    class="fa fa-shopping-basket"></i><span class="hidden-sm">В корзину</span>-->
+<!--                                            </button>-->
+<!--                                            <button type="button" class="wishlist btn btn-default"-->
+<!--                                                    data-toggle="tooltip" title=""-->
+<!--                                                    onclick="wishlist.add(&#39;406&#39;);"-->
+<!--                                                    data-original-title="В закладки"><i class="fa fa-heart"></i>-->
+<!--                                            </button>-->
+<!--                                            <button type="button" class="compare btn btn-default"-->
+<!--                                                    data-toggle="tooltip" title=""-->
+<!--                                                    onclick="compare.add(&#39;406&#39;);"-->
+<!--                                                    data-original-title="В сравнение"><i-->
+<!--                                                    class="fa fa-exchange-alt"></i></button>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="owl-controls clickable" style="display: none;">-->
+<!--                        <div class="owl-buttons">-->
+<!--                            <div class="owl-prev"><i class="fa fa-chevron-left"></i></div>-->
+<!--                            <div class="owl-next"><i class="fa fa-chevron-right"></i></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <script>
                 module_type_view('carousel', '.product_related');
             </script>
@@ -343,3 +344,5 @@ use frontend\components\Helper; ?>
         </div>
     </div>
 </div>
+
+

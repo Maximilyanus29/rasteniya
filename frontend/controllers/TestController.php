@@ -7,6 +7,7 @@ use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
 use yii\helpers\Inflector;
+use yii\httpclient\Client;
 use yii\imagine\Image;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -81,17 +82,27 @@ class TestController extends Controller
     }
 
 
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
+
     public function actionIndex()
     {
 
-        $cart = Yii::$app->cart;
+        $client = new Client();
+        $response = $client->createRequest()
+            ->setMethod('POST')
+            ->setUrl('https://api.telegram.org/bot1787171127:AAE_R9bTULvzTH4A8e9oJEf9KUxKXmpRnfc/sendMessage')
+            ->setData([
+                'chat_id' => '@justMomentPleaseOne',
+                'text' => 'johndoe@example.com'
+            ])
+            ->send();
+        if ($response->isOk) {
 
-        return $cart->getTotalCost();
+            var_dump($response->data);die;
+            $newUserId = $response->data['id'];
+
+        }
+
+
     }
 
 

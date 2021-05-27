@@ -4,6 +4,9 @@
 namespace frontend\components;
 
 
+use common\models\City;
+use Yii;
+
 class Helper
 {
 
@@ -29,6 +32,22 @@ class Helper
             echo "<li><a href=\"/category/$value->slug\"> $value->name </a></li>";
 
         }
+
+    }
+
+
+    public static  function getCity()
+    {
+
+        $domain = Yii::$app->request->serverName;
+
+
+
+        return City::findOne(['slug' => explode('.', $domain)[0]])->name;
+
+
+
+
 
     }
 

@@ -49,6 +49,8 @@ return [
 
                 'category/<slug:[a-zA-Z-]+>' => 'good/category',
 
+                'provider/<slug:[a-zA-Z-]+>' => 'provider/view',
+
 
 
 //                '//<city:[a-zA-Z]+>.rasteniya' => 'local/default/index',
@@ -120,9 +122,7 @@ return [
         'user' => [
             'class' => 'frontend\modules\user\Module',
         ],
-        'provider' => [
-            'class' => 'frontend\modules\provider\Module',
-        ],
+
     ],
     'params' => $params,
 ];

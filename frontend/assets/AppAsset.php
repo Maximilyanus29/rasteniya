@@ -15,7 +15,6 @@ class AppAsset extends AssetBundle
         'css/bootstrap.min.css',
         'https://pro.fontawesome.com/releases/v5.10.0/css/all.css',
         'css/stylesheet.css',
-//        'css/font-awesome.min.css',
         'css/elements_0.css',
         'css/progroman.citymanager.css',
         'css/categorywall.css',
@@ -24,11 +23,13 @@ class AppAsset extends AssetBundle
         'css/subscribe.css',
         'css/custom.css',
         'css/cart/checkout.css',
+        'css/jquery-ui.css',
     ];
     public $js = [
 
 
         'js/jquery-2.1.1.min.js',
+        'js/jquery-ui.js',
 
         'js/bootstrap.min.js',
         'js/common.js',
@@ -38,7 +39,7 @@ class AppAsset extends AssetBundle
 
 
         'js/jquery.progroman.autocomplete.js',
-        'js/jquery.progroman.citymanager.js',
+//        'js/jquery.progroman.citymanager.js',
         'js/jquery.magnific-popup.min.js',
 
         'js/owl.carousel.min.js',
