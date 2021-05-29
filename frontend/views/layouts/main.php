@@ -45,14 +45,31 @@ $request = Yii::$app->request;
 <?= $this->render('_footer'); ?>
 
 
+<!-- Modal -->
+<div class="modal fade" id="change_city" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <p>Выберете город</p>
+            <ul class="list">
+                <?php foreach ($providers as $provider) : ?>
+                    <li><a href="//<?= $provider->city->slug ?>.rasteniya"><?= $provider->city->name ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
 
-<div id="dialog" title="Ваш город">
-    <p>Выберете город</p>
-    <ul class="list">
-        <?php foreach ($providers as $provider) : ?>
-            <li><a href="//<?= $provider->city->slug ?>.rasteniya"><?= $provider->city->name ?></a></li>
-        <?php endforeach; ?>
-    </ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="review_response" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <p class="text">Выберете город</p>
+        </div>
+
+    </div>
 </div>
 
 

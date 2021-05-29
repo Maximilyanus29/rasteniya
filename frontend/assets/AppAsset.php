@@ -43,6 +43,7 @@ class AppAsset extends AssetBundle
         'js/jquery.magnific-popup.min.js',
 
         'js/owl.carousel.min.js',
+        "js/vendor/jquery.js",
 //        'js/tag.js',
 //        'js/subscribe.js',
 

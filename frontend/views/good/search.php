@@ -9,6 +9,13 @@
         <?= $this->render('@app/views/layouts/_aside_menu') ?>
 
         <div id="content" class="col-sm-8 col-md-8 col-lg-9">
+
+            <?php if ($issetInThisCity === false) : ?>
+                <div class="alert alert-danger" role="alert">
+                    Внимание! В вашем городе нет таких товаров, показаны товары с других городов
+                </div>
+            <?php endif; ?>
+
             <h1 class="heading">
                 <span>Поиск - <?= $searchModel->search ?></span>
             </h1>
@@ -59,7 +66,16 @@
 
             <div class="row">
 
-                <?= $this->render('_goods', ['goods' => $goods]) ?>
+                <?php if (!empty($goods)) : ?>
+                    <?= $this->render('_goods', ['goods' => $goods]) ?>
+                <?php else: ?>
+                    <p style="font-size: 4rem"> Товаров в вашем городе не найдено</p>
+                <?php endif; ?>
+
+                <h2>Товары из других городов</h2>
+                <?= $this->render('_goods', ['goods' => $recommendedGoods]) ?>
+
+
 
             </div>
             <div class="pagination_wrap row">

@@ -79,26 +79,83 @@ document.addEventListener('DOMContentLoaded', () => {
 	liveSearch();
 
 
+	const hintBlock = document.getElementById('review_form_hint');
+
+	const alertt = `<div class="alert alert-primary" role="alert">
+  Необходимо заполнить все поля
+</div>`;
+
+
+	const review_form = document.getElementById('form-review');
+
+	if (review_form) {
+		review_form.addEventListener('submit', event => {
+			event.preventDefault();
+
+			let target = event.target;
+
+			let errors = false;
+
+			target.querySelectorAll('input').forEach(input => {
+				if (!input.value){
+					hintBlock.innerHTML = alertt;
+					errors = true;
+				}
+			});
+			if (!errors){
+				$.ajax({
+					url: '/common/create-review',
+					type: 'post',
+					data: $(target).serialize(),
+					dataType: 'json',
+					success: function(json) {
+						if (json.success === true){
+
+							target.innerText = "Отзыв создан";
+						}
+					}
+				});
+			}
+		});
+	}
+
+
+
+
+
+	/*city block*/
 	const cityBlock = document.querySelector('.prmn-cmngr');
 
 	cityBlock.addEventListener('click', event => {
 		$( "#dialog" ).dialog();
 	})
 
-	// const cityConfirm = cityBlock.querySelector('.prmn-cmngr__confirm');
-	//
-	// cityConfirm.addEventListener('click', event => {
-	// 	let target = event.target
-	// 	if(target.tagName === "INPUT"){
-	//
-	// 		if (target.dataset.value == "yes"){
-	// 			cityConfirm.style.display = "none";
-	// 		}else{
-	// 			cityConfirm.style.display = "none";
-	// 			$( "#dialog" ).dialog();
-	// 		}
-	// 	}
-	// })
+	const cityModal = document.querySelector('#dialog');
+
+	if (cityModal){
+		cityModal.addEventListener('click', evt => {
+			evt.preventDefault();
+			console.log(evt)
+		})
+	}
+
+
+
+
+
+
+
+
+
+	/*city block end*/
+
+
+
+
+
+
+
+
 
 
 

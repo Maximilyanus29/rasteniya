@@ -13,8 +13,13 @@ class ViewAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/gallery.css',
+        "css/blueimp-gallery.css",
+        "css/blueimp-gallery-indicator.css",
+        "css/blueimp-gallery-video.css",
+        "css/demo/demo.css",
 
     ];
+
     public $js = [
 
 
@@ -23,7 +28,22 @@ class ViewAsset extends AssetBundle
         'js/gallery/jquery.mobile.min.js',
         'js/gallery/main.js',
 
-//        'js/zoom.js',
+
+
+        "js/blueimp-helper.js",
+        "js/blueimp-gallery.js",
+        "js/blueimp-gallery-fullscreen.js",
+        "js/blueimp-gallery-indicator.js",
+        "js/blueimp-gallery-video.js",
+        "js/blueimp-gallery-youtube.js",
+        "js/vendor/jquery.js",
+        "js/jquery.blueimp-gallery.js",
+        "js/demo/demo.js",
+
+
+
+
+
         'js/good/view.js',
 
 
@@ -31,6 +51,8 @@ class ViewAsset extends AssetBundle
     public $jsOptions = ['position' => \yii\web\View::POS_HEAD];
     public $depends = [
         AppAsset::class,
+
+
 //        'yii\bootstrap\BootstrapAsset',
     ];
 }

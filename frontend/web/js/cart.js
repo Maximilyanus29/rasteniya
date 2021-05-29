@@ -1,6 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+    const checkout_block = `<li class="checkout">
+                                <div>
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-right"><strong>Итого:</strong></td>
+                                            <td class="text-right">1234 р.</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <p class="text-right">
+                                        <a href="/cart" class="btn btn-primary">Оформление заказа</a>
+                                    </p>
+                                </div>
+                            </li>`;
+
+    const emptyCartBlock = `<li style="padding-top:0;border-top:none" class="cart_empty">
+                                <p class="text-center">Ваша корзина пуста!</p>
+                            </li>`;
+
     let smallCartBlockBuffer = null;
+
 
     const updateSecondCartWhenInHeaderLine = (block) => {
 
@@ -32,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             }
         });
+
+        // checkout_block
 
 
         const good_id = smallCard.querySelector('[data-id]');
@@ -84,7 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (issetInSmallCard == false){
 
                 const ul = cart__block.querySelector('.dropdown-menu');
-                ul.innerHTML = template + ul.innerHTML
+                ul.innerHTML = template + ul.innerHTML;
+                ul.querySelector('.cart_empty').remove();
+
+                if (!ul.querySelector('.checkout')){
+                    ul.innerHTML += checkout_block;
+                }
 
         }else{
 
@@ -196,11 +226,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     },
                     success: function(data) {
 
+                        let ul = target.closest('ul');
+
                         target.closest('li').remove();
 
-                        document.querySelectorAll('.table.table-bordered .text-right')[1].innerHTML = data.totalPrice + " р.";
+                        if (ul.querySelectorAll('li').length === 1){
+                            ul.innerHTML = emptyCartBlock;
 
-                        insertCountCart(data.count);
+                            insertCountCart(data.count);
+                        }else{
+                            document.querySelectorAll('.table.table-bordered .text-right')[1].innerHTML = data.totalPrice + " р.";
+
+                            insertCountCart(data.count);
+                        }
+
+
 
                         // updateSecondCartWhenInHeaderLine(target.closest('#cart'));
 
@@ -327,7 +367,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 
-    /*for good view end*/
+    /*for good view end
+    * */
 });
 
 

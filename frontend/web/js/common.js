@@ -65,18 +65,9 @@ $(function() {
 	$('#menu span.visible-xs').on('click', function() {
 		$(this).parent().toggleClass('open');
 	});
-	
-	uniMenuDropdownPos();
-	uniMenuAim();
-	
-	/* menu */
-	
-	if($(window).width() > 768) {
-		$('[data-toggle=\'tooltip\']').tooltip({container:'body', trigger:'hover'});
-		$(document).ajaxStop(function() {
-			$('[data-toggle=\'tooltip\']').tooltip({container:'body', trigger:'hover'});
-		});
-	}
+
+
+
 	
 	$('.add_to_cart.disabled').each(function(){
 		$(this).attr('disabled', true);
@@ -205,114 +196,6 @@ function select_view() {
 	} else {
 		grid_view();
 	}
-}
-
-function uniMenuDropdownPos() {
-	updMenuChild = function(){
-		var menu_block = $('#menu.menu2 .nav');
-		
-		if(menu_block.length) {
-			menu_block.find('> li > .dropdown-menu').each(function() {
-				var menu = menu_block.offset(), dropdown = $(this).parent().offset(), i = (dropdown.left + $(this).outerWidth()) - (menu.left + menu_block.outerWidth());
-				if (i > 0) $(this).css('margin-left', '-'+(i+1)+'px');
-			});
-		}
-	}
-	
-	updMenuChild();
-	
-	$(window).resize(function(){
-		setTimeout(function() { 
-			updMenuChild();
-		}, 100);
-	});
-}
-
-function uniMenuAim() {
-	
-	uniAim = function() {
-		$('#menu .nav').menuAim({
-			rowSelector:'> li',
-			submenuSelector:'*',
-			activate:open_menu,
-			deactivate:close_menu,
-			exitMenu:exit_menu
-		});
-		
-		function open_menu(data) {
-			$(data).addClass('open')
-		}
-	
-		function close_menu(data) {
-			$(data).removeClass('open')
-		}
-			
-		function exit_menu(data) {
-			return true
-		}
-	}
-	
-	if($(window).width() > 992) uniAim();
-	
-	$(window).resize(function(){
-		if($(window).width() > 992) uniAim();
-	});
-}
-
-function uniUpdRightMenu(menu2) {
-	
-	var menu2 = $(menu2);
-	
-	updRightMenu = function() {
-		
-		var menu_width = menu2.outerWidth(), menu_child = menu2.find('> li').not('.additional'), total_width = 0, new_items = '';
-		
-		if($(window).width() > 992) {
-		
-			if(menu2.find('.additional').length) menu_width = menu_width-50
-		
-			menu_child.each(function() {
-				total_width += $(this).outerWidth();
-				
-				var item = $(this).find('a');
-			
-				if(total_width > menu_width) {
-					new_items += '<li><a href="'+item.attr('href')+'">'+item.html()+'</a></li>';
-					$(this).hide();
-				} else {
-					$(this).show();
-				}
-			});
-		
-			if (total_width > menu_width && !menu2.find('.additional').length) {
-				html = '<li class="additional">';
-				html += '<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">';
-				html += '<span><i class="fa fa-ellipsis-h"></i></span>';
-				html += '</button>';
-				html += '<ul class="dropdown-menu dropdown-menu-right"></ul>';
-				html += '</li>';
-			
-				menu2.append(html)
-			}
-		
-			menu2.find('.additional ul').html(new_items)
-		
-			if(total_width < menu_width) {
-				menu2.find('.additional').remove();
-			}
-		} else {
-			menu_child.show()
-			menu2.find('.additional').remove();
-		}
-	}
-	
-	updRightMenu();
-	
-	$(window).resize(function(){
-		setTimeout(function() { 
-			updRightMenu();
-		}, 50);
-	});
 }
 
 function module_type_view(type, id, items) {
@@ -824,77 +707,6 @@ function scroll_text(target_div, target_text) {
 	});
 }
 
-
-
-// function uni_live_search(show_image, show_description, show_rating, show_price, show_limit, all_results, empty_results) {
-// 	data_id = 'div_search';
-// 	$('body').on('click', function() {$('.live-search').hide();});
-// 	$('header .form-control.input-lg').attr('autocomplete', 'off')
-//
-// 	$('body').on('input click', 'header .form-control.input-lg', function() {
-// 		data_id = $(this).parent().parent().attr('id');
-// 		if(!$('.'+data_id).size()) {
-// 			$(this).parent().after('<div id="live-search" class="live-search '+data_id+'"><ul></ul></div>');
-// 		}
-//
-// 		if ($(this).val().length >= 3) {
-// 			$.ajax({
-// 				url: 'index.php?route=unishop/search&filter_name='+$('#'+data_id+' input[name=\'search\']').val()+'&category_id='+$('#'+data_id+' input[name=\'filter_category_id\']').val(),
-// 				dataType: 'json',
-// 				beforeSend: function() {$('.'+data_id+' ul').html('<li style="text-align:center;"><i class="fa fa-spinner" aria-hidden="true"></i></li>');},
-// 				complete: function() {$('.'+data_id+' ul').html();},
-// 				success: function(result) {
-// 					var products = result.products;
-// 					$('.'+data_id+' ul li').remove();
-// 					if (!$.isEmptyObject(products)) {
-// 						$(products).each(function(index, product) {
-// 							html = '';
-// 							html += '<li onclick="location=\''+product.url+'\'">';
-// 							if (product.image && show_image) {html += '<div class="product-image"><img alt="'+product.name+'" src="'+product.image+'"></div>';}
-// 							html += '<div class="product-name">'+product.name;
-// 							if (show_description || show_rating) {
-// 								html += '<p>';
-// 								if (show_description) {html += '<span>'+product.description+'</span>';}
-// 								if (show_rating) {
-// 									html += '<span class="rating">';
-// 									for(var i=1; i <= 5; i++) {
-// 										if(product.rating < i) {
-// 											html += '<i class="fa fa-star-o"></i>';
-// 										} else {
-// 											html += '<i class="fa fa-star"></i>';
-// 										}
-// 									}
-// 									html += '</span>';
-// 								}
-// 								html += '</p>';
-// 							}
-// 							html += '</div>';
-// 							if(show_price){
-// 								if (product.special) {
-// 									html += '<div class="product-price"><span class="special">'+product.price+'</span><span class="price">'+product.special+'</span></div>';
-// 								} else {
-// 									html += '<div class="product-price"><span class="price">'+product.price+'</span></div>';
-// 								}
-// 							}
-// 							html += '</li>';
-// 							$('.'+data_id+' ul').append(html);
-// 						});
-// 						if(parseFloat(show_limit) < parseFloat(result.products_total)) {
-// 							var description = '';
-// 							if(show_description) {
-// 								var description = '&description=true';
-// 							}
-// 							$('.'+data_id+' ul').append('<li style="text-align:center;"><a href="index.php?route=product/search&search='+$('#'+data_id+' input[name=\'search\']').val()+''+description+'">'+all_results+' ('+result.products_total+')</a></li>');
-// 						}
-// 					} else {
-// 						$('.'+data_id+' ul').html('<li style="text-align:center;padding:5px 0;">'+empty_results+'</li>');
-// 					}
-// 					$('.'+data_id).css('display', 'block');
-// 				}
-// 			});
-// 		}
-// 	});
-// }
 
 
 

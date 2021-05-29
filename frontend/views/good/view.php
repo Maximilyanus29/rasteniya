@@ -17,6 +17,15 @@ use frontend\components\Helper;
 
     <div class="row">
         <div id="content" class="col-xs-12" data-id="<?= $good->id ?>">
+
+            <?php if ($good->provider->city_id != Helper::getCity()->id) : ?>
+                <div class="alert alert-danger" role="alert">
+                    Внимание! Этот товар находится в городе <?= $good->provider->city->name ?>
+                </div>
+            <?php endif; ?>
+
+
+
             <div id="product" class="row product-block">
 
                 <div class="col-sm-12">
@@ -31,24 +40,83 @@ use frontend\components\Helper;
 
                 <div class="col-sm-6 col-md-5">
 
-                    <section class="cd-single-item">
-                        <div class="cd-slider-wrapper">
-                            <ul class="cd-slider">
-                                <li class="selected">
-                                    <img src="<?= $good->getImage()->getUrl() ?>" alt="Product Image 1">
-                                </li>
-                                <?php foreach ($good->getImages() as $image) : ?>
-                                    <li><img src="<?= $image->getUrl() ?>" alt="Product Image 1"></li>
-                                <?php endforeach; ?>
 
-                            </ul>
-                            <ul class="cd-slider-navigation">
-                                <li><a class="cd-prev inactive">Next</a></li>
-                                <li><a class="cd-next">Prev</a></li>
-                            </ul>
-                            <a  class="cd-close">Close</a>
-                        </div>
-                    </section>
+
+                    <p>
+                        <input type="checkbox" id="fullscreen" />
+                        <label for="fullscreen">Полный экран</label>
+                    </p>
+                    <!-- The container for the list of example images -->
+                    <div id="links" class="links">
+
+                        <?php foreach ($good->getImages() as $image) : ?>
+                            <a title="<?= $good->name ?>" href="<?= $image->getUrl() ?>"
+                               data-srcset="
+                               <?= $image->getUrl('75') ?> 75w,
+                               <?= $image->getUrl('150') ?> 150w,
+                               <?= $image->getUrl('100') ?> 100w,
+                               <?= $image->getUrl('240') ?> 240w,
+                               <?= $image->getUrl('320') ?> 320w,
+                               <?= $image->getUrl('500') ?> 500w,
+                               <?= $image->getUrl('640') ?> 640w,
+                               <?= $image->getUrl('800') ?> 800w,
+                               <?= $image->getUrl('1024') ?> 1024w,
+                               <?= $image->getUrl('1600') ?> 1600w,
+                               <?= $image->getUrl('2048') ?> 2048w"
+                               data-gallery="">
+
+                                <img loading="lazy"
+                                     src="<?= $image->getUrl() == $good->getImage()->getUrl() ? $image->getUrl() : $image->getUrl('75x75') ?>"
+                                     alt="<?= $good->name ?>">
+                            </a>
+
+
+                        <?php endforeach; ?>
+
+
+
+                    </div>
+                    <!-- The Gallery as lightbox dialog -->
+                    <div
+                            id="blueimp-gallery"
+                            class="blueimp-gallery"
+                            aria-label="image gallery"
+                            aria-modal="true"
+                            role="dialog"
+                    >
+                        <div class="slides" aria-live="polite"></div>
+                        <h3 class="title"></h3>
+                        <a
+                                class="prev"
+                                aria-controls="blueimp-gallery"
+                                aria-label="previous slide"
+                                aria-keyshortcuts="ArrowLeft"
+                        ></a>
+                        <a
+                                class="next"
+                                aria-controls="blueimp-gallery"
+                                aria-label="next slide"
+                                aria-keyshortcuts="ArrowRight"
+                        ></a>
+                        <a
+                                class="close"
+                                aria-controls="blueimp-gallery"
+                                aria-label="close"
+                                aria-keyshortcuts="Escape"
+                        ></a>
+                        <a
+                                class="play-pause"
+                                aria-controls="blueimp-gallery"
+                                aria-label="play slideshow"
+                                aria-keyshortcuts="Space"
+                                aria-pressed="false"
+                                role="button"
+                        ></a>
+                        <ol class="indicator"></ol>
+                    </div>
+
+
+
 
                 </div>
 
@@ -145,25 +213,25 @@ use frontend\components\Helper;
                     </div>
                     <hr>
                 </div>
-                <div class="col-sm-12 col-md-2">
-                    <div class="product_button btn-group hidden-xs hidden-sm">
-                        <button type="button" data-toggle="tooltip" class="btn btn-default" title=""
-                                onclick="callback(&#39;Вопрос о товаре&#39;, &#39;335&#39;);"
-                                data-original-title="Вопрос о товаре"><i class="fa fa-question"></i></button>
-                        <button type="button" data-toggle="tooltip" class="wishlist btn btn-default" title=""
-                                onclick="wishlist.add(&#39;335&#39;);" data-original-title="В закладки"><i
-                                class="fa fa-heart"></i></button>
-                        <button type="button" data-toggle="tooltip" class="compare btn btn-default" title=""
-                                onclick="compare.add(&#39;335&#39;);" data-original-title="В сравнение"><i
-                                class="fa fa-exchange-alt"></i></button>
-                    </div>
-                    <div class="row">
-                        <div class="product_banners">
-                            <script>max_height_div('.product_banners div div');</script>
-                        </div>
-                    </div>
-                    <hr class="visible-xs visible-sm">
-                </div>
+<!--                <div class="col-sm-12 col-md-2">-->
+<!--                    <div class="product_button btn-group hidden-xs hidden-sm">-->
+<!--                        <button type="button" data-toggle="tooltip" class="btn btn-default" title=""-->
+<!--                                onclick="callback(&#39;Вопрос о товаре&#39;, &#39;335&#39;);"-->
+<!--                                data-original-title="Вопрос о товаре"><i class="fa fa-question"></i></button>-->
+<!--                        <button type="button" data-toggle="tooltip" class="wishlist btn btn-default" title=""-->
+<!--                                onclick="wishlist.add(&#39;335&#39;);" data-original-title="В закладки"><i-->
+<!--                                class="fa fa-heart"></i></button>-->
+<!--                        <button type="button" data-toggle="tooltip" class="compare btn btn-default" title=""-->
+<!--                                onclick="compare.add(&#39;335&#39;);" data-original-title="В сравнение"><i-->
+<!--                                class="fa fa-exchange-alt"></i></button>-->
+<!--                    </div>-->
+<!--                    <div class="row">-->
+<!--                        <div class="product_banners">-->
+<!--                            <script>max_height_div('.product_banners div div');</script>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr class="visible-xs visible-sm">-->
+<!--                </div>-->
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -196,37 +264,43 @@ use frontend\components\Helper;
                                     </div>
                                 </div>
                             </div>
-                            <form class="form-horizontal" id="form-review">
+                            <form class="form-horizontal" id="form-review" action="/common/create-review" method="post">
+                                <input type="hidden" name="<?=Yii::$app->request->csrfParam; ?>" value="<?=Yii::$app->request->getCsrfToken(); ?>" />
                                 <div class="rev_form well well-sm">
                                     <div class="form-group required">
                                         <div class="col-sm-12">
                                             <label class="control-label" for="input-name">Ваше имя</label>
-                                            <input type="text" name="name" value="" id="input-name"
+                                            <input type="text" name="Review[username]" value="" id="input-name"
                                                    class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group required">
                                         <div class="col-sm-12">
                                             <label class="control-label"
-                                                   for="input-review-minus">Достоинства:</label>
-                                            <textarea name="plus" rows="5" id="input-review-minus"
+                                                   for="input-review-minus"
+                                                   name="Review[disadvantages]"
+                                            >Достоинства:</label>
+                                            <textarea name="Review[dignity]" rows="5" id="input-review-minus"
                                                       class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group required">
                                         <div class="col-sm-12">
                                             <label class="control-label" for="input-review-plus">Недостатки:</label>
-                                            <textarea name="minus" rows="5" id="input-review-plus"
+                                            <textarea name="Review[disadvantages]" rows="5" id="input-review-plus"
                                                       class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group required">
                                         <div class="col-sm-12">
                                             <label class="control-label" for="input-review">Ваш отзыв</label>
-                                            <textarea name="text" rows="5" id="input-review"
+                                            <textarea name="Review[comment]" rows="5" id="input-review"
                                                       class="form-control"></textarea>
-                                            <div class="help-block"><span style="color: #FF0000;">Примечание:</span>
+                                            <div class="help-block">
+                                                <span style="color: #FF0000;">Примечание:</span>
                                                 HTML разметка не поддерживается! Используйте обычный текст.
+
+                                                <span style="color: #FF0000;" id="review_form_hint">Необходимо заполнить все поля</span>
                                             </div>
                                         </div>
                                     </div>
@@ -234,21 +308,23 @@ use frontend\components\Helper;
                                         <div class="col-sm-12">
                                             <label class="control-label">Рейтинг</label>
                                             <div class="review_star">
-                                                <input type="radio" name="rating" value="1">
-                                                <input type="radio" name="rating" value="2">
-                                                <input type="radio" name="rating" value="3">
-                                                <input type="radio" name="rating" value="4">
-                                                <input type="radio" name="rating" value="5">
-                                                <div class="stars">
-                                                    <i class="far fa-star"></i><i class="far fa-star"></i><i
-                                                        class="far fa-star"></i><i class="far fa-star"></i><i
-                                                        class="far fa-star"></i>
+                                                <div class="rating-area">
+                                                    <input type="radio" id="star-5" name="Review[rating]" value="5">
+                                                    <label for="star-5" title="Оценка «5»"></label>
+                                                    <input type="radio" id="star-4" name="Review[rating]" value="4">
+                                                    <label for="star-4" title="Оценка «4»"></label>
+                                                    <input type="radio" id="star-3" name="Review[rating]" value="3">
+                                                    <label for="star-3" title="Оценка «3»"></label>
+                                                    <input type="radio" id="star-2" name="Review[rating]" value="2">
+                                                    <label for="star-2" title="Оценка «2»"></label>
+                                                    <input type="radio" id="star-1" name="Review[rating]" value="1">
+                                                    <label for="star-1" title="Оценка «1»"></label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="text-right clearfix">
-                                        <button type="button" id="button-review" data-loading-text="Загрузка..."
+                                        <button type="submit" id="button-review" data-loading-text="Загрузка..."
                                                 class="btn btn-primary">Отправить свой отзыв
                                         </button>
                                     </div>
@@ -259,82 +335,9 @@ use frontend\components\Helper;
                 </div>
             </div>
             <hr>
-<!--            <div class="row product_carousel">-->
-<!--                <h3 class="heading">-->
-<!--                    <span>Рекомендуем посмотреть</span>-->
-<!--                </h3>-->
-<!--                <div class="products product_related owl-carousel owl-theme" style="opacity: 1; display: block;">-->
-<!--                    <div class="owl-wrapper-outer">-->
-<!--                        <div class="owl-wrapper" style="width: 580px; left: 0px; display: block;">-->
-<!--                            <div class="owl-item" style="width: 290px;">-->
-<!--                                <div class="product-layout">-->
-<!--                                    <div class="product-thumb transition">-->
-<!--                                        <div class="image">-->
-<!--                                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-">-->
-<!--                                                <img src="/images/_сосны с лого 3-200x180.png"-->
-<!--                                                     alt="Семена сосны обыкновенной "-->
-<!--                                                     title="Семена сосны обыкновенной " class="img-responsive">-->
-<!--                                            </a>-->
-<!--                                        </div>-->
-<!--                                        <div class="caption">-->
-<!--                                            <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"-->
-<!--                                               style="height: 22px;">Семена сосны обыкновенной </a>-->
-<!--                                            <p class="description" style="height: 80px;">Сосна обыкновенная.-->
-<!--                                                Семена развиваются в шишках, которые созревают поздно осенью-->
-<!--                                                следующего года,-->
-<!--                                                ..</p>-->
-<!--                                            <div id="option_406" class="option">-->
-<!--                                            </div>-->
-<!--                                            <div class="rating">-->
-<!--                                                    <span class="fa fa-stack"><i-->
-<!--                                                            class="far fa-star fa-stack-2x"></i></span>-->
-<!--                                                <span class="fa fa-stack"><i-->
-<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
-<!--                                                <span class="fa fa-stack"><i-->
-<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
-<!--                                                <span class="fa fa-stack"><i-->
-<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
-<!--                                                <span class="fa fa-stack"><i-->
-<!--                                                        class="far fa-star fa-stack-2x"></i></span>-->
-<!--                                                <sup><a onclick="location=&#39;http://opt.voodland.com/semena/semena-sosny-obyknovennoj-#tab-review&#39;"></a></sup>-->
-<!--                                            </div>-->
-<!--                                            <p class="price">-->
-<!--                                                9000.00р. </p>-->
-<!--                                        </div>-->
-<!--                                        <div class="cart">-->
-<!--                                            <button type="button" class="add_to_cart button btn btn-default  406"-->
-<!--                                                    data-toggle="tooltip" title=""-->
-<!--                                                    onclick="cart.add(&#39;406&#39;);"-->
-<!--                                                    data-original-title="В корзину"><i-->
-<!--                                                    class="fa fa-shopping-basket"></i><span class="hidden-sm">В корзину</span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="wishlist btn btn-default"-->
-<!--                                                    data-toggle="tooltip" title=""-->
-<!--                                                    onclick="wishlist.add(&#39;406&#39;);"-->
-<!--                                                    data-original-title="В закладки"><i class="fa fa-heart"></i>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="compare btn btn-default"-->
-<!--                                                    data-toggle="tooltip" title=""-->
-<!--                                                    onclick="compare.add(&#39;406&#39;);"-->
-<!--                                                    data-original-title="В сравнение"><i-->
-<!--                                                    class="fa fa-exchange-alt"></i></button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="owl-controls clickable" style="display: none;">-->
-<!--                        <div class="owl-buttons">-->
-<!--                            <div class="owl-prev"><i class="fa fa-chevron-left"></i></div>-->
-<!--                            <div class="owl-next"><i class="fa fa-chevron-right"></i></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <script>
-                module_type_view('carousel', '.product_related');
-            </script>
+
+
+
             <hr>
             <p>
                 <i class="fa fa-tag" data-toggle="tooltip" title="" data-original-title="Теги:"></i>

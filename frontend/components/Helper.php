@@ -36,19 +36,18 @@ class Helper
     }
 
 
+
+//    public static  function getCity()
+//    {
+//        $domain = Yii::$app->request->serverName;
+//
+//        return City::findOne(['slug' => explode('.', $domain)[0]])->name;
+//    }
     public static  function getCity()
     {
-
         $domain = Yii::$app->request->serverName;
 
-
-
-        return City::findOne(['slug' => explode('.', $domain)[0]])->name;
-
-
-
-
-
+        return City::findOne(['slug' => explode('.', $domain)[0]]);
     }
 
 }

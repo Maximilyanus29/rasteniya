@@ -2,6 +2,7 @@
 
 namespace frontend\models;
 
+use frontend\components\Helper;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use common\models\Good as GoodModel;
@@ -104,9 +105,6 @@ class GoodSearch extends GoodModel
                 ['=','category.parent_id', $this->category_id],
             ])
             ->andFilterWhere(['like', 'description', $this->description]);
-
-
-//        var_dump($this->order);die;
 
 
 

@@ -23,6 +23,8 @@
 })(function ($, Gallery) {
   'use strict'
 
+  console.log(Gallery)
+
   var galleryPrototype = Gallery.prototype
 
   $.extend(galleryPrototype.options, {

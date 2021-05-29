@@ -89,7 +89,9 @@
                                 <span class="prmn-cmngr__title-text"></span>
                                 <a class="prmn-cmngr__city">
                                     <span class="glyphicon glyphicon-map-marker fa fa-map-marker"></span>
-                                    <span class="prmn-cmngr__city-name"><?= !empty(\frontend\components\Helper::getCity()) ? \frontend\components\Helper::getCity() : "Выберите город"?></span>
+                                    <span class="prmn-cmngr__city-name"  data-toggle="modal" data-target="#change_city">
+                                        <?= !empty(\frontend\components\Helper::getCity()) ? \frontend\components\Helper::getCity()->name : "Выберите город"?>
+                                    </span>
                                 </a>
                             </div>
                             <div class="prmn-cmngr__confirm" style="display: none;">
@@ -109,7 +111,7 @@
                 <li><a href="/page/about" title="О компании">О компании</a></li>
                 <li><a href="/page/policy"
                        title="Условия соглашения">Условия соглашения</a></li>
-                <li><a href="/blog/index" title="Статьи">Статьи</a></li>
+                <li><a href="/blog" title="Статьи">Статьи</a></li>
 
             </ul>
         </div>

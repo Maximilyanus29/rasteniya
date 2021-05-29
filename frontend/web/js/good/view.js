@@ -1,4 +1,5 @@
 
+
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
     $.ajax({
         url: 'index.php?route=product/product/getRecurringDescription',
@@ -112,64 +113,8 @@ $('#button-review').on('click', function() {
         }
     });
 });
-/*
-
-$(document).ready(function() {
-    $('.thumbnails').magnificPopup({
-        type:'image',
-        delegate: 'a',
-        gallery: {
-            enabled: true
-        }
-    });
-});
-*/
 
 
 
-//
-// document.addEventListener('DOMContentLoaded', () => {
-//
-//     const button_to_cart = document.getElementById('button-cart');
-//     const input_quantity = document.getElementById('input-quantity');
-//
-//     console.log(button_to_cart);
-//
-//     button_to_cart.addEventListener('click', event => {
-//         let target = event.target;
-//
-//         if (target.tagName !== "BUTTON"){
-//             target = target.closest('button');
-//         }
-//
-//         console.log(target)
-//         console.log(target.dataset.id)
-//
-//
-//
-//
-//         $.ajax({
-//             url: `/cart/add-to-cart`,
-//             type: 'get',
-//             dataType: 'json',
-//             data: {
-//                 id : target.dataset.id,
-//                 quantity : input_quantity.value,
-//             },
-//             success: function(data) {
-//
-//
-//
-//
-//                 return true;
-//
-//             }
-//         });
-//
-//     })
-//
-//
-//
-// });
-//
+
 

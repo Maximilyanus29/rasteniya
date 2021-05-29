@@ -64,7 +64,7 @@ $cart = Yii::$app->cart;
                                         <tr>
                                             <td class="image">
                                                 <a href="/good/<?= $product->provider->slug ?>/<?= $product->slug ?>">
-                                                    <img src="124512" alt="<?= $product->name ?>"
+                                                    <img src="<?= $product->getImage()->getUrl('40x40') ?>" alt="<?= $product->name ?>"
                                                          title="<?= $product->name ?>"
                                                          class="img-thumbnail">
                                                 </a>
@@ -107,7 +107,7 @@ $cart = Yii::$app->cart;
 
                             <?php endforeach;?>
 
-                            <li>
+                            <li class="checkout">
                                 <div>
                                     <table class="table table-bordered">
                                         <tbody>
@@ -119,13 +119,13 @@ $cart = Yii::$app->cart;
                                         </tbody>
                                     </table>
                                     <p class="text-right">
-                                        <a href="index.php?route=checkout/uni_checkout" class="btn btn-primary">Оформление заказа</a>
+                                        <a href="/cart" class="btn btn-primary">Оформление заказа</a>
                                     </p>
                                 </div>
                             </li>
 
                         <?php else: ?>
-                            <li style="padding-top:0;border-top:none">
+                            <li style="padding-top:0;border-top:none" class="cart_empty">
                                 <p class="text-center">Ваша корзина пуста!</p>
                             </li>
                         <?php endif; ?>
@@ -211,7 +211,7 @@ $cart = Yii::$app->cart;
 <!--                            Купить оптом </a>-->
 <!--                    </li>-->
                 </ul>
-                <script>uniUpdRightMenu('.menu_links');</script>
+
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-4 col-md-pull-8 col-lg-pull-9 col-xl-pull-8">
 

@@ -74,7 +74,7 @@ return [
 
         'cart' => [
             'class' => 'frontend\components\cart\Cart',
-            'storageClass' => 'devanych\cart\storage\SessionStorage',
+            'storageClass' => 'frontend\components\cart\CookieStorage',
             'calculatorClass' => 'frontend\components\cart\CalculatorForCart',
             'cartItemClass' => 'frontend\components\cart\CartItem',
             'params' => [
@@ -86,6 +86,20 @@ return [
                 'productFieldDiscountPrice' => 'discount_price',
             ],
         ],
+
+
+//        'cart' => [
+//            'class' => 'devanych\cart\Cart',
+//            'storageClass' => 'devanych\cart\storage\CookieStorage',
+//            'calculatorClass' => 'devanych\cart\calculators\SimpleCalculator',
+//            'params' => [
+//                'key' => 'favorite',
+//                'expire' => 604800,
+//                'productClass' => 'common\models\Good',
+//                'productFieldId' => 'id',
+//                'productFieldPrice' => 'price',
+//            ],
+//        ],
 
         'favorite' => [
             'class' => 'devanych\cart\Cart',

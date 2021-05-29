@@ -5,6 +5,7 @@ use common\models\Category;
 use common\models\City;
 use common\models\Good;
 use common\models\GoodType;
+use common\models\Review;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -35,7 +36,6 @@ class CommonController extends Controller
                 'class' => ContentNegotiator::className(),
                 'formats' => [
                     'application/json' => Response::FORMAT_JSON,
-//                    'application/xml' => Response::FORMAT_XML,
                 ],
 //                'languages' => [
 //                    'ru-RU',
@@ -46,6 +46,7 @@ class CommonController extends Controller
                 'actions' => [
                     'city-autocomplete'  => ['get'],
                     'good-autocomplete'  => ['get'],
+                    'create-review'  => ['post'],
                 ],
             ],
         ];
@@ -78,6 +79,42 @@ class CommonController extends Controller
             ->join('LEFT JOIN', 'provider', 'provider.id = good.provider_id')
             ->limit(6)
             ->all();
+
+    }
+
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionCreateReview()
+    {
+        $model = new Review();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()){
+
+
+            foreach ($model->getAttributes() as $attributeName => $attribute){
+                $model->$attributeName = htmlspecialchars($attribute);
+            }
+
+            if ($model->save()){
+                return [
+                    'success' => true,
+                    'messege' => "Отзыв успешно создан",
+                ];
+            }else{
+                return [
+                    'success' => false,
+                    'messege' => "Не получилось",
+                ];
+            }
+        }
+
+
+
+
 
     }
 
