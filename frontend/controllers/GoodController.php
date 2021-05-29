@@ -54,48 +54,12 @@ class GoodController extends Controller
 
         $goods = $dataProvider->query->all();
 
-
-        /*Сортировка начало:
-        Если текущий город совпадает с городом товара то тру, если нет, то сортируем товары по отдаленности от города*/
-        $city = Helper::getCity();
-        $cityHW = Helper::getCity()->lat + Helper::getCity()->lng;
-        $issetInThisCityArr = [];
-        $goodsHW = [];
-        foreach ($goods as $key =>  $good){
-            if ($good->provider->city_id == $city->id){
-                $issetInThisCityArr[$key] = true;
-            }else{
-                $goodsHW[$key] = ($good->provider->city->lat + $good->provider->city->lng) - $cityHW;
-                $issetInThisCityArr[$key] = false;
-            }
-        }
-        sort($goodsHW);
-        $recommendedGoods = [];
-
-        foreach ($goodsHW as $key =>  $goodHW){
-            $recommendedGoods[$key] = $goods[$key];
-        }
-        /*Сортировка конец*/
-
-
-        /*чистим гуды*/
-        foreach($goods as $goodKey => $good) {
-            if(array_key_exists($goodKey, $recommendedGoods)) {
-                unset($goods[$goodKey]);
-            }
-        }
-
-        if (empty($goods)){
-            $issetInThisCity = false;
-        }
-
-
+        $goods = Good::sortByCity($goods);
 
         return $this->render('search', [
-            'goods' => $goods,
+            'goods' => $goods['goods'],
             'searchModel' => $searchModel,
-            'issetInThisCity' => $issetInThisCity,
-            'recommendedGoods' => $recommendedGoods,
+            'recommendedGoods' => $goods['recommended'],
         ]);
     }
 

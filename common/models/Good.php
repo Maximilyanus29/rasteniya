@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use frontend\components\Helper;
 use Yii;
 use yii\behaviors\SluggableBehavior;
 
@@ -104,5 +105,44 @@ class Good extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Provider::className(), ['id' => 'provider_id']);
     }
+
+    public static function sortByCity($goods)
+    {
+        $currentCity = Helper::getCity();
+        $currentCityCoordinats = Helper::getCity()->lat + Helper::getCity()->lng;
+
+        $recommendedGoods = [];
+        $resGoods = [];
+        $mapCoordinatsSum = [];
+
+        for ($i = 0; $i < count($goods)  ; $i++){
+            $good = $goods[$i];
+            if ($good->provider->city_id === $currentCity->id){
+                $resGoods[] = $goods[$i];
+            }else{
+                $mapCoordinatsSum[$i] = abs(($good->provider->city->lat + $good->provider->city->lng) - $currentCityCoordinats);
+            }
+        }
+
+        sort($mapCoordinatsSum);
+
+        for ($i = 0; $i < count($goods)  ; $i++){
+            $good = $goods[$i];
+            $key = array_search (abs(($good->provider->city->lat + $good->provider->city->lng) - $currentCityCoordinats), $mapCoordinatsSum);
+            if ($key !== false){
+                $recommendedGoods[$key] = $good;
+                unset($mapCoordinatsSum[$key]);
+            }
+        }
+
+        return[
+            'goods' => $resGoods,
+            'recommended' => $recommendedGoods,
+        ];
+    }
+
+
+
+
 
 }
