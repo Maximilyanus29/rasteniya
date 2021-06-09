@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use common\models\Category;
 use common\models\Good;
 use common\models\GoodType;
+use common\models\Provider;
 use frontend\components\Helper;
 use frontend\models\GoodSearch;
 use frontend\models\ResendVerificationEmailForm;
@@ -120,9 +121,11 @@ class GoodController extends Controller
      */
     public function actionView($provider, $slug)
     {
-        $good = Good::find()->where(['slug'=> $slug])->limit(1)->one();
+        $provider = Provider::findOne(['slug' => $provider]);
 
-        if (empty($good)){
+        $good = Good::find()->where(['slug'=> $slug, 'provider_id' => $provider->id])->limit(1)->one();
+
+        if (empty($provider) || empty($good)){
             throw new HttpException(404);
         }
 

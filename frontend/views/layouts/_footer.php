@@ -1,8 +1,5 @@
 <div class="clear container"></div>
-<i class="fa fa-chevron-up scroll_up" onclick="scroll_to(&#39;body&#39;)"></i>
-<div class="show_quick_order"></div>
-<div class="show_callback"></div>
-<div class="show_login_register"></div>
+
 
 <!--<div id="subscribe">-->
 <!--    <form name="subscribe" class="container">-->
@@ -45,11 +42,8 @@
                 <ul class="list-unstyled">
                     <li><a href="/good/sale"><i class="fa fa-chevron-right"></i>Акции</a></li>
                     <li><a href="/page/contacts"><i class="fa fa-chevron-right"></i>Контакты</a></li>
-<!--                    <li><a href="http://voodland.com/bezopasnost-platezhej"><i class="fa fa-chevron-right"></i>Безопасность платежей</a></li>-->
                     <li><a href="/page/about"><i class="fa fa-chevron-right"></i>О компании</a></li>
-<!--                    <li><a href="http://voodland.com/dostavka"><i class="fa fa-chevron-right"></i>Доставка и Оплата</a></li>-->
                     <li><a href="/page/policy"><i class="fa fa-chevron-right"></i>Политика конфиденциальности</a></li>
-<!--                    <li><a href="/page/policy"><i class="fa fa-chevron-right"></i>Условия соглашения</a></li>-->
                 </ul>
             </div>
             <div class="col-sm-6 col-md-3">
@@ -69,7 +63,7 @@
                 <h5 class="heading"><i class="fa fa-thumbtack"></i><span>Дополнительно</span></h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="/page/cooperation">							<i class="fa fa-chevron-right"></i>Сотрудничество						</a>					</li>
+                        <a href="/page/cooperation"><i class="fa fa-chevron-right"></i>Сотрудничество</a></li>
                     <li>
                         <a href="https://ru.jooble.org/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81%D0%B0%D0%B4%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA-%D1%81-%D0%BF%D1%80%D0%BE%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC">							<i class="fa fa-chevron-right"></i>Вакансии для садовников						</a>					</li>
                 </ul>

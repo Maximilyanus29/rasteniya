@@ -51,31 +51,34 @@
                 </p>
                 <input value="Поиск" type="submit" id="button-search" class="btn btn-primary">
                 <hr>
-                <h3 class="heading">
-                    <span>Товары, соответствующие критериям поиска</span></h3>
-                <p style="margin:0">
-                    <a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (2)</a>
-                </p>
+
+                <?php if (!empty($goods)) : ?>
+                    <h3 class="heading">
+                        <span>Товары, соответствующие критериям поиска</span></h3>
+                    <p style="margin:0">
+                        <a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (2)</a>
+                    </p>
+
+                    <?= $this->render('_sort', ['searchModel'=> $searchModel]) ?>
+
+                <?php else: ?>
+                    <p style="font-size: 4rem"> Товаров в вашем городе не найдено</p>
+                <?php endif; ?>
 
 
-                <?= $this->render('_sort', ['searchModel'=> $searchModel]) ?>
+
 
             </form>
 
 
 
             <div class="row">
-
                 <?php if (!empty($goods)) : ?>
                     <?= $this->render('_goods', ['goods' => $goods]) ?>
-                <?php else: ?>
-                    <p style="font-size: 4rem"> Товаров в вашем городе не найдено</p>
                 <?php endif; ?>
 
-                <h2>Товары из других городов</h2>
+                <h2>Товары из других городов отсортированные по близжайшему городу</h2>
                 <?= $this->render('_goods', ['goods' => $recommendedGoods]) ?>
-
-
 
             </div>
             <div class="pagination_wrap row">

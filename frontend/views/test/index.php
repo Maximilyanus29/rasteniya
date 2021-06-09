@@ -1,4 +1,18 @@
-<form name="file_upload" method="POST" enctype="multipart/form-data">
-    <label>Ваш аватар: <input type="file" name="avatar"></label>
-    <input type="submit" name="send" value="Отправить файл">
-</form>
+<div class="container">
+    <select class="js-example-basic-single" name="state">
+    </select>
+
+
+</div>
+
+
+<style>
+    select{
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 600px;
+    }
+</style>
+

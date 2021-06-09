@@ -127,7 +127,7 @@ use frontend\components\Helper;
                             <div class="row">
                                 <div class="col-sm-6 col-md-6">Производитель:
                                     <a data-href href="/provider/<?= $good->provider->slug ?>">
-                                        <span data-name ><?= $good->provider->name ?></span>
+                                        <span class="provider-id" data-name="<?= $good->provider_id ?>" ><?= $good->provider->name ?></span>
                                     </a>
                                 </div>
                                 <div class="col-sm-6 col-md-6">Артикул: <?= $good->vendor_code ?></div>

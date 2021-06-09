@@ -75,4 +75,9 @@ class OrderItem extends \yii\db\ActiveRecord
 
 
 
+    public function getGood()
+    {
+        return $this->hasOne(Good::class, ['id' => 'good_id']);
+    }
+
 }

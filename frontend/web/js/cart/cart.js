@@ -1,10 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    $('#modal-info').iziModal();
+
+    if (document.querySelector('.check-sum-cart-on-all-provider')){
+        $.ajax({
+            url: `/cart/check-cart-for-min-price-order`,
+            type: 'get',
+            dataType: 'json',
+            success: function(data) {
+                if (data.notice){
+                    $('#modal-info p').html(data.notice);
+                    $('#modal-info').iziModal('open');
+                }
+
+
+            }
+        });
+    }
+
+
+
+
+
+
+
     let smallCartBlockBuffer = null;
 
     const updateSecondCartWhenInHeaderLine = (block) => {
-
-
 
         const cart__blocks = document.querySelectorAll('#cart');
 
@@ -15,14 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.innerHTML = cart__blocks_open.innerHTML;
             });
         },1100)
-
-
-
-
-
-
-
-
 
 
     };
@@ -145,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             success: function(data) {
 
-                console.log(data.goodtotalPrice)
+                // console.log(data.goodtotalPrice)
 
                 li.querySelector('.total.text-right').innerHTML = data.goodtotalPrice + " р.";
 
@@ -162,6 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 insertCountCart(data.count);
+
+                // if (data.notice){
+                //     $('#modal-info p').html(data.notice);
+                //     $('#modal-info').iziModal('open');
+                // }
 
                 // updateSecondCartWhenInHeaderLine(li.closest('#cart'));
 

@@ -3,9 +3,10 @@
 /* @var $content string */
 
 use frontend\assets\AppAsset;
+use frontend\assets\CustomAsset;
 use yii\helpers\Html;
 
-AppAsset::register($this);
+CustomAsset::register($this);
 
 $providers = \common\models\Provider::find()->all();
 
@@ -46,31 +47,19 @@ $request = Yii::$app->request;
 
 
 <!-- Modal -->
-<div class="modal fade" id="change_city" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <p>Выберете город</p>
-            <ul class="list">
-                <?php foreach ($providers as $provider) : ?>
-                    <li><a href="//<?= $provider->city->slug ?>.rasteniya"><?= $provider->city->name ?></a></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
+<div  id="change_city" >
+    <div class="myclass">
+    <?php foreach ($providers as $provider) : ?>
 
+        <li><a href="//<?= $provider->city->slug ?>.rasteniya"><?= $provider->city->name ?></a></li>
+    <?php endforeach; ?>
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="review_response" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <p class="text">Выберете город</p>
-        </div>
-
-    </div>
+<div  id="modal-info" class="modal-info" >
+    <p></p>
 </div>
+
 
 
 

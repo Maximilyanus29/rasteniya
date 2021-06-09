@@ -1,8 +1,10 @@
 <?php
 return [
+    'language' => 'ru-RU',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@telegram' => '@vendor/danog/MadelineProto',
         '@root'   => '@app/..',
         '@imageBuffer'   => '@root/files/images/buffer',
         '@imageCache'   => '@root/files/images/cache',

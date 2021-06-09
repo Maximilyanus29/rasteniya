@@ -11,10 +11,20 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+
     'components' => [
         'request' => [
             'baseUrl' => '',
             'csrfParam' => '_csrf-frontend',
+
+            'as sypexGeo' => [
+                'class' => 'omnilight\sypexgeo\GeoBehavior',
+                // It is not required to define property sypexGeo if you have sypexGeo component defined
+                // in your application
+                'sypexGeo' => [
+                    'database' => '@app/data/SxGeoCity.dat',
+                ]
+            ],
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -125,6 +135,15 @@ return [
                 'productFieldId' => 'id',
                 'productFieldPrice' => 'price',
             ],
+        ],
+
+        'sypexGeo' => [
+            'class' => 'omnilight\sypexgeo\SypexGeo',
+            'database' => '@app/data/SxGeoCity.dat',
+        ],
+        'telegram' => [
+            'class' => 'aki\telegram\Telegram',
+            'botToken' => '1787171127:AAE_R9bTULvzTH4A8e9oJEf9KUxKXmpRnfc',
         ],
 
     ],

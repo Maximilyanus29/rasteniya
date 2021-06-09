@@ -11,9 +11,6 @@ $this->title = "Поставщики";
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="provider-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a(Yii::t('app', 'Создать поставщика'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>

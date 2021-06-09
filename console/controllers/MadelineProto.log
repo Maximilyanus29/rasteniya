@@ -1,0 +1,963 @@
+[33;1mLogger, justMomentPleaseOne:         	Automatically truncated logfile to 1048576[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761152088591361) is bigger than or equal to the current limit (6970761152088565761). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updateShort[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 0 incoming messages, 1 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761281765295105) is bigger than or equal to the current limit (6970761281765285889). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761411638947841) is bigger than or equal to the current limit (6970761411638924289). Consider syncing your date.[0m
+[32;1mGarbageCollector, justMomentPleaseOne: 	gc_collect_cycles done. Cleaned memory: 2 Mb[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761541584529409) is bigger than or equal to the current limit (6970761541584503809). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426688[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426692[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426696[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426700[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426704[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426708[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761676941426720[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761671134613505) is bigger than or equal to the current limit (6970761671134601217). Consider syncing your date.[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445568[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445572[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445576[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445580[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445584[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445588[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761805790445600[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761800871540737) is bigger than or equal to the current limit (6970761800871527425). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464448[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464452[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464456[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464460[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464464[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464468[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970761934639464472[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761930944295937) is bigger than or equal to the current limit (6970761930944271361). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970761936470994945) is bigger than or equal to the current limit (6970761936470964225). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 13 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762060420657153) is bigger than or equal to the current limit (6970762060420645889). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updateShort[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 0 incoming messages, 1 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762190131894273) is bigger than or equal to the current limit (6970762190131881985). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762213812338688[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 1 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762319638343681) is bigger than or equal to the current limit (6970762319638328321). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762449374166017) is bigger than or equal to the current limit (6970762449374148609). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762579168266241) is bigger than or equal to the current limit (6970762579168229377). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545024[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545028[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545032[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545044[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545048[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545052[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970762712028545056[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762708838984705) is bigger than or equal to the current limit (6970762708838977537). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762838614225921) is bigger than or equal to the current limit (6970762838614203393). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updates) received via the socket...[0m
+[32;1mSeqLoop, justMomentPleaseOne:        	Was fed updates of type updates...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop channel 1237513492[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updateShort[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 incoming messages, 1 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970762968313677825) is bigger than or equal to the current limit (6970762968313658369). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763097958008833) is bigger than or equal to the current limit (6970763097957991425). Consider syncing your date.[0m
+[32;1mGarbageCollector, justMomentPleaseOne: 	gc_collect_cycles done. Cleaned memory: 2 Mb[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587840[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587844[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587848[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587852[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587856[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587860[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587864[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587868[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587872[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587876[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587888[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763231719587892[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 12 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763226166499329) is bigger than or equal to the current limit (6970763226166469633). Consider syncing your date.[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763227900734465) is bigger than or equal to the current limit (6970763227900709889). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 23 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 21 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763357529214977) is bigger than or equal to the current limit (6970763357529187329). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763489417625600[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763489417625604[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763489417625608[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763489417625612[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763489417625616[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763489417625620[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 6 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763487058746369) is bigger than or equal to the current limit (6970763487058723841). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect msg_container[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect rpc_result[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect rpc_result[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 0 incoming messages, 3 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611776[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611780[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611784[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611788[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611792[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611796[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970763622561611808[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763616651975681) is bigger than or equal to the current limit (6970763616651958273). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763746393665537) is bigger than or equal to the current limit (6970763746393647105). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763876060750849) is lower than or equal to the current limit (6970763876060765185). Consider syncing your date.[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updates) received via the socket...[0m
+[32;1mSeqLoop, justMomentPleaseOne:        	Was fed updates of type updates...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop channel 1237513492[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970763876297140225) is bigger than or equal to the current limit (6970763876297108481). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 11 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764005958440961) is lower than or equal to the current limit (6970764005958450177). Consider syncing your date.[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updates) received via the socket...[0m
+[32;1mSeqLoop, justMomentPleaseOne:        	Was fed updates of type updates...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop channel 1237513492[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764006460807169) is bigger than or equal to the current limit (6970764006460781569). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 11 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764136129396737) is bigger than or equal to the current limit (6970764136129381377). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764266193480705) is bigger than or equal to the current limit (6970764266193458177). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764395869273089) is bigger than or equal to the current limit (6970764395869247489). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776640[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776644[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776648[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776652[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776656[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776660[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776664[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776676[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776680[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776688[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776692[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764520209776696[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 outgoing messages, 12 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764516126491649) is bigger than or equal to the current limit (6970764516126476289). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 12 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764526498917377) is bigger than or equal to the current limit (6970764526498884609). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764656035854337) is bigger than or equal to the current limit (6970764656035844097). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764790792716288[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764790792716292[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764790792716296[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764790792716300[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 4 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764786176920577) is bigger than or equal to the current limit (6970764786176905217). Consider syncing your date.[0m
+[32;1mGarbageCollector, justMomentPleaseOne: 	gc_collect_cycles done. Cleaned memory: 2 Mb[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735168[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735172[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735176[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735180[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735184[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735188[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970764919641735192[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970764915698615297) is bigger than or equal to the current limit (6970764915698594817). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754048[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754052[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754064[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754068[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754072[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754076[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765048490754084[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765045644390401) is bigger than or equal to the current limit (6970765045644362753). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updateShort[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 0 incoming messages, 1 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765175160411137) is bigger than or equal to the current limit (6970765175160387585). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765305186417665) is bigger than or equal to the current limit (6970765305186400257). Consider syncing your date.[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop channel 1387475875[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765305333298177) is bigger than or equal to the current limit (6970765305333263361). Consider syncing your date.[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop channel 1387475875[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 12 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765435315983361) is bigger than or equal to the current limit (6970765435315954689). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765564847129601) is bigger than or equal to the current limit (6970765564847109121). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765694377744385) is bigger than or equal to the current limit (6970765694377734145). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect msg_container[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect rpc_result[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect rpc_result[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect rpc_result[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 0 incoming messages, 4 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965440[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965444[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965448[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965452[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965456[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965460[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965464[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965476[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965480[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965488[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965492[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765808699965500[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 outgoing messages, 12 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765805468731393) is bigger than or equal to the current limit (6970765805468717057). Consider syncing your date.[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765805731585025) is bigger than or equal to the current limit (6970765805731568641). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 16 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 12 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765824043824129) is bigger than or equal to the current limit (6970765824043809793). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820800[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820804[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820808[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820812[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820816[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820820[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970765959023820824[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970765953759415297) is bigger than or equal to the current limit (6970765953759404033). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839680[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839684[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839688[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839692[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839696[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839700[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766087872839712[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766084301405185) is bigger than or equal to the current limit (6970766084301386753). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updates) received via the socket...[0m
+[32;1mSeqLoop, justMomentPleaseOne:        	Was fed updates of type updates...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop channel 1407693155[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766214872049665) is bigger than or equal to the current limit (6970766214872012801). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766349865844736[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766349865844740[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766349865844744[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766349865844748[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766349865844752[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766349865844764[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 6 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766344624695297) is bigger than or equal to the current limit (6970766344624688129). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863616[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863620[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863624[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863628[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863632[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863644[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970766478714863648[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766474704375809) is bigger than or equal to the current limit (6970766474704346113). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766604253317121) is bigger than or equal to the current limit (6970766604253307905). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766734058224641) is bigger than or equal to the current limit (6970766734058206209). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mGarbageCollector, justMomentPleaseOne: 	gc_collect_cycles done. Cleaned memory: 2 Mb[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766863802819585) is bigger than or equal to the current limit (6970766863802803201). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970766993490660353) is bigger than or equal to the current limit (6970766993490644993). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767094920266753) is bigger than or equal to the current limit (6970767094920242177). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767123166015489) is bigger than or equal to the current limit (6970767123165993985). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767253518486529) is bigger than or equal to the current limit (6970767253518459905). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767383208723457) is bigger than or equal to the current limit (6970767383208701953). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949248[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949252[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949256[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949260[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949264[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949276[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767518096949280[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767512920009729) is bigger than or equal to the current limit (6970767512919998465). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968128[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968132[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968136[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968140[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968144[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968148[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970767646945968152[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767642715064321) is bigger than or equal to the current limit (6970767642715038721). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767772408582145) is bigger than or equal to the current limit (6970767772408571905). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970767902523744257) is bigger than or equal to the current limit (6970767902523717633). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768032028412929) is bigger than or equal to the current limit (6970768032028400641). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768161775579137) is bigger than or equal to the current limit (6970768161775550465). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768291434990593) is bigger than or equal to the current limit (6970768291434977281). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310336[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310340[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310344[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310348[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310352[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310364[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310368[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310372[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310380[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310384[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310388[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768389975310396[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 outgoing messages, 12 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768384238035969) is bigger than or equal to the current limit (6970768384238026753). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 12 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768421237801985) is bigger than or equal to the current limit (6970768421237776385). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768550761229313) is bigger than or equal to the current limit (6970768550761221121). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970768660558249984[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 1 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768680546920449) is bigger than or equal to the current limit (6970768680546899969). Consider syncing your date.[0m
+[32;1mGarbageCollector, justMomentPleaseOne: 	gc_collect_cycles done. Cleaned memory: 2 Mb[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updateShort[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 0 incoming messages, 1 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768810364354561) is bigger than or equal to the current limit (6970768810364339201). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970768940058241025) is bigger than or equal to the current limit (6970768940058229761). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769069786550273) is bigger than or equal to the current limit (6970769069786539009). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769199722158081) is bigger than or equal to the current limit (6970769199722131457). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769329231230977) is bigger than or equal to the current limit (6970769329231213569). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769458927127553) is bigger than or equal to the current limit (6970769458927091713). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769588662163457) is bigger than or equal to the current limit (6970769588662151169). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499136[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499140[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499144[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499148[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499160[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499164[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499168[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499172[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499176[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499180[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499184[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970769678465499192[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 12 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769673550018561) is bigger than or equal to the current limit (6970769673549992961). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 12 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769718609125377) is bigger than or equal to the current limit (6970769718609097729). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769848117037057) is bigger than or equal to the current limit (6970769848117027841). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970769977880067073) is bigger than or equal to the current limit (6970769977880049665). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770107559070721) is bigger than or equal to the current limit (6970770107559034881). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770237280314369) is bigger than or equal to the current limit (6970770237280303105). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770369955233792[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770369955233796[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770369955233800[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770369955233804[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770369955233808[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770369955233820[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 6 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770367017543681) is bigger than or equal to the current limit (6970770367017526273). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099219968[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099219972[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099219976[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099219980[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099219984[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099219988[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770503099220000[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770496771746817) is bigger than or equal to the current limit (6970770496771724289). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 4 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238848[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238852[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238856[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238860[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238872[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238876[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770631948238884[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770626474646529) is bigger than or equal to the current limit (6970770626474628097). Consider syncing your date.[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 10 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.safe.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Waiting for exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mSessionPaths, justMomentPleaseOne:   	Got exclusive lock of C:\Oserver\domains\rasteniya\console\controllers\session.madeline.lightState.php.lock...[0m
+[33;1mAPIWrapper, justMomentPleaseOne:     	Saved session![0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257728[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257732[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257736[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257740[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257744[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257748[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970770760797257752[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770757076234241) is bigger than or equal to the current limit (6970770757076217857). Consider syncing your date.[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 11 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770889336787969) is bigger than or equal to the current limit (6970770889336771585). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[32;1mGarbageCollector, justMomentPleaseOne: 	gc_collect_cycles done. Cleaned memory: 2 Mb[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970770962906594305) is bigger than or equal to the current limit (6970770962906568705). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 14 outgoing messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262784[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262788[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262800[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262804[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262808[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262816[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Can't garbage collect updates.getChannelDifference with message ID 6970771022790262820[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 outgoing messages, 7 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970771020476837889) is bigger than or equal to the current limit (6970771020476827649). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 7 outgoing messages, 0 left[0m
+[33;1mMsgIdHandler64, justMomentPleaseOne: 	Given message id (6970771154126522369) is bigger than or equal to the current limit (6970771154126502913). Consider syncing your date.[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 9 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 8 outgoing messages, 0 left[0m
+[97;2;41mResponseHandler, justMomentPleaseOne: 	Received bad_msg_notification: incorrect server salt (in this case, the bad_server_salt response is received with the correct salt, and the message is to be re-sent with it)[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 2 incoming messages, 0 left[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 3 outgoing messages, 0 left[0m
+[32;1mUpdateHandler, justMomentPleaseOne:  	Parsing updates (updateShort) received via the socket...[0m
+[33;1mFeedLoop, justMomentPleaseOne:       	Resumed update feed loop generic[0m
+[32;1mMsgIdHandler, justMomentPleaseOne:   	Garbage collected 1 incoming messages, 0 left[0m

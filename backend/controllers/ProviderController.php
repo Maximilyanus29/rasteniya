@@ -58,15 +58,17 @@ class ProviderController extends AppController
 
         if ($model->load(Yii::$app->request->post())) {
 
-            $model->setCityId($model->city_id);
-
             $model->save();
+
 
             $model->importFile = UploadedFile::getInstance($model, 'importFile');
 
-            $model->upload();
+            if (!empty($model->importFile)){
+                $model->upload();
+            }
 
-            return $this->redirect(['view', 'id' => $model->id]);
+
+            return $this->redirect(['update', 'id' => $model->id]);
         }
 
 
@@ -99,24 +101,20 @@ class ProviderController extends AppController
 
         if ($model->load(Yii::$app->request->post())) {
 
-            $model->setCityId($model->city_id);
-
             $model->save();
 
             $model->importFile = UploadedFile::getInstance($model, 'importFile');
 
-            $model->upload();
+            if (!empty($model->importFile)){
+                $model->upload();
+            }
 
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['update', 'id' => $model->id]);
         }
 
 
-        $citites = array_map(function ($el){
-            return $el['name'];
-        },City::find()->asArray()->all());
+        $citites = ArrayHelper::getColumn(City::find()->asArray()->indexBy('id')->all(), 'name');
 
-//
-//        var_dump($citites);die;
 
         return $this->render('update', [
             'model' => $model,

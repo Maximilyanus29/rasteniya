@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    $('#modal-info').iziModal();
 
 
     const checkout_block = `<li class="checkout">
@@ -106,11 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
             </li>
         `;
 
-        if (issetInSmallCard == false){
+        if (issetInSmallCard === false){
 
                 const ul = cart__block.querySelector('.dropdown-menu');
                 ul.innerHTML = template + ul.innerHTML;
-                ul.querySelector('.cart_empty').remove();
+
+                if (ul.querySelector('.cart_empty')){
+                    ul.querySelector('.cart_empty').remove();
+
+                }
 
                 if (!ul.querySelector('.checkout')){
                     ul.innerHTML += checkout_block;
@@ -293,6 +298,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
+
+
+
             $.ajax({
                 url: `/cart/add-to-${action}`,
                 type: 'get',
@@ -305,10 +313,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (action == 'cart'){
 
+
+
                         addToCartBlock(goodCard, data.quantity, data.goodtotalPrice);
 
 
                         insertCountCart(data.count);
+
+                        if (data.notice){
+                            $('#modal-info p').html(data.notice);
+                            $('#modal-info').iziModal('open');
+                        }
                     }
 
                     return true;

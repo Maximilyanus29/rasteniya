@@ -2,6 +2,8 @@
 
 namespace common\models;
 
+use frontend\components\Helper;
+use frontend\components\telegramApi\TelegramApi;
 use frontend\models\CartForm;
 use Yii;
 
@@ -36,6 +38,20 @@ class OrderCheckout extends \yii\db\ActiveRecord
         ];
     }
 
+//    /**
+//     * {@inheritdoc}
+//     */
+//    public function attributeLabels()
+//    {
+//        return [
+//            'id' => Yii::t('app', 'ID'),
+//            'user_id' => Yii::t('app', 'User ID'),
+//            'discount_price' => Yii::t('app', 'Discount Price'),
+//            'delivery_price' => Yii::t('app', 'Delivery Price'),
+//            'total_price' => Yii::t('app', 'Total Price'),
+//        ];
+//    }
+
     /**
      * {@inheritdoc}
      */
@@ -43,10 +59,16 @@ class OrderCheckout extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'user_id' => Yii::t('app', 'User ID'),
-            'discount_price' => Yii::t('app', 'Discount Price'),
-            'delivery_price' => Yii::t('app', 'Delivery Price'),
-            'total_price' => Yii::t('app', 'Total Price'),
+            'user_id' => 'Пользователь',
+            'delivery_price' => "Цена доставки",
+            'total_price' => "Стоимость",
+            'phone' => "телефон",
+            'email' => "email",
+            'name' => "ФИО",
+            'delivery_address' => "адрес доставки",
+            'delivery_method' => "способ доставки",
+            'payment_method' => "Спрособ оплаты",
+            'comment' => "Комментарий",
         ];
     }
 
@@ -59,6 +81,7 @@ class OrderCheckout extends \yii\db\ActiveRecord
         $this->name = $cartForm->name;
         $this->email = $cartForm->email;
         $this->phone = $cartForm->phone;
+        $this->telegram = $cartForm->telegram;
         $this->delivery_method = $cartForm->delivery_method;
         $this->delivery_price = 0;
         $this->delivery_address = $cartForm->delivery_address;
@@ -67,9 +90,35 @@ class OrderCheckout extends \yii\db\ActiveRecord
         $this->discount_price = $cart->getTotalCost() - $cart->getTotalCost(true);
 
         if ($this->save()){
-            return OrderItem::attach($this->id);
+
+            OrderItem::attach($this->id);
+
+            Helper::sendTelegramMessege($this->getMessege(), $this->telegram);
+
+            return true;
         }
         var_dump($this);die;
         return false;
+    }
+
+
+    public function getMessege()
+    {
+        $items = $this->getItems()->joinWith('good')->all();
+
+        $text = "Здравствуйте, вы оформили заказ на сайте " . Yii::$app->name;
+        $text .= "\nСостав заказа : \n";
+
+        foreach ($items as $item){
+            $text .= $item->good->name . " " . $item->quantity . "шт. " . $item->price . "р.\n";
+        }
+
+        return $text;
+    }
+
+
+    public function getItems()
+    {
+        return $this->hasMany(OrderItem::class, ['order_id' => 'id']);
     }
 }

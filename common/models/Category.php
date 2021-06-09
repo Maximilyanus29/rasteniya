@@ -15,6 +15,9 @@ use yii\behaviors\SluggableBehavior;
  */
 class Category extends \yii\db\ActiveRecord
 {
+
+    public $imageFile;
+
     public function behaviors()
     {
         return [
@@ -47,6 +50,7 @@ class Category extends \yii\db\ActiveRecord
             [['name'], 'unique'],
             [['parent_id'], 'integer'],
             [['name', 'slug'], 'string', 'max' => 254],
+            [['imageFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg'],
         ];
     }
 
@@ -57,8 +61,8 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'name' => Yii::t('app', 'Name'),
-            'slug' => Yii::t('app', 'Slug'),
+            'name' => Yii::t('app', 'Название'),
+            'slug' => Yii::t('app', 'url'),
             'parent_id' => Yii::t('app', 'Parent ID'),
         ];
     }
@@ -115,6 +119,20 @@ class Category extends \yii\db\ActiveRecord
         $categories = self::findOne($id);
 
         return self::buildTree($categories);
+    }
+
+
+
+    public function upload()
+    {
+        if ($this->validate()) {
+
+            $this->attachImage($this->imageFile->tempName, true);
+            unlink($this->imageFile->tempName);
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

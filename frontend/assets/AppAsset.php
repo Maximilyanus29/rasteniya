@@ -24,8 +24,13 @@ class AppAsset extends AssetBundle
         'css/custom.css',
         'css/cart/checkout.css',
         'css/jquery-ui.css',
+        'css/iziModal.min.css',
+        'css/elements_0.css',
+        'css/select2.css',
+
     ];
     public $js = [
+        "js/vendor/jquery.js",
 
 
         'js/jquery-2.1.1.min.js',
@@ -43,7 +48,9 @@ class AppAsset extends AssetBundle
         'js/jquery.magnific-popup.min.js',
 
         'js/owl.carousel.min.js',
-        "js/vendor/jquery.js",
+        "js/iziModal.min.js",
+        'js/select2.js',
+        'js/test.js',
 //        'js/tag.js',
 //        'js/subscribe.js',
 

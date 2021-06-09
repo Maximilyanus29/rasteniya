@@ -142,9 +142,9 @@ $absoluteUrl = Yii::$app->request->getPathInfo();
 
 
             </div>
-            <p style="margin:0">
-                <a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (0)</a>
-            </p>
+<!--            <p style="margin:0">-->
+<!--                <a href="http://opt.voodland.com/index.php?route=product/compare" id="compare-total">Сравнение товаров (0)</a>-->
+<!--            </p>-->
             <div class="row">
 
                 <div class="col-xs-12"><hr></div>

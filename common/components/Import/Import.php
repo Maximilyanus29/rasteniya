@@ -25,6 +25,7 @@ class Import
         $this->_provider_id = $provider_id;
         $this->_path = $path;
 
+
     }
 
     public function getHashesInArrayImportGoods($goods)

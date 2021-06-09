@@ -28,12 +28,15 @@ class CategoryChecker extends Checker
         $this->_import = $import;
 
         $this->calculate();
+
     }
 
 
     private function getStructCategoriesInDb()
     {
         $dataInDb = Category::find()->asArray()->all();
+
+
 
         $struct = [];
         foreach ($dataInDb as $key => $value){
@@ -85,14 +88,15 @@ class CategoryChecker extends Checker
 
         $to_create = array_intersect ( $dataInImport,$dataInDb);
 
+
         foreach ($to_create as $key => $value){
+
 
             if (array_key_exists($key, $dataInDb)){
 
-                $categoryInDb = array_filter($dataInDbForSearchId, function ($el, $keyy) use ($key){
+                $categoryInDb = array_filter($dataInDbForSearchId, function ($el) use ($key){
                     return mb_strtolower(trim($el['name'])) === $key;
                 }, ARRAY_FILTER_USE_BOTH );
-
 
 
 
@@ -103,9 +107,14 @@ class CategoryChecker extends Checker
                 }
 
 
+            }else{
+                $this->to_create = $to_create;
+
             }
 
         }
+
+
 
         return true;
     }

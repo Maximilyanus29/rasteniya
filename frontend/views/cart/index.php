@@ -1,6 +1,8 @@
 <?php
 use yii\widgets\ActiveForm;
+
 ?>
+<div class="check-sum-cart-on-all-provider"></div>
 <div id="unicheckout" class="checkout_form container">
     <div class="row">
         <div class="col-md-12">
@@ -35,7 +37,7 @@ use yii\widgets\ActiveForm;
                             ?>
                             <tr data-id="<?= $product->id ?>">
                                 <td class="image text-center">
-                                    <img src="http://opt.voodland.com/image/cache/catalog/semena/Sosna%20/%20%D1%81%D0%BE%D1%81%D0%BD%D1%8B%20%D1%81%20%D0%BB%D0%BE%D0%B3%D0%BE%203-47x47.png" class="img-thumbnail" title="Семена сосны обыкновенной "></td>
+                                    <img src="<?= $product->getImage()->getUrl('47x47') ?>" class="img-thumbnail" title="Семена сосны обыкновенной "></td>
                                 <td class="name text-left">
                                     <a href="http://opt.voodland.com/semena/semena-sosny-obyknovennoj-"><?= $product->name ?> </a>
                                     <br><small><?= substr($product->description,0, 18)  ?></small>
@@ -133,46 +135,29 @@ use yii\widgets\ActiveForm;
                 <div class="row">
                     <div class="payment_address col-xs-12"><div>
                             <h3 class="heading"><span>Адрес доставки</span></h3>
-<!---->
-<!--                            <div class="radio">-->
-<!--                                <label class="input">-->
-<!--                                    <input type="radio" name="address" value="existing" checked="checked" onclick="$('#payment-address-new').hide();"-->
-<!--                                           id="payment_address">-->
-<!--                                    <span>-->
-<!---->
-<!--                                    </span>-->
-<!--                                    <span>Я хочу использовать существующий адрес</span>-->
-<!--                                </label>-->
-<!--                            </div>-->
+
                             <div id="payment-existing">
                                 <?= $form->field($model, 'delivery_address')->textInput(['placeholder'=> 'Ваш адрес: город, улица, д, кв']) ?>
                             </div>
-<!--                            <div class="radio">-->
-<!--                                <label class="input">-->
-<!--                                    <input type="radio" name="address" value="new" onclick="$('#payment-address-new').show();" id="new_payment_address">-->
-<!--                                    <span></span>-->
-<!--                                    <span>Я хочу использовать новый адрес</span>-->
-<!--                                </label>-->
-<!--                            </div>-->
+
                             <div class="row">
-<!--                                <div id="payment-address-new" style="display:none">-->
-<!--                 -->
-<!---->
-<!--                                    <div class="form-group required  col-md-6">-->
-<!--                                        <select name="zone_id" id="input-payment-zone" class="form-control" onchange="update_checkout();">-->
-<!--                                            <option value="">Выберете город</option>-->
-<!---->
-<!--                                            <option value="338">Гомель</option>-->
-<!--                                        </select>-->
-<!--                                    </div>-->
-<!--                                    <div class="form-group required  col-xs-6">-->
-<!--                                        <input type="text" name="city" value="Сковородино" placeholder="Город" id="input-payment-city" class="form-control">-->
-<!--                                    </div>-->
-<!--                                    <div class="form-group hide col-xs-12">-->
-<!--                                        <input type="text" name="address_2" value="308000, Белгород, Народный бульвар 101/35, Логоша Сергей Игорьевич" placeholder="Ваш адрес, продолжнение" id="input-payment-address-2" class="form-control">-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="col-xs-12 visible-xs visible-sm" style="height:20px"></div>-->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="payment_address col-xs-12"><div>
+                            <h3 class="heading"><span>Телеграм</span></h3>
+
+                            <div id="payment-existing">
+                                <?= $form->field($model, 'telegram')->textInput(['placeholder'=> 'Телеграм аккаунт для получения уведомлений']) ?>
+                            </div>
+
+                            <div class="row">
+
                             </div>
 
                         </div>
@@ -226,7 +211,7 @@ use yii\widgets\ActiveForm;
 
         <div id="confirm" class="row">
             <div class="total_checkout col-sm-12 col-md-12 text-right">
-                <h3 style="margin:10px 0 20px;"><span style="padding:0;color:#777;">Сумма вашего заказа: <span style="padding:0;color:#D9534F;" id="totatotalsum">31213.44р.</span></span></h3>
+                <h3 style="margin:10px 0 20px;"><span style="padding:0;color:#777;">Сумма вашего заказа: <span style="padding:0;color:#D9534F;" id="totatotalsum"><?= $cart->getTotalCost() ?>р.</span></span></h3>
             </div>
             <div class="col-sm-12 col-md-12">
                 <div class="buttons clearfix">
@@ -234,14 +219,14 @@ use yii\widgets\ActiveForm;
                         <label class="input">
                             <input type="checkbox" name="CartForm[agreement]" value="1" id="agree">
                             <span></span>
-                            <span>Я прочитал(-а) <a href="http://opt.voodland.com/index.php?route=information/information/agree&amp;information_id=5" class="agree"><b>Условия соглашения</b></a> и согласен(-на) с условиями</span>
+                            <span>Я прочитал(-а) <a href="/site/oferta" target="_blank"  class="agree"><b>Условия соглашения</b></a> и согласен(-на) с условиями</span>
                         </label>
                     </div>
                     <div class="radio pull-right text-right visible-xs">
                         <label class="input">
                             <input type="checkbox" name="CartForm[agreement]" value="1" id="agree">
                             <span></span>
-                            <span>Я прочитал(-а) <a href="http://opt.voodland.com/index.php?route=information/information/agree&amp;information_id=5" class="agree"><b>Условия соглашения</b></a> и согласен(-на) с условиями</span>
+                            <span>Я прочитал(-а) <a href="/site/oferta" target="_blank" class="agree"><b>Условия соглашения</b></a> и согласен(-на) с условиями</span>
                         </label>
                         <hr>
                     </div>

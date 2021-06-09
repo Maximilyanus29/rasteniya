@@ -79,6 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	liveSearch();
 
 
+
+
+
+
+
+
 	const hintBlock = document.getElementById('review_form_hint');
 
 	const alertt = `<div class="alert alert-primary" role="alert">
@@ -120,6 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
+	$("#change_city").iziModal();
+
 
 
 
@@ -127,27 +135,42 @@ document.addEventListener('DOMContentLoaded', () => {
 	const cityBlock = document.querySelector('.prmn-cmngr');
 
 	cityBlock.addEventListener('click', event => {
-		$( "#dialog" ).dialog();
-	})
+		let target = event.target;
 
-	const cityModal = document.querySelector('#dialog');
+		if (target.closest('.prmn-cmngr__confirm')){
+			if (target.tagName === "INPUT"){
+				if (target.dataset.value === "no"){
+					event.preventDefault();
+					// $('#modal').iziModal('setZindex', 99999);
+					// $('#modal').iziModal('open', { zindex: 99999 });
+					$('#change_city').iziModal('open');
+				}else{
+					document.cookie = "city=true";
+					cityBlock.querySelector('.prmn-cmngr__confirm').style.display = 'none';
+				}
+			}
+		}else{
+			event.preventDefault();
+			$('#change_city').iziModal('setZindex', 99999);
+			$('#change_city').iziModal('open', { zindex: 99999 });
+			$('#change_city').iziModal('open');
+		}
 
-	if (cityModal){
-		cityModal.addEventListener('click', evt => {
-			evt.preventDefault();
-			console.log(evt)
-		})
-	}
 
 
 
-
-
-
-
-
+	});
 
 	/*city block end*/
+
+	/*cart*/
+
+
+	/*cart end*/
+
+
+
+
 
 
 

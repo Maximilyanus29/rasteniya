@@ -76,14 +76,26 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $categories = Yii::$app->db->createCommand(
-            'SELECT category.id, category.name, category.parent_id, category.slug, COUNT(good.id) as count FROM `category`
-                    LEFT join good on category.id = good.category_id
-                    GROUP by category.id
-                    ORDER by category.id
+            'SELECT c0.id, c0.name, c0.parent_id, c0.slug, COUNT(good.id) as count 
+FROM category c0 
+LEFT JOIN good ON c0.id 
+LEFT JOIN category c1 ON c1.id = good.category_id AND c1.id = c0.id 
+LEFT JOIN category c2 ON c2.id = good.category_id AND c2.parent_id = c0.id 
+WHERE c1.id IS NOT NULL OR c2.id IS NOT null 
+GROUP by c0.id 
+ORDER by c0.id
 '
         )->queryAll();
 
+
         return $this->render('index', ['categories'=>$categories]);
+    }
+
+    public function actionOferta()
+    {
+        $this->layout = false;
+
+        return $this->render('oferta');
     }
 
     /**

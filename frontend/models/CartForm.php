@@ -19,6 +19,7 @@ class CartForm extends Model
     public $delivery_address;
     public $comment;
     public $payment_method;
+    public $telegram;
     public $agreement = false;
 
 
@@ -31,10 +32,8 @@ class CartForm extends Model
         return [
             // name, email, subject and body are required
             [['name', 'email', 'phone', 'delivery_method', 'payment_method', 'agreement'], 'required'],
-            [['name', 'email', 'phone'], 'string', 'max' => 50],
-            [['comment', 'delivery_address'], 'string', 'max' => 254],
-            [['delivery_method', 'payment_method'], 'string'],
-            // email has to be a valid email address
+            [['name', 'phone'], 'string', 'max' => 50],
+            [['comment', 'delivery_address', 'telegram', 'email', 'delivery_method', 'payment_method'], 'string', 'max' => 254],
             ['email', 'email'],
             ['agreement', 'boolean'],
         ];
@@ -46,7 +45,17 @@ class CartForm extends Model
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'id' => Yii::t('app', 'ID'),
+            'user_id' => 'Пользователь',
+            'delivery_price' => "Цена доставки",
+            'total_price' => "Стоимость",
+            'phone' => "телефон",
+            'email' => "email",
+            'name' => "ФИО",
+            'delivery_address' => "адрес доставки",
+            'delivery_method' => "способ доставки",
+            'payment_method' => "Спрособ оплаты",
+            'comment' => "Комментарий",
         ];
     }
 
@@ -92,11 +101,7 @@ class CartForm extends Model
         $new_order = new OrderCheckout();
 
 
-
-
         $transaction = Yii::$app->db->beginTransaction();
-
-
 
 
         try {
@@ -114,9 +119,11 @@ class CartForm extends Model
 
             $new_order->create($this);
 
+
+
             $transaction->commit();
 
-            return true;
+            return $new_order;
 
         } catch (\Exception $e) {
             $transaction->rollBack();
@@ -132,12 +139,13 @@ class CartForm extends Model
     {
         $new_user = new User();
 
-        $new_user->fio = $this->name;
-        $new_user->username = $this->email;
-        $new_user->email = $this->email;
+        $new_user->fio = htmlspecialchars($this->name);
+        $new_user->username = htmlspecialchars($this->email) ;
+        $new_user->email = htmlspecialchars($this->email) ;
         $new_user->status = 10;
-        $new_user->phone = $this->phone;
-        $new_user->address = $this->delivery_address;
+        $new_user->phone = htmlspecialchars($this->phone) ;
+        $new_user->telegram = htmlspecialchars($this->telegram) ;
+        $new_user->address = htmlspecialchars( $this->delivery_address);
         $new_user->setPassword(Yii::$app->security->generateRandomString(6));
         $new_user->generateAuthKey();
         $new_user->save();

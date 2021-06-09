@@ -1,0 +1,2104 @@
+2021-06-06 14:15:37 [-][-][-][info][application] РЅР°С‡Р°Р»Рѕ РІС‹С‡РёСЃР»РµРЅРёСЏ СЃСЂРµРґРЅРµРіРѕ РґРѕС…РѕРґР°
+2021-06-06 14:15:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622978137.5124
+    'REQUEST_TIME' => 1622978137
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege2'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:17:00 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:17:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622978220.418
+    'REQUEST_TIME' => 1622978220
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:19:22 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:19:22 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622978362.8049
+    'REQUEST_TIME' => 1622978362
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:37:08 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:37:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622979428.5269
+    'REQUEST_TIME' => 1622979428
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:39:32 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:39:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622979572.1985
+    'REQUEST_TIME' => 1622979572
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:42:54 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:42:54 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622979774.9417
+    'REQUEST_TIME' => 1622979774
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:44:23 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:44:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622979863.0778
+    'REQUEST_TIME' => 1622979863
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:45:36 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:45:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622979936.264
+    'REQUEST_TIME' => 1622979936
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:47:26 [-][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: console\controllers\MessegeOrderController::actionSendMessege(): Failed opening required 'console/libs/madeline.php' (include_path='.;c:/oserver/modules/php/PHP_7.3-x64;c:/oserver/modules/php/PHP_7.3-x64/PEAR/pear') in C:\Oserver\domains\rasteniya\console\controllers\MessegeOrderController.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2021-06-06 14:47:26 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'AP_PARENT_PID' => '10280'
+    'PHP_SELF' => '../../yii'
+    'SCRIPT_NAME' => '../../yii'
+    'SCRIPT_FILENAME' => '../../yii'
+    'PATH_TRANSLATED' => '../../yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622980046.6282
+    'REQUEST_TIME' => 1622980046
+    'argv' => [
+        0 => '../../yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:48:43 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=rasteniya
+2021-06-06 14:48:43 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 14:48:43 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 14:48:43 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 14:48:44 [-][-][-][info][yii\db\Command::execute] DELETE FROM `messege_order` WHERE `id`=4
+2021-06-06 14:50:15 [-][-][-][info][yii\db\Command::execute] DELETE FROM `messege_order` WHERE `id`=5
+2021-06-06 14:48:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622980121.392
+    'REQUEST_TIME' => 1622980121
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 14:59:33 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=rasteniya
+2021-06-06 14:59:33 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 14:59:33 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 14:59:33 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 14:59:34 [-][-][-][info][yii\db\Command::execute] DELETE FROM `messege_order` WHERE `id`=5
+2021-06-06 15:01:04 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=6
+2021-06-06 15:01:04 [-][-][-][info][yii\db\Command::execute] DELETE FROM `messege_order` WHERE `id`=6
+2021-06-06 14:59:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622980770.9512
+    'REQUEST_TIME' => 1622980770
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:01:14 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=rasteniya
+2021-06-06 15:01:14 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:01:14 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:01:14 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:01:15 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=6
+2021-06-06 15:02:46 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=7
+2021-06-06 15:02:46 [-][-][-][info][yii\db\Command::execute] DELETE FROM `messege_order` WHERE `id`=7
+2021-06-06 15:01:12 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622980872.7508
+    'REQUEST_TIME' => 1622980872
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:04:10 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=rasteniya
+2021-06-06 15:04:10 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:04:10 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:04:10 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:04:11 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=7
+2021-06-06 15:05:42 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=8
+2021-06-06 15:05:42 [-][-][-][info][yii\db\Command::execute] DELETE FROM `messege_order` WHERE `id`=8
+2021-06-06 15:04:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622981048.4506
+    'REQUEST_TIME' => 1622981048
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:07:02 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=rasteniya
+2021-06-06 15:07:02 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:07:02 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:07:02 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:07:03 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=8
+2021-06-06 15:08:33 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=9
+2021-06-06 15:08:33 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=2 WHERE `id`=9
+2021-06-06 15:07:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622981220.0735
+    'REQUEST_TIME' => 1622981220
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:10:31 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=rasteniya
+2021-06-06 15:10:31 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:10:31 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:10:31 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:10:33 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=9
+2021-06-06 15:12:03 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=10
+2021-06-06 15:12:03 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=2 WHERE `id`=10
+2021-06-06 15:10:29 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622981429.4963
+    'REQUEST_TIME' => 1622981429
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:22:30 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=rasteniya
+2021-06-06 15:22:30 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:22:30 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:22:30 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:22:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622982147.8597
+    'REQUEST_TIME' => 1622982147
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:22:57 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=rasteniya
+2021-06-06 15:22:57 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:22:57 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:22:57 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:22:58 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=11
+2021-06-06 15:22:53 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622982173.8359
+    'REQUEST_TIME' => 1622982173
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]
+2021-06-06 15:27:40 [-][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=rasteniya
+2021-06-06 15:27:40 [-][-][-][info][yii\db\Command::query] SELECT * FROM `messege_order` WHERE `status`=0
+2021-06-06 15:27:40 [-][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `messege_order`
+2021-06-06 15:27:40 [-][-][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'messege_order' AND `kcu`.`TABLE_NAME` = 'messege_order'
+2021-06-06 15:27:42 [-][-][-][info][yii\db\Command::execute] UPDATE `messege_order` SET `status`=1 WHERE `id`=3
+2021-06-06 15:27:38 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '191x32766 (191x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Кирилл\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '132380920301637596'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-I4TCJM8'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00040542'
+    'ConEmuBaseDir' => 'C:\\oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\Oserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '190301'
+    'ConEmuCfgDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\oserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008050C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00060554'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '2320'
+    'ConEmuServerPID' => '3000'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\oserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\PostgreSQL\\10\\gdal-data'
+    'GOPATH' => 'C:\\Users\\Кирилл\\go'
+    'HOME' => 'c:\\oserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\oserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Кирилл\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-I4TCJM8'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\oserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\oserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\oserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Кирилл\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oserver\\modules\\conemu\\ConEmu\\Scripts;C:\\oserver\\modules\\conemu;C:\\oserver\\modules\\conemu\\ConEmu;c:\\oserver\\modules\\php\\PHP_7.3-x64\\ext;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear;c:\\oserver\\modules\\php\\PHP_7.3-x64\\pear\\bin;c:\\oserver\\modules\\php\\PHP_7.3-x64;c:\\oserver\\modules\\imagemagick;c:\\oserver\\modules\\wget\\bin;c:\\oserver\\modules\\git;c:\\oserver\\modules\\git\\bin;c:\\oserver\\modules\\git\\mingw\\bin;c:\\oserver\\modules\\git\\cmd;c:\\oserver\\modules\\database\\MariaDB-10.3-x64\\bin;c:\\oserver\\modules\\database\\MongoDB-4.0-x64;c:\\oserver\\modules\\memcached\\Memcached-1.5-x64;c:\\oserver\\modules\\redis\\Redis-3.2-x64;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64\\bin;c:\\oserver\\modules\\http\\Apache_2.4-PHP_7.2-7.3-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'PHPBIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHPDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHPRC' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64'
+    'PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINARY' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_BINDIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\'
+    'PHP_INI' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\oserver\\modules\\php\\PHP_7.3-x64\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'POSTGIS_ENABLE_OUTDB_RASTERS' => '1'
+    'POSTGIS_GDAL_ENABLED_DRIVERS' => 'GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '23'
+    'PROCESSOR_REVISION' => '1801'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\oserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\oserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-I4TCJM8'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-I4TCJM8'
+    'USERNAME' => 'Кирилл'
+    'USERPROFILE' => 'C:\\Users\\Кирилл'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1622982458.6521
+    'REQUEST_TIME' => 1622982458
+    'argv' => [
+        0 => 'yii'
+        1 => 'messege-order/send-messege'
+    ]
+    'argc' => 2
+]

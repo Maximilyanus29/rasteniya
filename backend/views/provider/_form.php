@@ -1,5 +1,6 @@
 <?php
 
+use kartik\select2\Select2;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -20,11 +21,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'importFile')->fileInput() ?>
 
-    <?= $form->field($model, 'city_id')->widget(\yii\jui\AutoComplete::classname(), [
-        'clientOptions' => [
-            'source' => $citites,
+
+    <?= $form->field($model, 'city_id')->widget(Select2::classname(), [
+        'data' => $citites,
+        'options' => ['placeholder' => 'Выбрать город'],
+        'pluginOptions' => [
+            'allowClear' => true
         ],
-    ]) ?>
+    ]); ?>
+
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>

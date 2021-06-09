@@ -92,15 +92,15 @@ AppAsset::register($this);
                             <img src="<?= $directoryAsset ?>/img/avatar.png" class="img-circle" alt="user image"/>
                         </div>
                         <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
+                            Обзорщики
+                            <small><i class="fa fa-clock-o"></i> 2 дня</small>
                         </h4>
-                        <p>Why not buy a new awesome theme?</p>
+                        <p>ПОчему не купить новую хорошую тему?</p>
                     </a>
                 </li>
             </ul>
         </li>
-        <li class="footer"><a href="#">See All Messages</a></li>
+        <li class="footer"><a href="#">Смотреть все сообщения</a></li>
     </ul>
 </li>
 <!-- Notifications: style can be found in dropdown.less -->
@@ -110,13 +110,13 @@ AppAsset::register($this);
         <span class="label label-warning">10</span>
     </a>
     <ul class="dropdown-menu">
-        <li class="header">You have 10 notifications</li>
+        <li class="header">10 новых уведомлений</li>
         <li>
             <!-- inner menu: contains the actual data -->
             <ul class="menu">
                 <li>
                     <a href="#">
-                        <i class="ion ion-ios7-people info"></i> 5 new members joined today
+                        <i class="ion ion-ios7-people info"></i> 5 присоединились сегодня
                     </a>
                 </li>
                 <li>
@@ -133,12 +133,12 @@ AppAsset::register($this);
 
                 <li>
                     <a href="#">
-                        <i class="ion ion-ios7-cart success"></i> 25 sales made
+                        <i class="ion ion-ios7-cart success"></i> 25 скидок создано
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="ion ion-ios7-person danger"></i> You changed your username
+                        <i class="ion ion-ios7-person danger"></i> ВЫ изменили логин
                     </a>
                 </li>
             </ul>

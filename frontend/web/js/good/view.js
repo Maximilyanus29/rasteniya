@@ -1,3 +1,44 @@
+$(document).ready(() => {
+
+    $('#modal-info').iziModal();
+
+    const provider_id = document.querySelector('.provider-id').dataset.name;
+
+    console.log(parseInt(getCookie('lookedLastGood')) === parseInt(provider_id))
+    console.log(parseInt(provider_id))
+    console.log(parseInt(getCookie('lookedLastGood')))
+
+
+    if (parseInt(getCookie('lookedLastGood')) !== parseInt(provider_id)){
+        $.ajax({
+            url: `/cart/check-cart-for-min-price-order`,
+            type: 'get',
+            dataType: 'json',
+            success: function(data) {
+                if (data.notice){
+                    $('#modal-info p').html(data.notice);
+                    $('#modal-info').iziModal('open');
+                }
+            }
+        });
+    }
+
+
+
+
+
+    setCookie('lookedLastGood', provider_id, {'max-age': 3600});
+
+
+
+})
+
+
+
+
+
+
+
 
 
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){

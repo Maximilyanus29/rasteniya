@@ -5,6 +5,7 @@ namespace common\models;
 use common\components\Import\Import;
 use Yii;
 use yii\behaviors\SluggableBehavior;
+use yii\helpers\Inflector;
 
 /**
  * This is the model class for table "provider".
@@ -24,7 +25,7 @@ class Provider extends \yii\db\ActiveRecord
             [
                 'class' => SluggableBehavior::className(),
                 'value' => function($event){
-                    return $this->name . $this->address;
+                    return Inflector::slug($this->name . "-" . $this->address);
                 },
                 'slugAttribute' => 'slug',
             ],

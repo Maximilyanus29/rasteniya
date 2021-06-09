@@ -71,6 +71,8 @@ class GoodRepository
             ],
             $data)->execute();
 
+
+
         $hashes = $this->checker->_import->getHashesInArrayImportGoods($data);
 
         $inserted_data = Good::find()->where(['hash' => $hashes])->indexBy('hash')->all();
