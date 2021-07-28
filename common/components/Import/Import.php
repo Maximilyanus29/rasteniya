@@ -18,14 +18,13 @@ class Import
     public $_path;
     public $_provider_id;
 
+    private $basePathFiles = "";
 
 
     public function __construct($path, $provider_id)
     {
         $this->_provider_id = $provider_id;
-        $this->_path = $path;
-
-
+        $this->_path = Yii::getAlias('@importStore') . "/" . $path;
     }
 
     public function getHashesInArrayImportGoods($goods)
@@ -56,6 +55,8 @@ class Import
                 $good['minPriceForOrderCheckout'],
             ];
         }
+
+
 
         return $data;
     }
@@ -120,9 +121,11 @@ class Import
 
             $this->data[] = $res;
 
+
         }
 
         unset($this->data[0]);
+
 
         return $this->data;
     }
@@ -143,7 +146,12 @@ class Import
         $this->parseFile();
 
         $CategoryChecker = new CategoryChecker($this);
+
+
+
         $CategoryRepository = new CategoryRepository($CategoryChecker);
+
+
 
         $GoodChecker = new GoodChecker($this);
         $GoodRepository = new GoodRepository($GoodChecker);

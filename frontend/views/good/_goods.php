@@ -9,7 +9,7 @@
             </div>
 
             <div class="caption">
-                <a href="/good/<?= $good->provider->slug ?>/<?= $good->slug ?>" data-name style="height: 22px;"><?= $good->name ?> </a>
+                <a href="/good/<?= $good->provider->slug ?>/<?= $good->slug ?>" data-name ><?= $good->name ?> </a>
                 <p class="description" style="height: 80px;" data-desc><?= $good->description ?>..</p>
                 <div id="option_406" class="option" style="height: 0px;"></div>
 <!--                <div class="rating">-->

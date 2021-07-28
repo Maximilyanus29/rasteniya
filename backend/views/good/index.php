@@ -20,7 +20,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
 
             'name',
-            'provider_id',
+            [
+                'attribute'=> 'provider_id',
+                'value'=> function($model){
+                   return $model->provider->username;
+                }
+            ],
             'weight',
             'height',
             'width',

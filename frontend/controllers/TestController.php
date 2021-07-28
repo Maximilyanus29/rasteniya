@@ -3,15 +3,24 @@ namespace frontend\controllers;
 
 use common\models\City;
 use common\models\MessegeOrder;
+use common\models\Pvz;
 use danog\MadelineProto\API;
+use frontend\components\Cdek;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
+use ryabcev\vk_api\VkBot;
+use Swift_Mailer;
+use Swift_Message;
+use Swift_SmtpTransport;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\db\Expression;
+use yii\db\Query;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
 use yii\httpclient\Client;
 use yii\imagine\Image;
+use yii\sphinx\MatchExpression;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -89,14 +98,7 @@ class TestController extends Controller
     public function actionIndex()
     {
 
-//        @voodland_bot
 
-        $res = Yii::$app->telegram->getUpdates()['result'];
-
-        Yii::$app->telegram->sendMessage([
-            'chat_id' => $this->getTelegrammId($res, 'justMomentPleaseOne'),
-            'text' => 'test',
-        ]);
 
 
     }
@@ -121,24 +123,34 @@ class TestController extends Controller
     {
 
 
-        $client = new Client();
-
-        $response = $client->createRequest()
-            ->setMethod('POST')
-            ->setUrl("wafs")
-            ->setData([])
-            ->send();
+        var_dump($_SERVER);die;
 
 
-        if ($response->isOk) {
-            echo $response->data['access_token'];
 
 
-            $newUserId = $response->data['id'];
 
-        }
+    }
 
 
+    public function actionSphinx()
+    {
+
+        Yii::$app->response->format = 'json';
+
+        $get = Yii::$app->request->get('data');
+
+
+
+
+        $query = new \yii\sphinx\Query();
+        $rows = $query
+            ->from('good')
+
+            ->match(new MatchExpression('@name :name', ['name' => $get]))
+            ->all();
+
+
+        var_dump($rows);
 
 
 

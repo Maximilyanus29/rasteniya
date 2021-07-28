@@ -55,7 +55,7 @@ return [
                 'good/search' => 'good/search',
                 'blog/<slug:[a-zA-Z-]+>' => 'blog/view',
 
-                'good/<provider:[a-zA-Z-]+>/<slug:[-\w+]+>' => 'good/view',
+                'good/<provider:[-\w]+>/<slug:[-\w+]+>' => 'good/view',
 
                 'category/<slug:[a-zA-Z-]+>' => 'good/category',
 
@@ -143,7 +143,7 @@ return [
         ],
         'telegram' => [
             'class' => 'aki\telegram\Telegram',
-            'botToken' => '1787171127:AAE_R9bTULvzTH4A8e9oJEf9KUxKXmpRnfc',
+            'botToken' => '1799246382:AAH4HI2AGugirn91h9klKYmQZ1U_KkFlIcU',
         ],
 
     ],
@@ -155,7 +155,14 @@ return [
         'user' => [
             'class' => 'frontend\modules\user\Module',
         ],
+        'provider' => [
+            'class' => 'frontend\modules\provider\Module',
+        ],
 
     ],
     'params' => $params,
+
+//    'on beforeRequest' => function () {
+//
+//    },
 ];

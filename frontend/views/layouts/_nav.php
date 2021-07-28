@@ -17,21 +17,39 @@
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li><a href="/user/default/signup">Регистрация</a></li>
                         <li><a href="/user/default/login">Авторизация</a></li>
+                        <li><a href="/provider/default/login">Авторизация для поставщиков</a></li>
                     </ul>
                 <?php else:?>
 
-                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                        <i class="fa fa-user"></i>
-                        <span class="hidden-xs"><?= Yii::$app->user->identity->email ?></span>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+                    <?php if(Yii::$app->user->identity->status == \common\models\User::STATUS_PROVIDER) :?>
+                        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <i class="fa fa-user"></i>
+                            <span class="hidden-xs"><?= Yii::$app->user->identity->email ?></span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
 
-                    <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a href="/user">Личный кабинет</a></li>
-                        <li><a href="/user/default/order-list">История заказа</a></li>
-                        <li><a href="/user/default/payment-history">Операции</a></li>
-                        <li><a href="/user/default/logout">Выход</a></li>
-                    </ul>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="/provider">Личный кабинет</a></li>
+                            <li><a href="/provider/default/order-list">История заказов</a></li>
+                            <li><a href="/provider/default/payment-history">Операции</a></li>
+                            <li><a href="/provider/default/logout">Выход</a></li>
+                        </ul>
+                    <?php else: ?>
+                        <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <i class="fa fa-user"></i>
+                            <span class="hidden-xs"><?= Yii::$app->user->identity->email ?></span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="/user">Личный кабинет</a></li>
+                            <li><a href="/user/default/order-list">История заказов</a></li>
+                            <li><a href="/user/default/payment-history">Операции</a></li>
+                            <li><a href="/user/default/logout">Выход</a></li>
+                        </ul>
+                    <?php endif; ?>
+
+
 
                 <?php endif; ?>
 
@@ -90,7 +108,7 @@
                                 <a class="prmn-cmngr__city">
                                     <span class="glyphicon glyphicon-map-marker fa fa-map-marker"></span>
                                     <span class="prmn-cmngr__city-name"  >
-                                        <?= !empty(\frontend\components\Helper::getCity()) ? \frontend\components\Helper::getCity()['name_ru'] : "Выберите город"?>
+                                        <?= !empty(\frontend\components\Helper::getCity()) ? \frontend\components\Helper::getCity()['name_ru'] : "Россия"?>
                                     </span>
                                 </a>
                             </div>

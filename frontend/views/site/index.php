@@ -31,7 +31,7 @@
                         <!--noindex-->
                         <div class="image">
                             <a rel="nofollow" href="/category/<?=$category['slug'] ?>">
-                                <img class="img-responsive" src="/images/Parnik-200x200.png" alt="<?=$category['name'] ?> (<?=$category['count'] ?>)"></a>
+                                <img class="img-responsive" src="<?= $categoriesAr[$category['id']]->getImage()->getUrl('200x200') ?>" alt="<?=$category['name'] ?> (<?=$category['count'] ?>)"></a>
                         </div><!--/noindex-->
                         <h4 style="padding-left:10px">
                             <a class="category_name" href="/category/<?=$category['slug'] ?>"><?=$category['name'] ?> <?=$category['count'] != 0 ? "(" . $category['count'] . ")" : ""?></a></h4>

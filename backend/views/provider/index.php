@@ -23,9 +23,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
 
-            'name',
+            'username',
             'address',
             'profit_in_percent',
+            'telegram',
+            [
+                'attribute' => 'city_id',
+                'value' => function($model){
+                    return $model->city->name;
+                }
+            ],
+            'fio',
+
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

@@ -29,7 +29,9 @@
         "danog/primemodule": "@dev",
         "omnilight/yii2-sypexgeo": "*",
         "sanmai/cdek-sdk": "^0.7.3",
-        "aki/yii2-bot-telegram": "*"
+        "aki/yii2-bot-telegram": "*",
+        "yiisoft/yii2-redis": "^2.0",
+        "yiisoft/yii2-sphinx": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

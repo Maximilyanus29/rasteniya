@@ -29,7 +29,7 @@ class OrderItem extends \yii\db\ActiveRecord
     {
         return [
             [['order_id', 'good_id', 'quantity'], 'required'],
-            [['order_id', 'good_id', 'quantity'], 'integer'],
+            [['order_id', 'good_id', 'quantity', 'status'], 'integer'],
         ];
     }
 
@@ -67,7 +67,6 @@ class OrderItem extends \yii\db\ActiveRecord
             }
         }
 
-        $cart->clear();
 
         return true;
 
@@ -78,6 +77,21 @@ class OrderItem extends \yii\db\ActiveRecord
     public function getGood()
     {
         return $this->hasOne(Good::class, ['id' => 'good_id']);
+    }
+
+
+    public static function getStatus($order)
+    {
+        $statuses = [];
+
+
+        foreach ($order as $item){
+        $statuses[] = $item['status'];
+        }
+
+
+        return array_unique($statuses)[0];
+
     }
 
 }

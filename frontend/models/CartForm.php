@@ -100,30 +100,37 @@ class CartForm extends Model
     {
         $new_order = new OrderCheckout();
 
-
         $transaction = Yii::$app->db->beginTransaction();
+
+
+        if (Yii::$app->user->isGuest){
+
+            $user = User::find()->where(['email' => $this->email])->limit(1)->one();
+
+
+            if (!empty($user)){
+                $new_order->user_id = $user->id;
+            }else{
+                $new_order->user_id = $this->createUser();
+
+
+            }
+        }else{
+            $new_order->user_id = Yii::$app->user->getId();
+        }
+
+        $new_order->create($this);
+
+//        var_dump($new_order);die;
+
+
+        $transaction->commit();
+
+        return $new_order;
 
 
         try {
 
-            if (Yii::$app->user->isGuest){
-                $user = User::find()->where(['email' => $this->email])->limit(1)->one();
-                if (!empty($user)){
-                    $new_order->user_id = $user->id;
-                }else{
-                    $new_order->user_id = $this->createUser();
-                }
-            }else{
-                $new_order->user_id = Yii::$app->user->getId();
-            }
-
-            $new_order->create($this);
-
-
-
-            $transaction->commit();
-
-            return $new_order;
 
         } catch (\Exception $e) {
             $transaction->rollBack();
@@ -148,11 +155,16 @@ class CartForm extends Model
         $new_user->address = htmlspecialchars( $this->delivery_address);
         $new_user->setPassword(Yii::$app->security->generateRandomString(6));
         $new_user->generateAuthKey();
-        $new_user->save();
 
-        $auth = Yii::$app->authManager;
-        $auth->assign($auth->getRole('client'), $new_user->getId());
 
-        return $new_user->id;
+        if($new_user->save()){
+
+            $auth = Yii::$app->authManager;
+            $auth->assign($auth->getRole('client'), $new_user->getId());
+
+            return $new_user->id;
+        }
+
+
     }
 }

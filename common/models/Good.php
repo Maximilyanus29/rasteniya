@@ -103,7 +103,7 @@ class Good extends \yii\db\ActiveRecord
      */
     public function getProvider()
     {
-        return $this->hasOne(Provider::className(), ['id' => 'provider_id']);
+        return $this->hasOne(User::className(), ['id' => 'provider_id']);
     }
 
     public static function sortByCity($goods)

@@ -110,7 +110,7 @@ $absoluteUrl = Yii::$app->request->getPathInfo();
                     <div class="col-xs-12">
                         <hr>
                         <div class="image">
-                            <img src="/images/hvoin_plants-80x80.jpg" alt="<?= $mainCategory->name ?>" title="<?= $mainCategory->name ?>" class="img-thumbnail">
+                            <img src="<?= $mainCategory->getImage()->getUrl('80x80') ?>" alt="<?= $mainCategory->name ?>" title="<?= $mainCategory->name ?>" class="img-thumbnail">
                         </div>
                         <div class="description">
                             <p>

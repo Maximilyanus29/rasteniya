@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Category;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -87,8 +88,10 @@ ORDER by c0.id
 '
         )->queryAll();
 
+        $categoriesAr = Category::find()->indexBy('id')->all();
 
-        return $this->render('index', ['categories'=>$categories]);
+
+        return $this->render('index', ['categories'=>$categories, 'categoriesAr' => $categoriesAr]);
     }
 
     public function actionOferta()

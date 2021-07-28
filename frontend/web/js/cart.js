@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const good_price = smallCard.querySelector('[data-price]').innerHTML;
         const good_img = smallCard.querySelector('[data-img]');
 
+        console.log(good_img)
+
 
         const template = `
             <li data-id="${good_id.dataset.id}">
@@ -293,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const good_city_slug = target.dataset.city;
 
             if (good_city_slug !== subdomain){
-                if (!confirm("Этот товар находится в другом городе, хотите ли заказать его?")){
+                if (!confirm("Этот товар находится в другом городе, поэтому стоимость доставки будет увеличена все равно хотите его заказать? ")){
                     return;
                 }
             }
@@ -358,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const good_city_slug = target.dataset.city;
 
         if (good_city_slug !== subdomain){
-            if (!confirm("Этот товар находится в другом городе, хотите ли заказать его?")){
+            if (!confirm("Этот товар находится в другом городе, поэтому стоимость доставки будет увеличена все равно хотите его заказать? ")){
                 return;
             }
         }

@@ -8,6 +8,7 @@ use common\models\User;
 use frontend\components\Helper;
 use frontend\components\telegramApi\TelegramApi;
 use frontend\models\CartForm;
+use Yii;
 use yii\filters\ContentNegotiator;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -199,12 +200,14 @@ class CartController extends Controller
         if ($model->load($post) && $model->validate()){
 
             if ($model->checkTotalSumOnProvider() !== true){
-                return "Для заказа необходимо набрать товаров у каждого заказчика на сумму 2000 шекелей";
-
+                Yii::$app->session->setFlash('info', "Для заказа необходимо набрать товаров у каждого заказчика на сумму 2000 шекелей");
+                return $this->redirect(Yii::$app->request->referrer);
             }
 
             $model->createOrder();
 
+            Yii::$app->session->setFlash('info', "Ваш заказ успешно создан, оплата произведена! На вашу электронную почту, указанную в заказе, мы вышлем электронный чек. Благодарим вас за заказ мы будем очень рады видеть вас среди наших постоянных покупателей и участников клуба");
+            return $this->redirect(Yii::$app->request->referrer);
 
         }
 

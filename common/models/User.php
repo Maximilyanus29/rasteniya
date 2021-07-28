@@ -1,10 +1,13 @@
 <?php
 namespace common\models;
 
+use common\components\Import\Import;
 use Yii;
 use yii\base\NotSupportedException;
+use yii\behaviors\SluggableBehavior;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
+use yii\helpers\Inflector;
 use yii\web\IdentityInterface;
 
 /**
@@ -32,16 +35,23 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_PROVIDER = 3;
 
 
-    public function attributeLabels()
+    public $importFile;
+
+    public function behaviors()
     {
         return [
-            'username' => 'Имя пользователя',
-            'password' => 'Пароль',
-            'fio' => 'ФИО',
-            'address' => 'Адрес',
-
+            [
+                'class' => SluggableBehavior::class,
+                'attribute' => 'username',
+            ],
+            'image' => [
+                'class' => 'rico\yii2images\behaviors\ImageBehave',
+            ],
+            TimestampBehavior::className(),
         ];
     }
+
+
 
 
     /**
@@ -52,24 +62,34 @@ class User extends ActiveRecord implements IdentityInterface
         return '{{%user}}';
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            TimestampBehavior::className(),
-        ];
-    }
 
-    /**
-     * {@inheritdoc}
-     */
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_INACTIVE],
-//            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED, self::STATUS_ADMIN, self::STATUS_PROVIDER, self::STATUS_USER]],
+            [['username'], 'required'],
+            [['slug'], 'unique'],
+            [['profit_in_percent'], 'number'],
+            [['username', 'address', 'telegram', 'email', 'fio'], 'string', 'max' => 254],
+            ['city_id',  'integer'],
+            ['email', 'email'],
+            [['password_hash'], 'string', 'min' => 6],
+            [['importFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'xml'],
+        ];
+    }
+
+
+    public function attributeLabels()
+    {
+        return [
+            'id' => Yii::t('app', 'ID'),
+            'username' => "Логин",
+            'address' => "Адрес",
+            'profit_in_percent' => "Процент от продажи",
+            'telegram' => "Логин телеграм",
+            'importFile' => "Загрузка файла импорта",
+            'city_id' => "Город",
+            'password_hash' => "Пароль",
+            'fio' => "ФИО",
         ];
     }
 
@@ -231,5 +251,36 @@ class User extends ActiveRecord implements IdentityInterface
     public function getProvider()
     {
         return $this->hasOne(Provider::class,['user_id'=>'id']);
+    }
+
+
+    public function upload()
+    {
+        $path = '../../files/import_files/' . $this->importFile->baseName . '.' . $this->importFile->extension;
+        $this->importFile->saveAs($path);
+        $this->import($path, $this->id);
+
+        return true;
+    }
+
+
+    private function import($path, $provider_id)
+    {
+        $import = new Import($path, $provider_id);
+        $import->run();
+    }
+
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getGoods()
+    {
+        return $this->hasMany(Good::className(), ['provider_id' => 'id']);
+    }
+
+    public function getCity()
+    {
+        return $this->hasOne(City::className(), ['id' => 'city_id']);
     }
 }

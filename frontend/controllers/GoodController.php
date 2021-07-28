@@ -5,6 +5,7 @@ use common\models\Category;
 use common\models\Good;
 use common\models\GoodType;
 use common\models\Provider;
+use common\models\User;
 use frontend\components\Helper;
 use frontend\models\GoodSearch;
 use frontend\models\ResendVerificationEmailForm;
@@ -121,7 +122,10 @@ class GoodController extends Controller
      */
     public function actionView($provider, $slug)
     {
-        $provider = Provider::findOne(['slug' => $provider]);
+
+
+        $provider = User::findOne(['slug' => $provider]);
+
 
         $good = Good::find()->where(['slug'=> $slug, 'provider_id' => $provider->id])->limit(1)->one();
 

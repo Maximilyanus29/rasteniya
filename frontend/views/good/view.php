@@ -47,7 +47,9 @@ use frontend\components\Helper;
                         <label for="fullscreen">Полный экран</label>
                     </p>
                     <!-- The container for the list of example images -->
-                    <div id="links" class="links">
+
+                    <input type="hidden" data-img src="<?= $good->getImage()->getUrl() ?>">
+                    <div id="links" class="links" >
 
                         <?php foreach ($good->getImages() as $image) : ?>
                             <a title="<?= $good->name ?>" href="<?= $image->getUrl() ?>"
@@ -127,7 +129,7 @@ use frontend\components\Helper;
                             <div class="row">
                                 <div class="col-sm-6 col-md-6">Производитель:
                                     <a data-href href="/provider/<?= $good->provider->slug ?>">
-                                        <span class="provider-id" data-name="<?= $good->provider_id ?>" ><?= $good->provider->name ?></span>
+                                        <span class="provider-id" data-name="<?= $good->provider_id ?>" ><?= $good->provider->fio ?></span>
                                     </a>
                                 </div>
                                 <div class="col-sm-6 col-md-6">Артикул: <?= $good->vendor_code ?></div>

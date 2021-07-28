@@ -30,6 +30,13 @@ use yii\widgets\ActiveForm;
                             <td class="total text-right">Всего</td>
                             <td class="delete text-center"></td>
                         </tr>
+                        <?php if(Yii::$app->session->hasFlash('info')):?>
+                            <p align="center" class="info alert">
+                                <?php echo Yii::$app->session->getFlash('info'); ?>
+                            </p>
+                        <?php endif; ?>
+
+
                         <?php if ($cart->getTotalCount() > 0 ) : ?>
                         <?php foreach ($cart->getItemIds() as $item) :
                             $item = $cart->getItem($item);
@@ -113,6 +120,7 @@ use yii\widgets\ActiveForm;
                     <div class="col-md-12">
                         <h3 class="heading"><span>Контактные данные</span></h3>
                     </div>
+
                     <div class="form-group required col-xs-6">
                         <?= $form->field($model, 'name')->textInput(['placeholder'=> 'Ваше имя']) ?>
 

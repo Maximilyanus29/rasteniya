@@ -86,8 +86,7 @@ class CategoryChecker extends Checker
 
         $dataInImport = $this->getStructCategoriesInImport();
 
-        $to_create = array_intersect ( $dataInImport,$dataInDb);
-
+        $to_create = array_diff_assoc (  $dataInImport, $dataInDb);
 
         foreach ($to_create as $key => $value){
 

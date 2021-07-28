@@ -8,7 +8,7 @@ use yii\helpers\Html;
 
 CustomAsset::register($this);
 
-$providers = \common\models\Provider::find()->all();
+$providers = \common\models\User::find()->where(['status' => \common\models\User::STATUS_PROVIDER])->all();
 
 $request = Yii::$app->request;
 

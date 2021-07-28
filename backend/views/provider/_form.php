@@ -13,11 +13,19 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'fio')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'profit_in_percent')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'telegram')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'password_hash')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'importFile')->fileInput() ?>
 

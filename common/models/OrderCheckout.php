@@ -2,8 +2,8 @@
 
 namespace common\models;
 
-use frontend\components\Helper;
-use frontend\components\telegramApi\TelegramApi;
+
+use common\components\Notificator\Notificator;
 use frontend\models\CartForm;
 use Yii;
 
@@ -18,6 +18,21 @@ use Yii;
  */
 class OrderCheckout extends \yii\db\ActiveRecord
 {
+    public static function getOrderStatuses()
+    {
+        return [
+            'новый заказ',
+            'собран',
+            'Выдан',
+        ];
+    }
+
+    public static function getSuccessStatus()
+    {
+        return self::getOrderStatuses()[1];
+    }
+
+
     /**
      * {@inheritdoc}
      */
@@ -33,7 +48,7 @@ class OrderCheckout extends \yii\db\ActiveRecord
     {
         return [
             [['user_id', 'discount_price', 'delivery_price', 'total_price'], 'required'],
-            [['user_id'], 'integer'],
+            [['user_id', 'status'], 'integer'],
             [['discount_price', 'delivery_price', 'total_price'], 'number'],
         ];
     }
@@ -69,6 +84,7 @@ class OrderCheckout extends \yii\db\ActiveRecord
             'delivery_method' => "способ доставки",
             'payment_method' => "Спрособ оплаты",
             'comment' => "Комментарий",
+            'status' => "Статус заказа",
         ];
     }
 
@@ -93,7 +109,11 @@ class OrderCheckout extends \yii\db\ActiveRecord
 
             OrderItem::attach($this->id);
 
-            Helper::sendTelegramMessege($this->getMessege(), $this->telegram);
+            $notificator = new Notificator();
+            $notificator->sendPostOrderCheckoutMessage($this);
+
+//            $cart->clear();
+
 
             return true;
         }
@@ -102,23 +122,60 @@ class OrderCheckout extends \yii\db\ActiveRecord
     }
 
 
-    public function getMessege()
-    {
-        $items = $this->getItems()->joinWith('good')->all();
-
-        $text = "Здравствуйте, вы оформили заказ на сайте " . Yii::$app->name;
-        $text .= "\nСостав заказа : \n";
-
-        foreach ($items as $item){
-            $text .= $item->good->name . " " . $item->quantity . "шт. " . $item->price . "р.\n";
-        }
-
-        return $text;
-    }
-
 
     public function getItems()
     {
         return $this->hasMany(OrderItem::class, ['order_id' => 'id']);
     }
+
+    public function getUser()
+    {
+        return $this->hasOne(User::class, ['id' => 'user_id']);
+    }
+
+
+
+    public function changeOrderStatus($status)
+    {
+        $goods = $this->items;
+
+        $goodsStatuses = [];
+
+        foreach ($goods as $good){
+            if (empty($good->good)) continue;
+            if ($good->good->provider_id == Yii::$app->user->getId()){
+                $good->status = $status;
+                $good->save();
+            }
+            $goodsStatuses[$good->id] = $good->status;
+        }
+
+        if ($this->status != min($goodsStatuses)){
+            $this->status = min($goodsStatuses);
+            $this->save();
+
+            $notificator = new Notificator();
+            $notificator->sendChangeStatus($this);
+        }
+
+
+
+        return true;
+    }
+
+
+
+    public function getProviderStruct()
+    {
+        $result = [];
+
+        foreach ($this->items as $item){
+            $result[$item->good->provider_id][] = $item;
+        }
+
+        return $result;
+    }
+
+
+
 }

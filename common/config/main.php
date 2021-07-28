@@ -4,15 +4,18 @@ return [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-        '@telegram' => '@vendor/danog/MadelineProto',
+//        '@telegram' => '@vendor/danog/MadelineProto',
         '@root'   => '@app/..',
         '@imageBuffer'   => '@root/files/images/buffer',
         '@imageCache'   => '@root/files/images/cache',
         '@imageStore'   => '@root/files/images/store',
         '@image'   => '@root/files/images',
+        '@importStore'   => '@root/files/import_files',
+        '@vk_bot' => '@vendor/ryabcev/vk_api',
 
 
     ],
+    'name' => "voodland",
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'cache' => [
